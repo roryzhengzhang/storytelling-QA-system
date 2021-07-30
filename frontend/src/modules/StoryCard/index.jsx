@@ -1,52 +1,61 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+import { Card, CardActionArea, CardContent, CardMedia, Typography, CardActions, Button, Link } from '@material-ui/core';
+import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
+import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
+  },
+  cover: {
+    display: "block",
+    height: "200px"
+  },
+  pic: {
+    objectFit: "cover",
+    objectPosition: "0% 0%"
   },
 });
 
 export default function StoryCard(props) {
   const classes = useStyles();
 
-  const {imgSrc} = props;
+  const { imgSrc } = props;
+
+  const history = useHistory();
+
+  const routeChange = () => {
+    let path = `/storydisplay`;
+    history.push(path);
+  }
 
   return (
     <Card className={classes.root}>
-      <CardActionArea>
+      <CardActionArea onClick={routeChange}>
         <CardMedia
           component="img"
-          alt="Contemplative Reptile"
-          height="140"
+          height="200"
           image={imgSrc}
-          title="Contemplative Reptile"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Lizard
+            {props.title}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+            {props.intro}
           </Typography>
         </CardContent>
+        <CardActions>
+          <Button
+            color="primary"
+            className={classes.button}
+            startIcon={<ArrowRightAltIcon />}
+          >
+            Read the story
+          </Button>
+        </CardActions>
       </CardActionArea>
-      {/* <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions> */}
     </Card>
   );
 }

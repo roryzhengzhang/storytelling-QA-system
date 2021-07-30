@@ -2,7 +2,7 @@ import React from 'react';
 import DrawerAndNavbar from '../DrawerAndNavbar';
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
-import StoryCard from '../StoryCard';
+import StoryBook from '../StoryBook';
 import { styled } from "@material-ui/core/styles";
 import { makeStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
@@ -38,11 +38,12 @@ function StoryDisplay(props) {
 
     const storyContent = (
         <div className={classes.paper} >
-            <StoryCard className={classes.card} imgSrc={process.env.PUBLIC_URL + '/cartoon1.jpg'}>
+            <StoryBook className={classes.card}>
                 The API documentation of the Paper React component. Learn more about the props and the CSS customization points.
-            </StoryCard>
+            </StoryBook>
         </div>
     );
+
 
     return (
         <DrawerAndNavbar content={storyContent} />

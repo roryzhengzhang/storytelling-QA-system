@@ -1,11 +1,9 @@
 import React from 'react';
 import DrawerAndNavbar from '../DrawerAndNavbar';
-import Typography from '@material-ui/core/Typography';
-import SearchBar from "material-ui-search-bar";
+// import SearchBar from "material-ui-search-bar";
 import StoryCard from '../StoryCard';
-import { styled } from "@material-ui/core/styles";
-import { makeStyles } from '@material-ui/core/styles';
-import GridList from '@material-ui/core/GridList';
+import { styled, makeStyles } from "@material-ui/core/styles";
+import { GridList, Box, Typography, Grid, Container } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -40,20 +38,34 @@ function StorySelection(props) {
     const classes = useStyles();
 
     const storySelectionList = (
-        <div>
-            <SearchBar placeholder="Search story name" className={classes.searchBar} />
-            <div className={classes.gridDiv}>
-                <GridList cellHeight={160} className={classes.gridList} cols={2} spacing={2}>
-                    <StoryCard className={classes.storyCard} imgSrc={process.env.PUBLIC_URL + '/cartoon1.jpg'}/>
-                    <StoryCard className={classes.storyCard} imgSrc={process.env.PUBLIC_URL + '/cartoon2.jpg'}/>
-                    <StoryCard className={classes.storyCard} imgSrc={process.env.PUBLIC_URL + '/cartoon3.jpg'}/>
-                    <StoryCard className={classes.storyCard} imgSrc={process.env.PUBLIC_URL + '/cartoon4.jpg'}/>
-                    <StoryCard className={classes.storyCard} imgSrc={process.env.PUBLIC_URL + '/cartoon5.jpg'}/>
-                    <StoryCard className={classes.storyCard} imgSrc={process.env.PUBLIC_URL + '/cartoon6.jpg'}/>
-                </GridList>
-            </div>
+        <Container maxWidth="lg">
+            {/* <SearchBar placeholder="Search story name" className={classes.searchBar} /> */}
+            <Box py={4}>
+                <Typography variant="subtitle1" color="textSecondary"> Select a story for your kid! </Typography>
+                <Typography variant="h4" color="textPrimary"> Featured Stories </Typography>
+            </Box>
+            <Grid container spacing={2}>
+                <Grid item xs={6} sm={4}>
+                    <StoryCard className={classes.storyCard} title="The Hare and the Tortoise" imgSrc={process.env.PUBLIC_URL + '/img/the_hare_and_the_tortoise.png'} />
+                </Grid>
+                <Grid item xs={6} sm={4}>
+                    <StoryCard className={classes.storyCard} title="The Sleeping Beauty in the Woods" imgSrc={process.env.PUBLIC_URL + '/img/the_sleeping_beauty_in_the_wood.jpg'} />
+                </Grid>
+                <Grid item xs={6} sm={4}>
+                    <StoryCard className={classes.storyCard} title="The Three Little Pigs" imgSrc={process.env.PUBLIC_URL + '/img/three_little_pigs.jpg'} />
+                </Grid>
+                <Grid item xs={6} sm={4}>
+                    <StoryCard className={classes.storyCard} title="The Ugly Duckling" imgSrc={process.env.PUBLIC_URL + '/img/the_ugly_duckling.jpg'} />
+                </Grid>
+                <Grid item xs={6} sm={4}>
+                    <StoryCard className={classes.storyCard} title="Toads and Diamonds" imgSrc={process.env.PUBLIC_URL + '/img/toads_and_diamonds.jpg'} />
+                </Grid>
+                <Grid item xs={6} sm={4}>
+                    <StoryCard className={classes.storyCard} title="The Story of Pretty Goldilocks" imgSrc={process.env.PUBLIC_URL + '/img/the_story_of_pretty_goldilocks.jpg'} />
+                </Grid>
+            </Grid>
 
-        </div>
+        </Container>
     );
 
     return (
