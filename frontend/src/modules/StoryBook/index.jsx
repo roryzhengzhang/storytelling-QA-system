@@ -157,7 +157,7 @@ const StoryPage = (props) => {
             </div>
             <div className={classes.details}>
                 <CardContent className={classes.content}>
-                    <Typography className={classes.text} component="div" variant="subtitle1" ref={ref}>
+                    <Typography className={classes.text} component="div" variant="subtitle1">
                         {props.content}
                     </Typography>
                 </CardContent>
@@ -180,7 +180,7 @@ const StoryPage = (props) => {
         </Card>
 
     )
-})
+}
 
 const QuestionCard = (props) => {
     const classes = useStyles();
@@ -258,7 +258,7 @@ const QuestionCard = (props) => {
 
         </Card >
     )
-})
+}
 
 export default function StoryBook(props) {
     const classes = useStyles();
@@ -295,13 +295,13 @@ export default function StoryBook(props) {
                         prev={() => { setCurrentPageNo(currentPageNo - 1) }}
                     >
                         {
-                            sampleStory.content.map((section, i) => <StoryPage ref={refs.current[i]} key={i} pic={section.pic} content={section.content} />)
+                            sampleStory.content.map((section, i) => <StoryPage key={i} pic={section.pic} content={section.content} />)
                         }
                     </Carousel>
                 </Grid>
 
                 <Grid item className={classes.grid} xs={12} sm={3}>
-                    <QuestionCard pageNo={currentPageNo} refs={refs} />
+                    <QuestionCard pageNo={currentPageNo} />
                 </Grid>
             </Grid >
         </Grid>
