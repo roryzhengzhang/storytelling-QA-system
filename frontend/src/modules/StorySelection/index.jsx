@@ -4,6 +4,7 @@ import DrawerAndNavbar from '../DrawerAndNavbar';
 import StoryCard from '../StoryCard';
 import { styled, makeStyles } from "@material-ui/core/styles";
 import { GridList, Box, Typography, Grid, Container } from '@material-ui/core';
+import { getStoryMetaData } from '../../services/Client';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -33,43 +34,39 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-function StorySelection(props) {
+const StorySelection = (props) => {
 
     const classes = useStyles();
+    const stories = getStoryMetaData();
 
-    const storySelectionList = (
-        <Container maxWidth="lg">
-            {/* <SearchBar placeholder="Search story name" className={classes.searchBar} /> */}
-            <Box py={4}>
-                <Typography variant="subtitle1" color="textSecondary"> Select a story for your kid! </Typography>
-                <Typography variant="h4" color="textPrimary"> Featured Stories </Typography>
-            </Box>
-            <Grid container spacing={2}>
-                <Grid item xs={6} sm={4}>
-                    <StoryCard className={classes.storyCard} title="The Hare and the Tortoise" imgSrc={process.env.PUBLIC_URL + '/img/the_hare_and_the_tortoise.png'} />
-                </Grid>
-                <Grid item xs={6} sm={4}>
-                    <StoryCard className={classes.storyCard} title="The Sleeping Beauty in the Woods" imgSrc={process.env.PUBLIC_URL + '/img/the_sleeping_beauty_in_the_wood.jpg'} />
-                </Grid>
-                <Grid item xs={6} sm={4}>
-                    <StoryCard className={classes.storyCard} title="The Three Little Pigs" imgSrc={process.env.PUBLIC_URL + '/img/three_little_pigs.jpg'} />
-                </Grid>
-                <Grid item xs={6} sm={4}>
-                    <StoryCard className={classes.storyCard} title="The Ugly Duckling" imgSrc={process.env.PUBLIC_URL + '/img/the_ugly_duckling.jpg'} />
-                </Grid>
-                <Grid item xs={6} sm={4}>
-                    <StoryCard className={classes.storyCard} title="Toads and Diamonds" imgSrc={process.env.PUBLIC_URL + '/img/toads_and_diamonds.jpg'} />
-                </Grid>
-                <Grid item xs={6} sm={4}>
-                    <StoryCard className={classes.storyCard} title="The Story of Pretty Goldilocks" imgSrc={process.env.PUBLIC_URL + '/img/the_story_of_pretty_goldilocks.jpg'} />
-                </Grid>
-            </Grid>
+    React.useEffect(() => {
+        console.log(stories)
+    })
 
-        </Container>
-    );
+    const StorySelectionList = () => {
+        if (stories)
+            return (
+                <Container maxWidth="lg">
+                    <Box py={4}>
+                        <Typography variant="subtitle1" color="textSecondary"> Select a story for your kid! </Typography>
+                        <Typography variant="h4" color="textPrimary"> Featured Stories </Typography>
+                    </Box>
+                    <Grid container spacing={2}>
+                        {
+                            stories.map((story, key) => (
+                                <Grid item xs={12} sm={4}>
+                                    <StoryCard className={classes.storyCard} title={story.title} imgSrc={story.cover} />
+                                </Grid>
+                            ))
+                        }
+                    </Grid>
+
+                </Container>
+            )
+    };
 
     return (
-        <DrawerAndNavbar content={storySelectionList} />
+        <DrawerAndNavbar content={StorySelectionList()} />
     );
 }
 

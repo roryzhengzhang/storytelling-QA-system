@@ -26,6 +26,9 @@ import DashboardIcon from '@material-ui/icons/Dashboard';
 
 import { Link as RouterLink } from 'react-router-dom'
 
+import { resetPage } from "../StoryBook/storybookSlice";
+import { useDispatch } from 'react-redux';
+
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -120,6 +123,8 @@ const DrawerAndNavbar = (props) => {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
   const { content } = props;
+
+  const dispatch = useDispatch();
 
   const handleDrawerOpen = () => {
     setOpen(true);

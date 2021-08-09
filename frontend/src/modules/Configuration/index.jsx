@@ -1,9 +1,12 @@
 import React from 'react';
 import DrawerAndNavbar from '../DrawerAndNavbar';
 import { styled, makeStyles } from "@material-ui/core/styles";
-import { GridList, Box, Typography, Grid, Container, Checkbox, Card, Divider, Chip } from '@material-ui/core';
+import { GridList, Box, Typography, Grid, Container, Checkbox, Card, Divider, Chip, SvgIcon } from '@material-ui/core';
 import { Row, Column, Item } from '@mui-treasury/components/flex';
 import { Face, Place, EmojiEmotions, DirectionsWalk, CompareArrows } from '@material-ui/icons';
+import { useSelector, useDispatch } from 'react-redux';
+import { toggleCategory } from './configSlice'
+import { RelationManyToMany, CrystalBall, RayStartArrow } from 'mdi-material-ui'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -39,6 +42,28 @@ const CardWithCheckbox = (props) => (
         </Item> */}
     </Column>
 )
+
+const ChipButton = (props) => {
+    const categories = useSelector((state) => state.config.categories);
+    const dispatch = useDispatch();
+    const selected = categories[props.label.split(' ')[0]];
+
+    const handleClick = () => {
+        dispatch(toggleCategory(props.label.split(' ')[0]));
+    }
+
+    return (
+        <Chip
+            label={props.label}
+            color="primary"
+            variant={selected ? "default" : "outlined"}
+            clickable
+            icon={props.icon}
+            onClick={handleClick}
+        />
+    )
+
+}
 
 function Configuration(props) {
 
@@ -82,25 +107,25 @@ function Configuration(props) {
                     </Item>
                     <Row>
                         <Item>
-                            <Chip label="character" color="primary" variant="outlined" clickable icon={<Face />} />
+                            <ChipButton label="character" icon={<Face />} />
                         </Item>
                         <Item>
-                            <Chip label="place" color="primary" variant="default" clickable icon={<Place />} />
+                            <ChipButton label="place" icon={<Place />} />
                         </Item>
                         <Item>
-                            <Chip label="feeling" color="primary" variant="outlined" clickable icon={<EmojiEmotions />} />
+                            <ChipButton label="feeling" icon={<EmojiEmotions />} />
                         </Item>
                         <Item>
-                            <Chip label="action" color="primary" variant="outlined" clickable icon={<DirectionsWalk />} />
+                            <ChipButton label="action" icon={<DirectionsWalk />} />
                         </Item>
                         <Item>
-                            <Chip label="causal relationship" color="primary" variant="outlined" clickable icon={<CompareArrows />} />
+                            <ChipButton label="causal relationship" icon={<RelationManyToMany />} />
                         </Item>
                         <Item>
-                            <Chip label="outcome" color="primary" variant="outlined" clickable icon={<CompareArrows />} />
+                            <ChipButton label="outcome" icon={<RayStartArrow />} />
                         </Item>
                         <Item>
-                            <Chip label="prediction" color="primary" variant="outlined" clickable icon={<CompareArrows />} />
+                            <ChipButton label="prediction" icon={<CrystalBall />} />
                         </Item>
 
                     </Row>

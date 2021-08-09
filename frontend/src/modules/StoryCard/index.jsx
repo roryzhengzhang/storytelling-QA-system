@@ -3,14 +3,16 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Card, CardActionArea, CardContent, CardMedia, Typography, CardActions, Button, Link } from '@material-ui/core';
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 import { useHistory } from "react-router-dom";
+import { selectStory } from '../StoryBook/storybookSlice';
+import { useDispatch } from 'react-redux';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    maxWidth: 500,
   },
   cover: {
     display: "block",
-    height: "200px"
+    height: "400px"
   },
   pic: {
     objectFit: "cover",
@@ -24,18 +26,25 @@ export default function StoryCard(props) {
   const { imgSrc } = props;
 
   const history = useHistory();
+  const dispatch = useDispatch();
 
-  const routeChange = () => {
+  const moveToStory = () => {
+
+    if (props.title) {
+      console.log("has title")
+      dispatch(selectStory(props.title))
+    }
+
     let path = `/storydisplay`;
     history.push(path);
   }
 
   return (
     <Card className={classes.root}>
-      <CardActionArea onClick={routeChange}>
+      <CardActionArea onClick={moveToStory}>
         <CardMedia
           component="img"
-          height="200"
+          height="400"
           image={imgSrc}
         />
         <CardContent>
