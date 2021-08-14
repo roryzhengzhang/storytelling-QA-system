@@ -1,11 +1,11 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import { fetchStoryFromServer, fetchQuestionFromServer } from '../../services/Client';
-import { getStoryFromLibrary, getQuestionsFromLibrary } from '../../services/Client';
+import { getStoryFromLibrary, getQuestionsFromLibrary, getSimilarQuestionsFromLibrary } from '../../services/Client';
 
 const initialState = {
     story: getStoryFromLibrary("Three Bears in a Boat"),
     questions: getQuestionsFromLibrary("Three Bears in a Boat"),
-    sim_questions: null,
+    sim_questions: getSimilarQuestionsFromLibrary("Three Bears in a Boat"),
     rephrased_questions: null,
     status: "idle",
     error: null,
@@ -13,6 +13,7 @@ const initialState = {
     toggled: [],
     selected: "",
     evaluation: [],
+    userInput: []
 }
 
 // export const fetchStory = createAsyncThunk('storybook/fetchStory', async (storyInfo) => {
@@ -33,7 +34,7 @@ const storybookSlice = createSlice({
             console.log("next page:");
             if (state.questions)
                 state.currPage = state.currPage === (state.questions.size - 1) ? state.currPage : state.currPage + 1;
-            state.toggled = new Array(state.questions[0].length).fill(false);
+            state.toggled = new Array(state.questions[0].qa_pair_list.length).fill(false);
         },
 
         prevPage(state, action) {
@@ -45,13 +46,19 @@ const storybookSlice = createSlice({
             console.log("story selected");
             const story = getStoryFromLibrary(action.payload);
             const questions = getQuestionsFromLibrary(action.payload);
+            const sim_questions = getSimilarQuestionsFromLibrary(action.payload);
+            state.evaluation = []
+            state.userInput = []
+            state.toggled = []
             if (questions)
                 questions.map((question_group) => {
-                    state.evaluation.push(new Array(question_group.qa_pairs.length).fill([-1, -1, -1]));
+                    state.evaluation.push(new Array(question_group.qa_pair_list.length).fill([-1, -1, -1]));
+                    state.userInput.push(new Array(question_group.qa_pair_list.length).fill(['', '', '']));
                 })
             console.log(state.evaluation)
             state.story = story;
             state.questions = questions;
+            state.sim_questions = sim_questions;
             state.currPage = 0;
         },
 
@@ -65,8 +72,8 @@ const storybookSlice = createSlice({
 
         evalQuestion(state, action) {
             var eval_list = state.evaluation[state.currPage]
-            if (!eval_list)
-                eval_list = new Array(state.questions[0].length).fill(-1).map(() => new Array(3).fill(-1));
+            // if (!eval_list)
+            //     eval_list = new Array(state.questions[0].qa_pair_list.length).fill(-1).map(() => new Array(3).fill(-1));
             eval_list[action.payload.key][action.payload.type] = action.payload.status;
             state.evaluation[state.currPage] = eval_list;
         },
@@ -74,6 +81,11 @@ const storybookSlice = createSlice({
         selectQuestion(state, action) {
             console.log(action.payload)
             state.selected = action.payload;
+        },
+
+        setInput(state, action) {
+            console.log(action.payload.key, action.payload.type);
+            state.userInput[state.currPage][action.payload.key][action.payload.type] = action.payload.value;
         },
 
         getFollowupQuestion(state, action) {
@@ -98,6 +110,6 @@ const storybookSlice = createSlice({
 })
 
 
-export const { getStories, nextPage, prevPage, resetPage, selectStory, toggleQuestion, evalQuestion, selectQuestion, getFollowupQuestion, getRephrasedQuestion } = storybookSlice.actions;
+export const { getStories, nextPage, prevPage, resetPage, selectStory, toggleQuestion, evalQuestion, selectQuestion, getFollowupQuestion, getRephrasedQuestion, setInput } = storybookSlice.actions;
 
 export default storybookSlice.reducer;

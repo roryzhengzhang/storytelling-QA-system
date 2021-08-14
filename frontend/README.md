@@ -1,3 +1,13 @@
+# Storytelling QA System
+
+modify the `MODE` parameter in `./frontend/src/config/index.jsx` to switch from two modes:
+
+`MODE == 0`: parent-AI co-reading mode (accompanied)
+
+`MODE == 1`: bot-reading mode (independent)
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

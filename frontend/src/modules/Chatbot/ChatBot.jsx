@@ -710,6 +710,7 @@ class ChatBot extends Component {
                   invalid={inputInvalid}
                   disabled={disabled}
                   speaking={speaking}
+                  customized={false}
                 >
                   {icon}
                 </SubmitButton>

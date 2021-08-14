@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-import { storyLibrary, questionLibrary } from '../../store/data'
+import { storyLibrary, questionLibrary, simQuestionLibrary } from '../../store/data'
 
 export async function getTTS(content) {
 
@@ -63,4 +63,11 @@ const getQuestionsFromLibrary = (title) => {
     }
 }
 
-export { getStoryMetaData, getStoryFromLibrary, getQuestionsFromLibrary };
+const getSimilarQuestionsFromLibrary = (title) => {
+    const story = simQuestionLibrary.find((story) => story.title === title);
+    if (story) {
+        return simQuestionLibrary.find((story) => story.title === title).questions;
+    }
+}
+
+export { getStoryMetaData, getStoryFromLibrary, getQuestionsFromLibrary, getSimilarQuestionsFromLibrary };

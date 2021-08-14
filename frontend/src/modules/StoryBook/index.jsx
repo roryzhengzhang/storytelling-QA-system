@@ -15,7 +15,7 @@ import StoryPage from "./StoryPage";
 import { prevPage, nextPage } from "./storybookSlice";
 import { useSelector, useDispatch } from 'react-redux';
 import { Help, QuestionAnswer } from '@material-ui/icons';
-
+import { MODE } from '../../config'
 
 const useStyles = makeStyles((theme) => ({
     grid: {
@@ -27,17 +27,15 @@ const useStyles = makeStyles((theme) => ({
     },
     card: {
         width: "100%",
+        height: "70vh"
+    },
+    overflowWrapper: {
+        overflow: 'overlay'
     }
 }));
 
 const TabPanel = (props) => {
     const { children, value, index, ...other } = props;
-
-    // console.log(document.querySelectorAll('[role="tablist"]')[0].style.height)
-
-    // var tab = document.querySelectorAll('[role="tablist"]')[0];
-    // var tab_height = parseFloat(document.defaultView.getComputedStyle(tab).height);
-    // var height = document.documentElement.clientHeight * 0.7 - tab_height;
 
     return (
         <div
@@ -46,7 +44,7 @@ const TabPanel = (props) => {
             id={`tabpanel-${index}`}
             aria-labelledby={`tab-${index}`}
             {...other}
-            style={{ height: "62vh", overflow: props.type == 1 ? "auto" : "hidden" }}
+            style={{ height: "62vh", overflow: props.type == 1 ? "overlay" : "hidden" }}
         >
             {value === index && (
                 children
@@ -88,32 +86,36 @@ export default function StoryBook(props) {
                         index={currPage}
                         autoPlay={false}
                         indicators={false}
-                        navButtonsAlwaysVisible={true}
+                        navButtonsAlwaysVisible={false}
                         cycleNavigation={false}
                         swipe={true}
                         next={() => { dispatch(nextPage()); }}
                         prev={() => { dispatch(prevPage()); }}
                     >
                         {
-                            story.content.map((section, i) => <StoryPage index={i} pic={section.pic} content={section.content} />)
+                            story.content.map((section, i) => <StoryPage index={i} pic={section.pic} content={section.content} hidePlay={props.hidePlay} />)
                         }
                     </Carousel>
                 </Grid>
 
                 <Grid item className={classes.grid} xs={12} sm={3}>
-                    <Card className={classes.card} variant="outlined">
-                        <Tabs value={tabIndex} onChange={handleTabChange} indicatorColor="primary" variant="fullWidth"
-                            textColor="primary">
-                            <Tab style={tabStyle} className={classes.tab} fontSize="small" label="Question Panel" wrapped icon={<Help />} />
-                            <Tab style={tabStyle} className={classes.tab} fontSize="small" label="Chatbot Panel" wrapped icon={<QuestionAnswer />} />
-                        </Tabs>
-                        <TabPanel value={tabIndex} index={0} type={1}>
-                            <QuestionPanel pageNo={currPage} />
-                        </TabPanel>
-                        <TabPanel value={tabIndex} index={1} type={2}>
-                            <ChatbotPanel />
-                        </TabPanel>
-
+                    <Card className={classes.card} variant="outlined" style={MODE == 1 ? { overflow: 'overlay' } : {}}>
+                        {props.hideQuestion ? <ChatbotPanel /> :
+                            props.hideChatbot ? <QuestionPanel pageNo={currPage} /> :
+                                <React.Fragment>
+                                    <Tabs value={tabIndex} onChange={handleTabChange} indicatorColor="primary" variant="fullWidth"
+                                        textColor="primary">
+                                        <Tab style={tabStyle} className={classes.tab} fontSize="small" label="Question Panel" wrapped icon={<Help />} />
+                                        <Tab style={tabStyle} className={classes.tab} fontSize="small" label="Chatbot Panel" wrapped icon={<QuestionAnswer />} />
+                                    </Tabs>
+                                    <TabPanel value={tabIndex} index={0} type={1}>
+                                        <QuestionPanel hidePlay={true} pageNo={currPage} />
+                                    </TabPanel>
+                                    <TabPanel value={tabIndex} index={1} type={2}>
+                                        <ChatbotPanel />
+                                    </TabPanel>
+                                </React.Fragment>
+                        }
                     </Card>
                 </Grid>
             </Grid >

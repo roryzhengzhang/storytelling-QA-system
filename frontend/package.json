@@ -20,6 +20,7 @@
     "circular-json": "^0.5.9",
     "material-ui-popup-state": "^1.9.0",
     "mdi-material-ui": "^6.22.1",
+    "mui-modal-provider": "^1.5.0",
     "react": "^17.0.2",
     "react-bot-ui": "^2.0.0",
     "react-chartjs-2": "^3.0.4",

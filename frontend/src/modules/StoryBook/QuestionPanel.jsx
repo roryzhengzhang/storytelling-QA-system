@@ -1,7 +1,6 @@
 import React from 'react';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 import {
-    Card,
     Box,
     Typography,
     IconButton,
@@ -11,32 +10,28 @@ import {
     ListItemSecondaryAction,
     Divider,
     Collapse,
-    Menu,
-    MenuItem,
     ListItemIcon,
-    Grid,
-    Slide,
-    Paper
+    ListItemText,
+    Grid
 } from '@material-ui/core';
 import { ToggleButton, ToggleButtonGroup } from '@material-ui/lab';
-import { PlusOne, Check, Clear, Autorenew, Delete, ExpandLess, ExpandMore, MoreVert } from '@material-ui/icons';
-import PopupState, {
-    anchorRef,
-    bindTrigger,
-    bindMenu,
-} from 'material-ui-popup-state'
-import { evalQuestion, toggleQuestion, selectQuestion } from './storybookSlice';
+import { PlusOne, Check, Clear, Delete, ExpandLess, ExpandMore, MoreVert, Mic, Edit } from '@material-ui/icons';
+import { evalQuestion, toggleQuestion, selectQuestion, setInput } from './storybookSlice';
 import { useSelector, useDispatch } from 'react-redux';
-
+import Recognition from '../Chatbot/recognition';
+import { SpeechButton } from '../Chatbot/components'
+import { MODE } from "../../config"
 const useStyles = makeStyles((theme) => ({
     root: {
         width: '100%',
-        backgroundColor: theme.palette.background.paper,
+        backgroundColor: theme.palette.background.paper
     },
     toggleGroup: {
         border: "0"
+    },
+    children: {
+        paddingLeft: "10px",
     }
-
 }));
 
 const QAItem = (props) => {
@@ -46,8 +41,10 @@ const QAItem = (props) => {
     const dispatch = useDispatch();
 
     const [selectedContent, setSelectedContent] = React.useState(originalContent);
+    const [speaking, setSpeaking] = React.useState(false);
 
     const meta_key = parseInt(props.index / 3);
+    const inputValue = useSelector((state) => state.storybook.userInput[currPage][meta_key]);
 
     const handleQuestionEval = (event, status) => {
         dispatch(evalQuestion({
@@ -69,6 +66,33 @@ const QAItem = (props) => {
         document.getElementById(`content${currPage}`).innerHTML = originalContent;
     }
 
+    const onRecognitionChange = value => {
+        console.log(meta_key, props.type)
+        dispatch(setInput({ value: value, key: meta_key, type: props.type }));
+    };
+
+    const onRecognitionEnd = () => {
+        setSpeaking(false);
+    };
+
+    const onRecognitionStop = () => {
+        setSpeaking(false);
+    };
+
+    const recognition = new Recognition(
+        onRecognitionChange,
+        onRecognitionEnd,
+        onRecognitionStop,
+        'en'
+    )
+
+
+    const handleSpeak = () => {
+        recognition.speak();
+        if (!speaking) setSpeaking(true);
+    }
+
+
     const ListItemWithWiderSecondaryAction = withStyles({
         secondaryAction: {
             paddingRight: 96
@@ -78,126 +102,153 @@ const QAItem = (props) => {
 
 
     return (
-        // <PopupState variant="popover" popupId="demoMenu">
-        //     {(popupState) => (
-        <React.Fragment>
-            <ListItemWithWiderSecondaryAction
-                key={props.index}
-                alignItems="center"
-                button
-                selected={props.selected}
-                onMouseEnter={(e) => {
-                    highlightCorrespondingContent(props.qa_pair.start_idx, props.qa_pair.end_idx)
-                }}
-                onClick={(e) => {
-                    console.log(props.selected)
-                    if (props.selected) {
-                        dispatch(selectQuestion(''));
-                        setSelectedContent(originalContent);
-                        restoreContent();
-                    }
-                    else {
-                        dispatch(selectQuestion(props.index));
-                        var hct = highlightCorrespondingContent(props.qa_pair.start_idx, props.qa_pair.end_idx);
-                        console.log(hct)
-                        setSelectedContent(hct);
-                        console.log(selectedContent);
-                    }
-                }}
-                onMouseLeave={() => { if (!props.selected) restoreContent(); }}
-            // ContainerProps={{ ref: anchorRef(popupState) }}
-            >
-                <Box pt={1}>
-                    <Typography color="textSecondary" variant="subtitle2" >
-                        {
-                            props.type == 0 ? `Q${meta_key + 1}` :
-                                props.type == 1 ? `Follow-up question to Q${meta_key + 1}` : `Rephrased Q${meta_key + 1}`
-                        }
-                    </Typography>
-                    <Typography color="textPrimary" variant="subtitle1" >
-                        {props.qa_pair.question}
-                    </Typography>
-                </Box>
-                <ListItemSecondaryAction
-                >
-                    <Tooltip title={"View Answer"}>
-                        <IconButton edge="end" fontSize="small" onClick={() => dispatch(toggleQuestion(props.index))}>
-                            {props.toggled ? <ExpandLess /> : <ExpandMore />}
-                        </IconButton>
-                    </Tooltip>
-                    {
-                        props.type == 0 &&
-                        (<Tooltip title={"Additional Options"}>
-                            <IconButton
-                            // {...bindTrigger(popupState)}
-                            >
-                                <MoreVert fontSize="small" />
-                                <Menu
-                                    // {...bindMenu(popupState)}
-                                    getContentAnchorEl={null}
-                                    anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-                                    transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-                                >
-                                    <MenuItem>
-                                        <ListItemIcon>
-                                            <PlusOne fontSize="small" />
-                                        </ListItemIcon>
-                                        <Typography variant="inherit" fontSize="small" >Generate a follow-up question</Typography>
-                                    </MenuItem>
-                                    <MenuItem>
-                                        <ListItemIcon>
-                                            <Autorenew fontSize="small" />
-                                        </ListItemIcon>
-                                        <Typography variant="inherit">Rephrase this question</Typography>
-                                    </MenuItem>
-                                    <MenuItem>
-                                        <ListItemIcon>
-                                            <Delete fontSize="small" />
-                                        </ListItemIcon>
-                                        <Typography variant="inherit">
-                                            Delete this question
-                                        </Typography>
-                                    </MenuItem>
-                                </Menu>
-                            </IconButton>
-                        </Tooltip>)
-                    }
-                </ListItemSecondaryAction>
-            </ListItemWithWiderSecondaryAction>
-            <Collapse in={props.toggled} timeout="auto" unmountOnExit>
-                <Grid container direction="row" justify="space-between" alignItems="center">
-                    <Grid item>
-                        <Box px={2} pb={1}>
-                            <Typography color="textSecondary">
-                                {props.qa_pair.answer}
-                            </Typography>
-                        </Box>
-                    </Grid>
-                    <Grid item>
-                        <Box px={2} pb={1}>
-                            <ToggleButtonGroup
-                                value={props.eval_status ? (props.eval_status[props.type] == 1 ? "left" : props.eval_status[props.type] == 0 ? "right" : "") : ""}
-                                onChange={handleQuestionEval}
-                                size="small"
-                                className="toggleGroup"
-                                exclusive
-                            >
-                                <ToggleButton value="left" fontSize="small" style={{ outlineColor: 'red', outlineWidth: '0px' }}>
-                                    <Check />
-                                </ToggleButton>
-                                <ToggleButton value="right" fontSize="small" style={{ outlineColor: 'red', outlineWidth: '0px' }}>
-                                    <Clear />
-                                </ToggleButton>
-                            </ToggleButtonGroup>
-                        </Box>
-                    </Grid>
-                </Grid>
-            </Collapse>
-        </React.Fragment >
-        //     )}
-        // </PopupState>
-    );
+        <div className={props.type != 0 ? classes.children : null}>
+            {MODE === 0 ?
+                <React.Fragment>
+                    <ListItemWithWiderSecondaryAction
+                        key={props.index}
+                        alignItems="center"
+                        button
+                        selected={props.selected}
+                        onMouseEnter={(e) => {
+                            highlightCorrespondingContent(props.qa_pair.start_idx, props.qa_pair.end_idx);
+                            console.log({ meta_key, inputValue })
+                        }}
+                        onClick={(e) => {
+                            console.log(props.selected)
+                            if (props.selected) {
+                                dispatch(selectQuestion(''));
+                                setSelectedContent(originalContent);
+                                restoreContent();
+                            }
+                            else {
+                                dispatch(selectQuestion(props.index));
+                                var hct = highlightCorrespondingContent(props.qa_pair.start_idx, props.qa_pair.end_idx);
+                                console.log(hct)
+                                setSelectedContent(hct);
+                                console.log(selectedContent);
+                            }
+                        }}
+                        onMouseLeave={() => { if (!props.selected) restoreContent(); }}
+                    >
 
+                        <Box pt={1}>
+                            <Typography color="textSecondary" variant="subtitle2" >
+                                {
+                                    props.type == 0 ? `Q${meta_key + 1}` :
+                                        props.type == 1 ? `Follow-up question to Q${meta_key + 1}` : `Rephrased Q${meta_key + 1}`
+                                }
+                            </Typography>
+                            <Typography color="textPrimary" variant="subtitle1" >
+                                {props.qa_pair.question}
+                            </Typography>
+                            {inputValue && inputValue[props.type] !== '' &&
+                                <Typography color="primary" variant="subtitle2">
+                                    {inputValue[props.type]}
+                                </Typography>
+                            }
+                        </Box>
+                        <ListItemSecondaryAction
+                        >
+                            <Tooltip title={"View Answer"}>
+                                <IconButton edge="end" onClick={() => dispatch(toggleQuestion(props.index))}>
+                                    {props.toggled ? <ExpandLess fontSize="small" /> : <ExpandMore fontSize="small" />}
+                                </IconButton>
+                            </Tooltip>
+                            <SpeechButton
+                                onClick={handleSpeak}
+                                speaking={speaking}
+                            >
+                                <Mic fontSize="small" />
+                            </SpeechButton>
+                        </ListItemSecondaryAction>
+                    </ListItemWithWiderSecondaryAction >
+                    <Collapse in={props.toggled} timeout="auto" unmountOnExit {...props}>
+                        <Grid container direction="row" justify="space-between" alignItems="center">
+                            <Grid item>
+                                <Box px={2} pb={1}>
+                                    <Typography color="textSecondary">
+                                        {props.qa_pair.answer}
+                                    </Typography>
+                                </Box>
+                            </Grid>
+                            <Grid item>
+                                <Box px={2} pb={1}>
+                                    <ToggleButtonGroup
+                                        value={props.eval_status ? (props.eval_status[props.type] == 1 ? "left" : props.eval_status[props.type] == 0 ? "right" : "") : ""}
+                                        onChange={handleQuestionEval}
+                                        size="small"
+                                        className={classes.toggleGroup}
+                                        exclusive
+                                    >
+                                        <ToggleButton value="left" fontSize="small" style={{ outlineColor: 'red', outlineWidth: '0px' }}>
+                                            <Check />
+                                        </ToggleButton>
+                                        <ToggleButton value="right" fontSize="small" style={{ outlineColor: 'red', outlineWidth: '0px' }}>
+                                            <Clear />
+                                        </ToggleButton>
+                                    </ToggleButtonGroup>
+                                </Box>
+                            </Grid>
+                        </Grid>
+                    </Collapse>
+                </React.Fragment>
+                :
+                <React.Fragment>
+                    <ListItemWithWiderSecondaryAction
+                        key={props.index}
+                        alignItems="center"
+                        button
+                        selected={props.selected}
+                        onMouseEnter={(e) => {
+                            highlightCorrespondingContent(props.qa_pair.start_idx, props.qa_pair.end_idx);
+                        }}
+                        onClick={(e) => {
+                            console.log(props.selected)
+                            if (props.selected) {
+                                dispatch(selectQuestion(''));
+                                setSelectedContent(originalContent);
+                                restoreContent();
+                            }
+                            else {
+                                dispatch(selectQuestion(props.index));
+                                var hct = highlightCorrespondingContent(props.qa_pair.start_idx, props.qa_pair.end_idx);
+                                console.log(hct)
+                                setSelectedContent(hct);
+                                console.log(selectedContent);
+                            }
+                        }}
+                        onMouseLeave={() => { if (!props.selected) restoreContent(); }}
+                    >
+
+                        <Box pt={1}>
+                            <Typography color="textSecondary" variant="subtitle2" >
+                                {
+                                    props.type == 0 ? `Q${meta_key + 1}` :
+                                        props.type == 1 ? `Follow-up question to Q${meta_key + 1}` : `Rephrased Q${meta_key + 1}`
+                                }
+                            </Typography>
+                            <ListItemText primary={props.qa_pair.question} secondary={props.qa_pair.answer} />
+                        </Box>
+                        <ListItemSecondaryAction>
+                            <IconButton edge="end">
+                                <PlusOne fontSize="small" />
+                            </IconButton>
+                            {/* Generate a follow-up question */}
+                            <IconButton edge="end">
+                                <Edit fontSize="small" />
+                            </IconButton>
+                            {/* Rephrase this question */}
+                            <IconButton edge="end">
+                                <Delete fontSize="small" />
+                            </IconButton>
+                            {/* Delete this question */}
+                        </ListItemSecondaryAction>
+                    </ListItemWithWiderSecondaryAction >
+                </React.Fragment>
+            }
+        </div >
+    );
 }
 
 const QuestionPanel = (props) => {
@@ -228,33 +279,28 @@ const QuestionPanel = (props) => {
     const eval_status = useSelector((state) => state.storybook.evaluation[currPage]);
 
     React.useEffect(() => {
-        console.log(filtered_categories);
-
+        console.log()
     })
 
     return (
 
         <List className={classes.root}>
             {
-                questions[currPage].qa_pairs.length === 0 ?
+                questions[currPage].qa_pair_list.length === 0 ?
                     <Box px={2} py={2}>
                         <Typography variant="substitle2" color="textSecondary">
                             No questions on this page
                         </Typography>
                     </Box>
                     :
-                    questions[currPage].qa_pairs.filter((i) => filtered_categories.indexOf(i.type) !== -1).map((qa_pair, key) =>
-                        [<QAItem eval_status={eval_status ? eval_status[key] : null} type={0} qa_pair={qa_pair} index={key * 3} toggled={toggledIndex.indexOf(key * 3) !== -1} selected={selectedIndex === key * 3} />,
-                        // <Slide direction="down" in={eval_status[key][0] == 1} mountOnEnter unmountOnExit>
-                        //     {sim_qa_pairs && sim_qa_pairs.length > currPage && sim_qa_pairs[currPage].length > key &&
-                        //         (<QAItem eval_status={eval_status[key]} type={1} qa_pair={sim_qa_pairs[currPage][key]} key={key * 3 + 1} toggled={toggledIndex.indexOf(key * 3 + 1) !== -1} />)}
-                        // </Slide>,
-                        // <Slide direction="down" in={eval_status[key][0] == 0} mountOnEnter unmountOnExit>
-                        //     {rephrased_qa_pairs && rephrased_qa_pairs.length > currPage && rephrased_qa_pairs[currPage].length > key &&
-                        //         (<QAItem eval_status={eval_status[key]} type={2} qa_pair={rephrased_qa_pairs[currPage][key]} key={key * 3 + 2} toggled={toggledIndex.indexOf(key * 3 + 2) !== -1} />)}
-                        // </Slide>,
-                        <Divider component="li" />
-                        ]
+                    questions[currPage].qa_pair_list.filter((i) => filtered_categories.filter(x => i.category.includes(x)).length > 0).map((qa_pair, key) =>
+                        <React.Fragment>
+                            <QAItem eval_status={eval_status ? eval_status[key] : null} type={0} qa_pair={qa_pair} index={key * 3} toggled={toggledIndex.indexOf(key * 3) !== -1} selected={selectedIndex === key * 3} />
+                            {eval_status[key][0] >= 0 &&
+                                <QAItem eval_status={eval_status ? eval_status[key] : null} type={1} qa_pair={sim_qa_pairs[currPage].filter((qa) => qa.question === qa_pair.question)[0].follow_ups[0]} index={key * 3 + 1} toggled={toggledIndex.indexOf(key * 3 + 1) !== -1} />
+                            }
+                            <Divider component="li" />
+                        </React.Fragment>
                     )
             }
         </List >

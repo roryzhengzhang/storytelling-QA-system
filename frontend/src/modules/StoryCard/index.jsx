@@ -5,7 +5,7 @@ import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 import { useHistory } from "react-router-dom";
 import { selectStory } from '../StoryBook/storybookSlice';
 import { useDispatch } from 'react-redux';
-
+import { MODE } from '../../config'
 const useStyles = makeStyles({
   root: {
     maxWidth: 500,
@@ -35,7 +35,7 @@ export default function StoryCard(props) {
       dispatch(selectStory(props.title))
     }
 
-    let path = `/storydisplay`;
+    let path = MODE === 0 ? `/storydisplay` : `/questionpreview`;
     history.push(path);
   }
 

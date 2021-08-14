@@ -11,7 +11,7 @@ import {
 import axios from 'axios';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import PauseIcon from '@material-ui/icons/Pause';
-
+import { MODE } from '../../config'
 const useStyles = makeStyles((theme) => ({
     card: {
         display: "flex",
@@ -36,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
         objectFit: "contain",
         maxWidth: "100%",
         maxHeight: "70vh",
+        marginRight: "auto"
     },
     controls: {
         display: 'flex',
@@ -127,15 +128,16 @@ const StoryPage = (props) => {
                             {props.content}
                         </Typography>
                     </CardContent>
-                    <div className={classes.controls}>
-                        {
-                            play ? <IconButton aria-label="pause" onClick={handlePause} className={classes.playIcon} style={styles.button} iconStyle={styles.icon}>
-                                <PauseIcon fontSize="large" />
-                            </IconButton> : <IconButton aria-label="play" onClick={handlePlay} className={classes.playIcon} style={styles.button} iconStyle={styles.icon}>
-                                <PlayArrowIcon fontSize="large" />
-                            </IconButton>
-                        }
-                    </div>
+                    {!props.hidePlay &&
+                        <div className={classes.controls}>
+                            {
+                                play ? <IconButton aria-label="pause" onClick={handlePause} className={classes.playIcon} style={styles.button} iconStyle={styles.icon}>
+                                    <PauseIcon fontSize="large" />
+                                </IconButton> : <IconButton aria-label="play" onClick={handlePlay} className={classes.playIcon} style={styles.button} iconStyle={styles.icon}>
+                                    <PlayArrowIcon fontSize="large" />
+                                </IconButton>
+                            }
+                        </div>}
                 </Grid>
 
             </Grid>

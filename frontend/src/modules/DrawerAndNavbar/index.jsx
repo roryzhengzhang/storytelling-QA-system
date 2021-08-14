@@ -22,12 +22,15 @@ import MailIcon from '@material-ui/icons/Mail';
 import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import BookIcon from '@material-ui/icons/Book';
 import TuneIcon from '@material-ui/icons/Tune';
+import HelpIcon from '@material-ui/icons/Help';
 import DashboardIcon from '@material-ui/icons/Dashboard';
 
 import { Link as RouterLink } from 'react-router-dom'
 
 import { resetPage } from "../StoryBook/storybookSlice";
 import { useDispatch } from 'react-redux';
+
+import { MODE } from '../../config'
 
 const drawerWidth = 240;
 
@@ -158,6 +161,9 @@ const DrawerAndNavbar = (props) => {
           <Typography variant="h6" noWrap>
             Story Buddy
           </Typography>
+          <Typography variant="body" noWrap style={{ marginLeft: 4 }}>
+            <sub>{MODE === 0 ? "accompanied" : "independent"}</sub>
+          </Typography>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -181,6 +187,8 @@ const DrawerAndNavbar = (props) => {
         <Divider />
         <List>
           <ListItemLink to="/storyselection" primary="Select Storybooks" icon={<LibraryBooksIcon />} />
+          {MODE == 1 &&
+            <ListItemLink to="/questionpreview" primary="Question Preview" icon={<HelpIcon />} />}
           <ListItemLink to="/storydisplay" primary="Read Story" icon={<BookIcon />} />
           <ListItemLink to="/config" primary="Configuration" icon={<TuneIcon />} />
           <ListItemLink to="/dashboard" primary="Dashboard" icon={<DashboardIcon />} />
