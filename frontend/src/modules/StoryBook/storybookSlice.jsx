@@ -78,6 +78,10 @@ const storybookSlice = createSlice({
             state.evaluation[state.currPage] = eval_list;
         },
 
+        editQuestion(state, action) {
+
+        },
+
         selectQuestion(state, action) {
             console.log(action.payload)
             state.selected = action.payload;
@@ -110,6 +114,6 @@ const storybookSlice = createSlice({
 })
 
 
-export const { getStories, nextPage, prevPage, resetPage, selectStory, toggleQuestion, evalQuestion, selectQuestion, getFollowupQuestion, getRephrasedQuestion, setInput } = storybookSlice.actions;
+export const { getStories, nextPage, prevPage, resetPage, selectStory, toggleQuestion, evalQuestion, selectQuestion, getFollowupQuestion, getRephrasedQuestion, setInput, editQuestion } = storybookSlice.actions;
 
 export default storybookSlice.reducer;

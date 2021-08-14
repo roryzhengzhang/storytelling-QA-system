@@ -46,11 +46,11 @@ function QuestionPreview(props) {
                 </DialogContent>
                 <DialogActions>
                     <Button onClick={handleClose} color="primary" autoFocus>
-                        Finished
+                        Done
                     </Button>
                 </DialogActions>
             </Dialog>
-            <StoryBook className={classes.card} hideChatbot={true} hidePlay={true}>
+            <StoryBook className={classes.card} hideChatbot={true} hidePlay={true} editable={true}>
                 The API documentation of the Paper React component. Learn more about the props and the CSS customization points.
             </StoryBook>
         </div>

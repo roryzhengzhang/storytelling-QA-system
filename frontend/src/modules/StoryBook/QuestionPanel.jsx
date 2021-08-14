@@ -12,11 +12,12 @@ import {
     Collapse,
     ListItemIcon,
     ListItemText,
-    Grid
+    Grid,
+    TextField
 } from '@material-ui/core';
 import { ToggleButton, ToggleButtonGroup } from '@material-ui/lab';
 import { PlusOne, Check, Clear, Delete, ExpandLess, ExpandMore, MoreVert, Mic, Edit } from '@material-ui/icons';
-import { evalQuestion, toggleQuestion, selectQuestion, setInput } from './storybookSlice';
+import { evalQuestion, toggleQuestion, selectQuestion, setInput, editQuestion } from './storybookSlice';
 import { useSelector, useDispatch } from 'react-redux';
 import Recognition from '../Chatbot/recognition';
 import { SpeechButton } from '../Chatbot/components'
@@ -31,6 +32,16 @@ const useStyles = makeStyles((theme) => ({
     },
     children: {
         paddingLeft: "10px",
+    },
+    disabled: {
+        color: "black",
+        borderBottom: 0,
+        "&:before": {
+            borderBottom: 0
+        }
+    },
+    input: {
+        color: "grey"
     }
 }));
 
@@ -42,6 +53,7 @@ const QAItem = (props) => {
 
     const [selectedContent, setSelectedContent] = React.useState(originalContent);
     const [speaking, setSpeaking] = React.useState(false);
+    const [editable, setEditable] = React.useState(false);
 
     const meta_key = parseInt(props.index / 3);
     const inputValue = useSelector((state) => state.storybook.userInput[currPage][meta_key]);
@@ -92,6 +104,10 @@ const QAItem = (props) => {
         if (!speaking) setSpeaking(true);
     }
 
+    const handleChange = (event) => {
+        // React.setState({ [event.target.name]: event.target.value });
+    };
+
 
     const ListItemWithWiderSecondaryAction = withStyles({
         secondaryAction: {
@@ -112,7 +128,6 @@ const QAItem = (props) => {
                         selected={props.selected}
                         onMouseEnter={(e) => {
                             highlightCorrespondingContent(props.qa_pair.start_idx, props.qa_pair.end_idx);
-                            console.log({ meta_key, inputValue })
                         }}
                         onClick={(e) => {
                             console.log(props.selected)
@@ -123,10 +138,7 @@ const QAItem = (props) => {
                             }
                             else {
                                 dispatch(selectQuestion(props.index));
-                                var hct = highlightCorrespondingContent(props.qa_pair.start_idx, props.qa_pair.end_idx);
-                                console.log(hct)
-                                setSelectedContent(hct);
-                                console.log(selectedContent);
+                                setSelectedContent(highlightCorrespondingContent(props.qa_pair.start_idx, props.qa_pair.end_idx));
                             }
                         }}
                         onMouseLeave={() => { if (!props.selected) restoreContent(); }}
@@ -198,25 +210,8 @@ const QAItem = (props) => {
                     <ListItemWithWiderSecondaryAction
                         key={props.index}
                         alignItems="center"
-                        button
-                        selected={props.selected}
                         onMouseEnter={(e) => {
                             highlightCorrespondingContent(props.qa_pair.start_idx, props.qa_pair.end_idx);
-                        }}
-                        onClick={(e) => {
-                            console.log(props.selected)
-                            if (props.selected) {
-                                dispatch(selectQuestion(''));
-                                setSelectedContent(originalContent);
-                                restoreContent();
-                            }
-                            else {
-                                dispatch(selectQuestion(props.index));
-                                var hct = highlightCorrespondingContent(props.qa_pair.start_idx, props.qa_pair.end_idx);
-                                console.log(hct)
-                                setSelectedContent(hct);
-                                console.log(selectedContent);
-                            }
                         }}
                         onMouseLeave={() => { if (!props.selected) restoreContent(); }}
                     >
@@ -228,15 +223,31 @@ const QAItem = (props) => {
                                         props.type == 1 ? `Follow-up question to Q${meta_key + 1}` : `Rephrased Q${meta_key + 1}`
                                 }
                             </Typography>
-                            <ListItemText primary={props.qa_pair.question} secondary={props.qa_pair.answer} />
+                            <TextField multiline defaultValue={props.qa_pair.question} disabled={!editable}
+                                onChange={handleChange}
+                                InputProps={{
+                                    classes: {
+                                        disabled: classes.disabled
+                                    }
+                                }} />
+                            <TextField multiline defaultValue={props.qa_pair.answer} disabled={!editable}
+                                onChange={handleChange}
+                                InputProps={{
+                                    classes: {
+                                        disabled: classes.disabled,
+                                        input: classes.input
+                                    },
+                                }} />
                         </Box>
                         <ListItemSecondaryAction>
                             <IconButton edge="end">
                                 <PlusOne fontSize="small" />
                             </IconButton>
                             {/* Generate a follow-up question */}
-                            <IconButton edge="end">
-                                <Edit fontSize="small" />
+                            <IconButton
+                                edge="end"
+                                onClick={() => { setEditable(!editable); }}>
+                                {editable ? <Check fontSize="small" onClick={() => dispatch(editQuestion())} /> : <Edit fontSize="small" />}
                             </IconButton>
                             {/* Rephrase this question */}
                             <IconButton edge="end">

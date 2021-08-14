@@ -161,7 +161,7 @@ const DrawerAndNavbar = (props) => {
           <Typography variant="h6" noWrap>
             Story Buddy
           </Typography>
-          <Typography variant="body" noWrap style={{ marginLeft: 4 }}>
+          <Typography variant="body1" noWrap style={{ marginLeft: 4 }}>
             <sub>{MODE === 0 ? "accompanied" : "independent"}</sub>
           </Typography>
         </Toolbar>

@@ -6,7 +6,8 @@ import {
     Grid,
     Tabs,
     Tab,
-    Card
+    Card,
+    Button
 } from '@material-ui/core';
 import Carousel from 'react-material-ui-carousel';
 import QuestionPanel from "./QuestionPanel";
@@ -16,6 +17,7 @@ import { prevPage, nextPage } from "./storybookSlice";
 import { useSelector, useDispatch } from 'react-redux';
 import { Help, QuestionAnswer } from '@material-ui/icons';
 import { MODE } from '../../config'
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     grid: {
@@ -28,9 +30,6 @@ const useStyles = makeStyles((theme) => ({
     card: {
         width: "100%",
         height: "70vh"
-    },
-    overflowWrapper: {
-        overflow: 'overlay'
     }
 }));
 
@@ -78,7 +77,14 @@ export default function StoryBook(props) {
     return (
         <Grid container>
             <Grid container item className={classes.grid}>
-                <Typography variant="h4"> {story.title} </Typography>
+                <Grid item className={classes.grid} xs={9}>
+                    <Typography variant="h4"> {story.title} </Typography>
+                </Grid>
+                {props.hideChatbot && <Grid container item className={classes.grid} xs={3} justifyContent="flex-end">
+                    <Button component={Link} to="/storydisplay" variant="outlined" color="primary">
+                        Proceed to Read the Story
+                    </Button>
+                </Grid>}
             </Grid>
             <Grid container>
                 <Grid item className={classes.grid} xs={12} sm={9}>
@@ -86,7 +92,7 @@ export default function StoryBook(props) {
                         index={currPage}
                         autoPlay={false}
                         indicators={false}
-                        navButtonsAlwaysVisible={false}
+                        navButtonsAlwaysVisible
                         cycleNavigation={false}
                         swipe={true}
                         next={() => { dispatch(nextPage()); }}
@@ -119,7 +125,7 @@ export default function StoryBook(props) {
                     </Card>
                 </Grid>
             </Grid >
-        </Grid>
+        </Grid >
 
     );
 }
