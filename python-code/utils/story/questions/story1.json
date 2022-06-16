@@ -1,0 +1,2732 @@
+[
+    {
+        "text": "Once there were three bears, Dash, Charlie, and Theo, who live by the sea. Look at the picture! Dash wears a green hat. Charlie wears an orange scarf. And Theo is in the striped shirt. Dash, Charlie, and Theo can't wait to share their adventure story with you. Let's turn to the next page. ",
+        "qa_pair_list": [
+            {
+                "question": "how many bears live by the sea ?",
+                "answer": "three .",
+                "start_idx": "-1",
+                "end_idx": "6",
+                "back_eval_a": "three .",
+                "score": 1.0,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "what does dash wear ?",
+                "answer": "a green hat .",
+                "start_idx": "-1",
+                "end_idx": "12",
+                "back_eval_a": "a green hat .",
+                "score": 1.0,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what does charlie wear ?",
+                "answer": "an orange scarf .",
+                "start_idx": "-1",
+                "end_idx": "16",
+                "back_eval_a": "an orange scarf .",
+                "score": 1.0,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what do dash, charlie and theo want to share with you ?",
+                "answer": "their adventure story .",
+                "start_idx": "-1",
+                "end_idx": "22",
+                "back_eval_a": "their adventure story .",
+                "score": 1.0,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what page does the story turn to ?",
+                "answer": "the next page .",
+                "start_idx": "-1",
+                "end_idx": "14",
+                "back_eval_a": "the next page .",
+                "score": 1.0,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what do dash , charlie and theo ca n't wait to share their adventure story ?",
+                "answer": "dash , charlie , and theo ca n't wait to share their adventure story with you .",
+                "start_idx": "-1",
+                "end_idx": "78",
+                "back_eval_a": "they ca n't wait to share their adventure story with you .",
+                "score": 0.8148148148148148,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "where do dash, charlie and theo live ?",
+                "answer": "the sea .",
+                "start_idx": "-1",
+                "end_idx": "8",
+                "back_eval_a": "by the sea .",
+                "score": 0.8,
+                "category": [
+                    "setting"
+                ]
+            },
+            {
+                "question": "what is theo wearing in this picture ?",
+                "answer": "the striped shirt .",
+                "start_idx": "-1",
+                "end_idx": "18",
+                "back_eval_a": "striped shirt .",
+                "score": 0.8,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what does dash wear ?",
+                "answer": "dash wears a green hat .",
+                "start_idx": "-1",
+                "end_idx": "23",
+                "back_eval_a": "a green hat .",
+                "score": 0.7499999999999999,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what does charlie wear ?",
+                "answer": "charlie wears an orange scarf .",
+                "start_idx": "-1",
+                "end_idx": "30",
+                "back_eval_a": "an orange scarf .",
+                "score": 0.7499999999999999,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what are dash , charlie and theo ?",
+                "answer": "three bears .",
+                "start_idx": "-1",
+                "end_idx": "12",
+                "back_eval_a": "they are three bears .",
+                "score": 0.6666666666666666,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what is dash s name ?",
+                "answer": "charlie .",
+                "start_idx": "-1",
+                "end_idx": "8",
+                "back_eval_a": "dash is charlie s name .",
+                "score": 0.33333333333333337,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what does theo want to do ?",
+                "answer": "once there were three bears , dash , charlie , and theo , who live by the sea .",
+                "start_idx": "-1",
+                "end_idx": "78",
+                "back_eval_a": "he wants to be a bear .",
+                "score": 0.1,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what is dash wearing ?",
+                "answer": "the picture .",
+                "start_idx": "-1",
+                "end_idx": "12",
+                "back_eval_a": "a green hat .",
+                "score": 0.0,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what is dash wearing ?",
+                "answer": "look at the picture !",
+                "start_idx": "-1",
+                "end_idx": "20",
+                "back_eval_a": "a green hat .",
+                "score": 0.0,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what do dash and charlie wear ?",
+                "answer": "let 's turn to the next page .",
+                "start_idx": "-1",
+                "end_idx": "29",
+                "back_eval_a": "green hats and orange scarves wear .",
+                "score": 0.0,
+                "category": [
+                    "action"
+                ]
+            }
+        ]
+    },
+    {
+        "text": "One day, when their mother was out, the three bears did something they really shouldn't have, and with a crash, their mother's beautiful blue seashell lay scattered in pieces across the floor. Afraid of their mama, who, after all, was a bear, the three fled from their house down to the beach, and huddled behind their boat. Theo whispered nervously, 'What should we do?'                  \nCharlie just crossed her arm and stared out at sea.It was Dash, as usual, who had an idea. What if we find another blue seashell, and put it back before Mama gets home? She'll never even know that anything happened.\u201d",
+        "qa_pair_list": [
+            {
+                "question": "who stared out at sea ?",
+                "answer": "charlie .",
+                "start_idx": "-1",
+                "end_idx": "8",
+                "back_eval_a": "charlie .",
+                "score": 1.0,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "what is mama ?",
+                "answer": "a bear .",
+                "start_idx": "-1",
+                "end_idx": "7",
+                "back_eval_a": "a bear .",
+                "score": 1.0,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "where did the bears hide when they fled from their house ?",
+                "answer": "their boat .",
+                "start_idx": "-1",
+                "end_idx": "11",
+                "back_eval_a": "behind their boat .",
+                "score": 0.8,
+                "category": [
+                    "setting"
+                ]
+            },
+            {
+                "question": "who was out when the three bears did something they really shouldn't have ?",
+                "answer": "their mother .",
+                "start_idx": "-1",
+                "end_idx": "13",
+                "back_eval_a": "their mother was out .",
+                "score": 0.6666666666666666,
+                "category": [
+                    "character",
+                    "setting"
+                ]
+            },
+            {
+                "question": "who was the three bears afraid of ?",
+                "answer": "their mama .",
+                "start_idx": "-1",
+                "end_idx": "11",
+                "back_eval_a": "mama .",
+                "score": 0.6666666666666666,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "what did dash have ?",
+                "answer": "an idea .",
+                "start_idx": "-1",
+                "end_idx": "8",
+                "back_eval_a": "dash had an idea .",
+                "score": 0.6666666666666666,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did theo whisper nervously ?",
+                "answer": "theo whispered nervously , ' what should we do ? '",
+                "start_idx": "-1",
+                "end_idx": "49",
+                "back_eval_a": "what should we do ? theo whispered nervously .",
+                "score": 0.5714285714285714,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did charlie do when theo whispered nervously ?",
+                "answer": "charlie just crossed her arm and stared out at sea.it",
+                "start_idx": "390",
+                "end_idx": "443",
+                "back_eval_a": "she stared out at sea .",
+                "score": 0.5000000000000001,
+                "category": [
+                    "action",
+                    "setting"
+                ]
+            },
+            {
+                "question": "what was charlie staring at ?",
+                "answer": "sea.it .",
+                "start_idx": "-1",
+                "end_idx": "7",
+                "back_eval_a": "the sea .",
+                "score": 0.5,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "where did the blue seashell lay ?",
+                "answer": "the floor .",
+                "start_idx": "-1",
+                "end_idx": "10",
+                "back_eval_a": "scattered in pieces across the floor .",
+                "score": 0.5,
+                "category": [
+                    "setting"
+                ]
+            },
+            {
+                "question": "what did the three bears break ?",
+                "answer": "their mother's beautiful blue seashell .",
+                "start_idx": "-1",
+                "end_idx": "39",
+                "back_eval_a": "a blue seashell .",
+                "score": 0.4444444444444444,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "where did the bears flee to ?",
+                "answer": "their house .",
+                "start_idx": "-1",
+                "end_idx": "12",
+                "back_eval_a": "behind their boat beach .",
+                "score": 0.3333333333333333,
+                "category": [
+                    "setting"
+                ]
+            },
+            {
+                "question": "where did the bears flee to ?",
+                "answer": "the beach .",
+                "start_idx": "-1",
+                "end_idx": "10",
+                "back_eval_a": "behind their boat beach .",
+                "score": 0.3333333333333333,
+                "category": [
+                    "setting"
+                ]
+            },
+            {
+                "question": "how many bears lived in the house ?",
+                "answer": "three .",
+                "start_idx": "-1",
+                "end_idx": "6",
+                "back_eval_a": "three bears lived in the house .",
+                "score": 0.2857142857142857,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "who did the three bears do something they really shouldn't have ?",
+                "answer": "the three bears .",
+                "start_idx": "-1",
+                "end_idx": "16",
+                "back_eval_a": "their mother was out the house .",
+                "score": 0.2222222222222222,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "what do the bears find to replace their mother's blue seashell ?",
+                "answer": "another blue seashell .",
+                "start_idx": "-1",
+                "end_idx": "22",
+                "back_eval_a": "they find another one the beach .",
+                "score": 0.2222222222222222,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what was dash s idea ?",
+                "answer": "what if we find another blue seashell , and put it back before mama gets home ?",
+                "start_idx": "-1",
+                "end_idx": "78",
+                "back_eval_a": "it was dash s idea .",
+                "score": 0.1,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did theo whisper nervously ?",
+                "answer": "one day , when their mother was out , the three bears did something they really should n't have , and with a crash , their mother 's beautiful blue seashell lay scattered in pieces across the floor .",
+                "start_idx": "-1",
+                "end_idx": "198",
+                "back_eval_a": "what should we do ? theo whispered nervously .",
+                "score": 0.04761904761904761,
+                "category": [
+                    "action",
+                    "casual relationship"
+                ]
+            },
+            {
+                "question": "how long was the mother out when she left her house ?",
+                "answer": "one day .",
+                "start_idx": "-1",
+                "end_idx": "8",
+                "back_eval_a": "how long was she gone ? hours .",
+                "score": 0.0,
+                "category": [
+                    "action",
+                    "setting"
+                ]
+            },
+            {
+                "question": "what happened to the mother's blue seashell ?",
+                "answer": "a crash .",
+                "start_idx": "-1",
+                "end_idx": "8",
+                "back_eval_a": "it was scattered in pieces across the floor .",
+                "score": 0.0,
+                "category": [
+                    "action",
+                    "outcome resolution"
+                ]
+            },
+            {
+                "question": "where did charlie cross her arm ?",
+                "answer": "her arm .",
+                "start_idx": "-1",
+                "end_idx": "8",
+                "back_eval_a": "she stared out at sea .",
+                "score": 0.0,
+                "category": [
+                    "setting"
+                ]
+            },
+            {
+                "question": "what did theo whisper nervously ?",
+                "answer": "afraid of their mama , who , after all , was a bear , the three fled from their house down to the beach , and huddled behind their boat .",
+                "start_idx": "-1",
+                "end_idx": "136",
+                "back_eval_a": "what should we do ? theo whispered nervously .",
+                "score": 0.0,
+                "category": [
+                    "action",
+                    "casual relationship"
+                ]
+            },
+            {
+                "question": "what if we find another blue seashell ?",
+                "answer": "she 'll never even know that anything happened . \u201d",
+                "start_idx": "-1",
+                "end_idx": "49",
+                "back_eval_a": "what if we find another blue seashell and put it back before mama gets .",
+                "score": 0.0,
+                "category": [
+                    "action"
+                ]
+            }
+        ]
+    },
+    {
+        "text": "Charlie and Theo smiled. And so just like that, the sly bears slid their boat into the sea and set sail. Their sail flew open like a wing, and the boat flashed across the water. Dotting the sea around their home were many other bears in boats. Surely one of them would know where they could find a blue seashell. ",
+        "qa_pair_list": [
+            {
+                "question": "what did charlie and theo want ?",
+                "answer": "a blue seashell .",
+                "start_idx": "-1",
+                "end_idx": "16",
+                "back_eval_a": "charlie and theo wanted a blue seashell .",
+                "score": 0.6,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did the sail flap like ?",
+                "answer": "a wing .",
+                "start_idx": "-1",
+                "end_idx": "7",
+                "back_eval_a": "like a wing the water .",
+                "score": 0.5714285714285715,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did charlie and theo see ?",
+                "answer": "dotting the sea around their home were many other bears in boats .",
+                "start_idx": "-1",
+                "end_idx": "65",
+                "back_eval_a": "they saw many other bears in boats .",
+                "score": 0.5263157894736842,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what was the first thing charlie and his friend set sail in ?",
+                "answer": "the boat .",
+                "start_idx": "-1",
+                "end_idx": "9",
+                "back_eval_a": "a boat .",
+                "score": 0.5,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "where did charlie and theo go to set sail ?",
+                "answer": "the sea .",
+                "start_idx": "-1",
+                "end_idx": "8",
+                "back_eval_a": "where the sea was around their home .",
+                "score": 0.4444444444444445,
+                "category": [
+                    "setting"
+                ]
+            },
+            {
+                "question": "what flew open like a wing ?",
+                "answer": "their sail .",
+                "start_idx": "-1",
+                "end_idx": "11",
+                "back_eval_a": "their sail flew open like a wing .",
+                "score": 0.4444444444444445,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what happened when charlie and theo opened their sail ?",
+                "answer": "their sail flew open like a wing , and the boat flashed across the water .",
+                "start_idx": "-1",
+                "end_idx": "73",
+                "back_eval_a": "they flew across the water like a wingnging their boat .",
+                "score": 0.3333333333333333,
+                "category": [
+                    "action",
+                    "setting",
+                    "outcome resolution"
+                ]
+            },
+            {
+                "question": "what did charlie and theo smile about ?",
+                "answer": "and so just like that , the sly bears slid their boat into the sea and set sail .",
+                "start_idx": "-1",
+                "end_idx": "80",
+                "back_eval_a": "they smiled because the blue seashell was near their home .",
+                "score": 0.14814814814814817,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did charlie and theo smile about ?",
+                "answer": "charlie and theo smiled .",
+                "start_idx": "-1",
+                "end_idx": "24",
+                "back_eval_a": "they smiled because the blue seashell was near their home .",
+                "score": 0.14285714285714288,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did charlie and theo think about their encounter with other bears ?",
+                "answer": "surely one of them would know where they could find a blue seashell .",
+                "start_idx": "-1",
+                "end_idx": "68",
+                "back_eval_a": "they smiledly .",
+                "score": 0.13333333333333336,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what is the bears name ?",
+                "answer": "charlie .",
+                "start_idx": "-1",
+                "end_idx": "8",
+                "back_eval_a": "theo .",
+                "score": 0.0,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "how many other bears were in boats around their home ?",
+                "answer": "one .",
+                "start_idx": "-1",
+                "end_idx": "4",
+                "back_eval_a": "how many other bears were in boats around their home ?y and theo .",
+                "score": 0.0,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "who set sail ?",
+                "answer": "the sly bears .",
+                "start_idx": "-1",
+                "end_idx": "14",
+                "back_eval_a": "theo and charlie set sail .",
+                "score": 0.0,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "what did charlie and theo set sail in ?",
+                "answer": "their boat .",
+                "start_idx": "-1",
+                "end_idx": "11",
+                "back_eval_a": "a boatly .",
+                "score": 0.0,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "where did charlie and theo set sail to ?",
+                "answer": "the water .",
+                "start_idx": "-1",
+                "end_idx": "10",
+                "back_eval_a": "their home .",
+                "score": 0.0,
+                "category": [
+                    "setting"
+                ]
+            },
+            {
+                "question": "what was the sea around ?",
+                "answer": "their home .",
+                "start_idx": "-1",
+                "end_idx": "11",
+                "back_eval_a": "many other bears in boats .",
+                "score": 0.0,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what was the sea around their home like ?",
+                "answer": "many other bears .",
+                "start_idx": "-1",
+                "end_idx": "17",
+                "back_eval_a": "it was blue .",
+                "score": 0.0,
+                "category": [
+                    "action"
+                ]
+            }
+        ]
+    },
+    {
+        "text": "But the bears on the first boat did not have any idea where to look. The bears in the second boat were a little confused. And the bears in the third boat seemed a bit busy. ",
+        "qa_pair_list": [
+            {
+                "question": "where were the bears in ?",
+                "answer": "the third boat .",
+                "start_idx": "-1",
+                "end_idx": "15",
+                "back_eval_a": "where were the bears in ? boat .",
+                "score": 0.4444444444444444,
+                "category": [
+                    "setting"
+                ]
+            },
+            {
+                "question": "which boat did the bears look in ?",
+                "answer": "the first boat .",
+                "start_idx": "-1",
+                "end_idx": "15",
+                "back_eval_a": "which boat did the bears look in ? first , second and third boats .",
+                "score": 0.4,
+                "category": [
+                    "others"
+                ]
+            },
+            {
+                "question": "which boat were the bears in ?",
+                "answer": "the second boat .",
+                "start_idx": "-1",
+                "end_idx": "16",
+                "back_eval_a": "which boat were the bears in ? one , second and third .",
+                "score": 0.30769230769230765,
+                "category": [
+                    "others"
+                ]
+            },
+            {
+                "question": "what was the first boat ?",
+                "answer": "the bears .",
+                "start_idx": "-1",
+                "end_idx": "10",
+                "back_eval_a": "the first boat was empty .",
+                "score": 0.28571428571428575,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did the bears on first boat have ?",
+                "answer": "any idea .",
+                "start_idx": "-1",
+                "end_idx": "9",
+                "back_eval_a": "they had no idea where to look .",
+                "score": 0.22222222222222224,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "which boat was the third one in ?",
+                "answer": "third .",
+                "start_idx": "-1",
+                "end_idx": "6",
+                "back_eval_a": "which boat was the third one in ?cellularslemente cell .",
+                "score": 0.19999999999999998,
+                "category": [
+                    "others"
+                ]
+            },
+            {
+                "question": "which boat were the bears in ?",
+                "answer": "second .",
+                "start_idx": "-1",
+                "end_idx": "7",
+                "back_eval_a": "which boat were the bears in ? one , second and third .",
+                "score": 0.18181818181818182,
+                "category": [
+                    "others"
+                ]
+            },
+            {
+                "question": "where did the bears look first ?",
+                "answer": "first .",
+                "start_idx": "-1",
+                "end_idx": "6",
+                "back_eval_a": "where did they look first ? the bears looked in boats 1 and 2 .",
+                "score": 0.14285714285714288,
+                "category": [
+                    "setting"
+                ]
+            },
+            {
+                "question": "what did the bears on first boat do ?",
+                "answer": "but the bears on the first boat did not have any idea where to look .",
+                "start_idx": "-1",
+                "end_idx": "68",
+                "back_eval_a": "they looked for food .",
+                "score": 0.10526315789473685,
+                "category": [
+                    "action",
+                    "casual relationship"
+                ]
+            },
+            {
+                "question": "what did the bears in second boat do ?",
+                "answer": "and the bears in the third boat seemed a bit busy .",
+                "start_idx": "-1",
+                "end_idx": "50",
+                "back_eval_a": "they looked for food .",
+                "score": 0.0,
+                "category": [
+                    "action"
+                ]
+            }
+        ]
+    },
+    {
+        "text": "Then they met a big, salty bear, and asked him if he knew where any blue seashell might be. The salty bear looked them up and down with his keen, old sailor eyes. \u201cI reckon I might,\u201d he said. [slow and low] \u201cA ways over yonder,\u201d he told them, `is an island shaped like a lumpy hat.  On that island, there may be a seashell, a beautiful blue one. It could be underwater, or in the tallest tree, or on the very top of the mountain. It might even be hidden in a cave. I'm not dead certain, but, if you look in the right place,  I reckon you'll find it. \nAs he began to motor away, the three little bears yelled their thanks to him. 'Just look in the right place,' he said with a wave of his big old paw. ",
+        "qa_pair_list": [
+            {
+                "question": "how many little bears were there when they met the big bear ?",
+                "answer": "three .",
+                "start_idx": "-1",
+                "end_idx": "6",
+                "back_eval_a": "three .",
+                "score": 1.0,
+                "category": [
+                    "character",
+                    "setting"
+                ]
+            },
+            {
+                "question": "who did the little bears meet ?",
+                "answer": "a big, salty bear .",
+                "start_idx": "-1",
+                "end_idx": "18",
+                "back_eval_a": "a big salty bear .",
+                "score": 1.0,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "what is the island shaped like ?",
+                "answer": "a lumpy hat .",
+                "start_idx": "-1",
+                "end_idx": "12",
+                "back_eval_a": "a lumpy hat .",
+                "score": 1.0,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did the bear look at them with ?",
+                "answer": "his keen, old sailor eyes .",
+                "start_idx": "-1",
+                "end_idx": "26",
+                "back_eval_a": "his keen sailor eyes .",
+                "score": 0.888888888888889,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what does the salty bear say he knows where to find ?",
+                "answer": "a seashell .",
+                "start_idx": "-1",
+                "end_idx": "11",
+                "back_eval_a": "a blue seashell .",
+                "score": 0.8,
+                "category": [
+                    "action",
+                    "setting"
+                ]
+            },
+            {
+                "question": "what is the lumpy hat shaped like ?",
+                "answer": "that island .",
+                "start_idx": "-1",
+                "end_idx": "12",
+                "back_eval_a": "island .",
+                "score": 0.6666666666666666,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did the salty bear look at when he saw them ?",
+                "answer": "the salty bear looked them up and down with his keen , old sailor eyes .",
+                "start_idx": "-1",
+                "end_idx": "71",
+                "back_eval_a": "he looked them over with his keen, old sailor eyes .",
+                "score": 0.6666666666666666,
+                "category": [
+                    "action",
+                    "setting"
+                ]
+            },
+            {
+                "question": "who asked the big bear for a blue seashell ?",
+                "answer": "the three little bears .",
+                "start_idx": "-1",
+                "end_idx": "23",
+                "back_eval_a": "the three little bears asked him for a blue seashell .",
+                "score": 0.5714285714285715,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "what does the bear give when he says look in a right place ?",
+                "answer": "a wave .",
+                "start_idx": "-1",
+                "end_idx": "7",
+                "back_eval_a": "a wave of his paw .",
+                "score": 0.5714285714285715,
+                "category": [
+                    "action",
+                    "setting"
+                ]
+            },
+            {
+                "question": "what did the little bears ask of a big , salty bear ?",
+                "answer": "then they met a big , salty bear , and asked him if he knew where any blue seashell might be .",
+                "start_idx": "-1",
+                "end_idx": "93",
+                "back_eval_a": "if he knew where a blue seashell might be .",
+                "score": 0.5714285714285714,
+                "category": [
+                    "action",
+                    "casual relationship"
+                ]
+            },
+            {
+                "question": "who knew where the blue seashell might be ?",
+                "answer": "the salty bear .",
+                "start_idx": "-1",
+                "end_idx": "15",
+                "back_eval_a": "the salty bear knew where it might be .",
+                "score": 0.5454545454545454,
+                "category": [
+                    "character",
+                    "setting"
+                ]
+            },
+            {
+                "question": "what does the salty bear say to look for a blue seashell ?",
+                "answer": "the right place .",
+                "start_idx": "-1",
+                "end_idx": "16",
+                "back_eval_a": "he says to look in the right place .",
+                "score": 0.5454545454545454,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did the three little bears yell to him ?",
+                "answer": "their thanks .",
+                "start_idx": "-1",
+                "end_idx": "13",
+                "back_eval_a": "they yelled their thanks to him .",
+                "score": 0.5,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what is a lumpy hat ?",
+                "answer": "an island .",
+                "start_idx": "-1",
+                "end_idx": "10",
+                "back_eval_a": "an island shaped like a lumpy hat .",
+                "score": 0.4444444444444445,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what is the distance to this island ?",
+                "answer": "yonder .",
+                "start_idx": "-1",
+                "end_idx": "7",
+                "back_eval_a": "a ways over yonder .",
+                "score": 0.4,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did the bear wave at them ?",
+                "answer": "his big old paw .",
+                "start_idx": "-1",
+                "end_idx": "16",
+                "back_eval_a": "paw .",
+                "score": 0.4,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what does the salty bear know about ?",
+                "answer": "any blue seashell .",
+                "start_idx": "-1",
+                "end_idx": "18",
+                "back_eval_a": "he knows where a blue seashell might be .",
+                "score": 0.36363636363636365,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "where might the blue seashell be hidden ?",
+                "answer": "it might even be hidden in a cave .",
+                "start_idx": "-1",
+                "end_idx": "34",
+                "back_eval_a": "underwater or in a cavey ? .",
+                "score": 0.3076923076923077,
+                "category": [
+                    "action",
+                    "setting"
+                ]
+            },
+            {
+                "question": "where might the blue seashell be hidden ?",
+                "answer": "a cave .",
+                "start_idx": "-1",
+                "end_idx": "7",
+                "back_eval_a": "underwater or in a cavey ? .",
+                "score": 0.28571428571428575,
+                "category": [
+                    "setting"
+                ]
+            },
+            {
+                "question": "what did the salty bear tell them about an island ?",
+                "answer": "\u201c a ways over yonder , \u201d he told them , ` is an island shaped like a lumpy hat .",
+                "start_idx": "-1",
+                "end_idx": "79",
+                "back_eval_a": "it was shaped like a haty .",
+                "score": 0.28571428571428575,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did the salty bear say ?",
+                "answer": "just look in the right place , ' he said with a wave of his big old paw .",
+                "start_idx": "-1",
+                "end_idx": "72",
+                "back_eval_a": "he said that they might find a blue seashell on an island shaped like the shape of .",
+                "score": 0.24242424242424243,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did the salty bear say ?",
+                "answer": "on that island , there may be a seashell , a beautiful blue one .",
+                "start_idx": "-1",
+                "end_idx": "64",
+                "back_eval_a": "he said that they might find a blue seashell on an island shaped like the shape of .",
+                "score": 0.20689655172413793,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did the salty bear say ?",
+                "answer": "\u201c i reckon i might , \u201d he said .",
+                "start_idx": "-1",
+                "end_idx": "31",
+                "back_eval_a": "he said that they might find a blue seashell on an island shaped like the shape of .",
+                "score": 0.1739130434782609,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what was the salty bear s response to their question ?",
+                "answer": "as he began to motor away , the three little bears yelled their thanks to him . '",
+                "start_idx": "-1",
+                "end_idx": "80",
+                "back_eval_a": "he said that they might find it if the right place was found .",
+                "score": 0.14285714285714288,
+                "category": [
+                    "action",
+                    "casual relationship"
+                ]
+            },
+            {
+                "question": "where could the blue seashell be found ?",
+                "answer": "it could be underwater , or in the tallest tree , or on the very top of the mountain .",
+                "start_idx": "-1",
+                "end_idx": "85",
+                "back_eval_a": "where it was hiddeny hat shaped island .",
+                "score": 0.08333333333333333,
+                "category": [
+                    "action",
+                    "setting"
+                ]
+            },
+            {
+                "question": "what did the salty bear say ?",
+                "answer": "i 'm not dead certain , but , if you look in the right place , i reckon you 'll find it .",
+                "start_idx": "-1",
+                "end_idx": "88",
+                "back_eval_a": "he said that they might find a blue seashell on an island shaped like the shape of .",
+                "score": 0.05555555555555555,
+                "category": [
+                    "action",
+                    "casual relationship"
+                ]
+            },
+            {
+                "question": "where could the seashell be hidden ?",
+                "answer": "the tallest tree .",
+                "start_idx": "-1",
+                "end_idx": "17",
+                "back_eval_a": "underwater or in a cavey .",
+                "score": 0.0,
+                "category": [
+                    "setting"
+                ]
+            },
+            {
+                "question": "where could the seashell be hidden ?",
+                "answer": "the very top .",
+                "start_idx": "-1",
+                "end_idx": "13",
+                "back_eval_a": "underwater or in a cavey .",
+                "score": 0.0,
+                "category": [
+                    "setting"
+                ]
+            },
+            {
+                "question": "where could the seashell be hidden ?",
+                "answer": "the mountain .",
+                "start_idx": "-1",
+                "end_idx": "13",
+                "back_eval_a": "underwater or in a cavey .",
+                "score": 0.0,
+                "category": [
+                    "setting"
+                ]
+            }
+        ]
+    },
+    {
+        "text": "Excited, and sure that they would soon have a new shell for their mother, the three bears sailed on. They sailed past islands that looked like a lot of fun. Look at the picture, there is a giant ferris wheel! And (they also sailed) past some islands that maybe didn't look so fun. Hmmm, the dark islands around them look kind of scary.",
+        "qa_pair_list": [
+            {
+                "question": "who did the bears hope to find a new shell for ?",
+                "answer": "their mother .",
+                "start_idx": "-1",
+                "end_idx": "13",
+                "back_eval_a": "their mother .",
+                "score": 1.0,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "what is on the island that looks fun ?",
+                "answer": "a giant ferris wheel .",
+                "start_idx": "-1",
+                "end_idx": "21",
+                "back_eval_a": "a ferris wheel .",
+                "score": 0.8571428571428571,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "how many bears are there in the story ?",
+                "answer": "three .",
+                "start_idx": "-1",
+                "end_idx": "6",
+                "back_eval_a": "three bears .",
+                "score": 0.6666666666666666,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "what did the bears hope to get ?",
+                "answer": "a new shell .",
+                "start_idx": "-1",
+                "end_idx": "12",
+                "back_eval_a": "a new shell for their mother .",
+                "score": 0.6666666666666666,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did the bears sail past ?",
+                "answer": "they sailed past islands that looked like a lot of fun .",
+                "start_idx": "-1",
+                "end_idx": "55",
+                "back_eval_a": "islands that looked fun and scary .",
+                "score": 0.4705882352941177,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did they sail past ?",
+                "answer": "and ( they also sailed ) past some islands that maybe did n't look so fun .",
+                "start_idx": "-1",
+                "end_idx": "74",
+                "back_eval_a": "islands that looked fun .",
+                "score": 0.4210526315789474,
+                "category": [
+                    "action",
+                    "casual relationship"
+                ]
+            },
+            {
+                "question": "what does the bear look at ?",
+                "answer": "the picture .",
+                "start_idx": "-1",
+                "end_idx": "12",
+                "back_eval_a": "he looks at the ferris wheel .",
+                "score": 0.25,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did the bears sail past ?",
+                "answer": "some islands .",
+                "start_idx": "-1",
+                "end_idx": "13",
+                "back_eval_a": "islands that looked fun and scary .",
+                "score": 0.25,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did the bears sail past ?",
+                "answer": "the dark islands .",
+                "start_idx": "-1",
+                "end_idx": "17",
+                "back_eval_a": "islands that looked fun and scary .",
+                "score": 0.2222222222222222,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "who sailed past islands that looked fun ?",
+                "answer": "the three bears .",
+                "start_idx": "-1",
+                "end_idx": "16",
+                "back_eval_a": "who sailed past islands that looked fun ? bears .",
+                "score": 0.18181818181818182,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "what did the bears think of some islands they passed ?",
+                "answer": "hmmm , the dark islands around them look kind of scary .",
+                "start_idx": "-1",
+                "end_idx": "55",
+                "back_eval_a": "they thought it looked funly .",
+                "score": 0.13333333333333333,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did the bears sail past ?",
+                "answer": "look at the picture , there is a giant ferris wheel !",
+                "start_idx": "-1",
+                "end_idx": "52",
+                "back_eval_a": "islands that looked fun and scary .",
+                "score": 0.125,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did the bears sail past ?",
+                "answer": "excited , and sure that they would soon have a new shell for their mother , the three bears sailed on .",
+                "start_idx": "-1",
+                "end_idx": "102",
+                "back_eval_a": "islands that looked fun and scary .",
+                "score": 0.08,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "how many islands did they sail past ?",
+                "answer": "a lot .",
+                "start_idx": "-1",
+                "end_idx": "6",
+                "back_eval_a": "three islands .",
+                "score": 0.0,
+                "category": [
+                    "character"
+                ]
+            }
+        ]
+    },
+    {
+        "text": "Their voyage was not without incident. Look at the boat! A whale picked it up off the water!",
+        "qa_pair_list": [
+            {
+                "question": "where did the whale pick up their boat ?",
+                "answer": "the water .",
+                "start_idx": "-1",
+                "end_idx": "10",
+                "back_eval_a": "off the water .",
+                "score": 0.8,
+                "category": [
+                    "setting"
+                ]
+            },
+            {
+                "question": "what was picked up off the water ?",
+                "answer": "the boat .",
+                "start_idx": "-1",
+                "end_idx": "9",
+                "back_eval_a": "what was picked up off the water ? boat .",
+                "score": 0.4,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what picked up the boat ?",
+                "answer": "a whale .",
+                "start_idx": "-1",
+                "end_idx": "8",
+                "back_eval_a": "a whale picked it up off the water .",
+                "score": 0.4,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what does the whale pick up off of water ?",
+                "answer": "look at the boat !",
+                "start_idx": "-1",
+                "end_idx": "17",
+                "back_eval_a": "what does the whale pick up off of water ? boat .",
+                "score": 0.28571428571428575,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what happened to the boat ?",
+                "answer": "a whale picked it up off the water !",
+                "start_idx": "-1",
+                "end_idx": "35",
+                "back_eval_a": "it was picked up by a whale .",
+                "score": 0.26666666666666666,
+                "category": [
+                    "action",
+                    "outcome resolution"
+                ]
+            },
+            {
+                "question": "what was the name of their voyage ?",
+                "answer": "their voyage .",
+                "start_idx": "-1",
+                "end_idx": "13",
+                "back_eval_a": "the voyage of discovery was their name .",
+                "score": 0.22222222222222224,
+                "category": [
+                    "action"
+                ]
+            }
+        ]
+    },
+    {
+        "text": "They sailed on further than they had ever gone before.",
+        "qa_pair_list": [
+            {
+                "question": "what did they sail on ?",
+                "answer": "they sailed on further than they had ever gone before .",
+                "start_idx": "-1",
+                "end_idx": "54",
+                "back_eval_a": "they sailed on a sailboat .",
+                "score": 0.4,
+                "category": [
+                    "action",
+                    "casual relationship"
+                ]
+            }
+        ]
+    },
+    {
+        "text": "They sailed until the island rose in a hump before them, then began to search for the seashell. Look at the picture, the bears are diving into the sea. They didn't find it underwater.",
+        "qa_pair_list": [
+            {
+                "question": "what did the island rise in ?",
+                "answer": "a hump .",
+                "start_idx": "-1",
+                "end_idx": "7",
+                "back_eval_a": "a hump .",
+                "score": 1.0,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did they search for ?",
+                "answer": "the seashell .",
+                "start_idx": "-1",
+                "end_idx": "13",
+                "back_eval_a": "the seashell .",
+                "score": 1.0,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "where did the bears dive into ?",
+                "answer": "the sea .",
+                "start_idx": "-1",
+                "end_idx": "8",
+                "back_eval_a": "the sea .",
+                "score": 1.0,
+                "category": [
+                    "setting"
+                ]
+            },
+            {
+                "question": "what did they search for ?",
+                "answer": "seashell .",
+                "start_idx": "-1",
+                "end_idx": "9",
+                "back_eval_a": "the seashell .",
+                "score": 0.6666666666666666,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what animal is diving into the sea ?",
+                "answer": "the bears .",
+                "start_idx": "-1",
+                "end_idx": "10",
+                "back_eval_a": "bears .",
+                "score": 0.6666666666666666,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what happened when they sailed ?",
+                "answer": "they sailed until the island rose in a hump before them , then began to search for the seashell .",
+                "start_idx": "-1",
+                "end_idx": "96",
+                "back_eval_a": "they searched for the seashell underwater .",
+                "score": 0.4166666666666667,
+                "category": [
+                    "action",
+                    "casual relationship",
+                    "setting",
+                    "outcome resolution"
+                ]
+            },
+            {
+                "question": "what did they sail until ?",
+                "answer": "the island .",
+                "start_idx": "-1",
+                "end_idx": "11",
+                "back_eval_a": "the island rose in a hump before them .",
+                "score": 0.4,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what is the significance of this picture ?",
+                "answer": "the picture .",
+                "start_idx": "-1",
+                "end_idx": "12",
+                "back_eval_a": "the bears are diving into water .",
+                "score": 0.25,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did they find underwater ?",
+                "answer": "they did n't find it underwater .",
+                "start_idx": "-1",
+                "end_idx": "32",
+                "back_eval_a": "it was not there .",
+                "score": 0.18181818181818182,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did they find underwater ?",
+                "answer": "look at the picture , the bears are diving into the sea .",
+                "start_idx": "-1",
+                "end_idx": "56",
+                "back_eval_a": "it was not there .",
+                "score": 0.0,
+                "category": [
+                    "action",
+                    "casual relationship"
+                ]
+            }
+        ]
+    },
+    {
+        "text": "It wasn't in the tree. Nor on top of the mountain. Then they found a small cave, \"I'm not going in there\" squeaked Theo. \"It's dark!\" \"But it has to be the right place,\"said Dash, peering in. 'We looked everywhere else. Then Charlie walked inside. Bears afraid of a cave?' she snorted, and the other followed. Inside, the cave was small and dark, and there was definitely no blue seashell. ",
+        "qa_pair_list": [
+            {
+                "question": "what did they find ?",
+                "answer": "a small cave .",
+                "start_idx": "-1",
+                "end_idx": "13",
+                "back_eval_a": "a small cave .",
+                "score": 1.0,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "where did they look for the blue seashell ?",
+                "answer": "we looked everywhere else .",
+                "start_idx": "-1",
+                "end_idx": "26",
+                "back_eval_a": "everywhere else .",
+                "score": 0.6666666666666666,
+                "category": [
+                    "action",
+                    "setting"
+                ]
+            },
+            {
+                "question": "what did charlie do inside the cave ?",
+                "answer": "then charlie walked inside .",
+                "start_idx": "-1",
+                "end_idx": "27",
+                "back_eval_a": "charlie walked inside the cave .",
+                "score": 0.6666666666666665,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did theo say when they found a small cave ?",
+                "answer": "then they found a small cave , \" i 'm not going in there \" squeaked theo .",
+                "start_idx": "-1",
+                "end_idx": "73",
+                "back_eval_a": "i'm not going in there say .",
+                "score": 0.5714285714285714,
+                "category": [
+                    "action",
+                    "setting"
+                ]
+            },
+            {
+                "question": "what did they find in the tree ?",
+                "answer": "a cave .",
+                "start_idx": "-1",
+                "end_idx": "7",
+                "back_eval_a": "a blue seashell .",
+                "score": 0.4,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what was the first thing they found ?",
+                "answer": "the cave .",
+                "start_idx": "-1",
+                "end_idx": "9",
+                "back_eval_a": "a small cave .",
+                "score": 0.4,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "charlie .  hath walked into the cave ?",
+                "answer": "charlie .",
+                "start_idx": "-1",
+                "end_idx": "8",
+                "back_eval_a": "charlie walked into the cave .",
+                "score": 0.33333333333333337,
+                "category": [
+                    "others"
+                ]
+            },
+            {
+                "question": "where was the blue seashell ?",
+                "answer": "the tree .",
+                "start_idx": "-1",
+                "end_idx": "9",
+                "back_eval_a": "where the blue seashell was it wasn't in a tree .",
+                "score": 0.3076923076923077,
+                "category": [
+                    "setting"
+                ]
+            },
+            {
+                "question": "where was the cave located ?",
+                "answer": "the mountain .",
+                "start_idx": "-1",
+                "end_idx": "13",
+                "back_eval_a": "where the cave was located in a tree .",
+                "score": 0.2,
+                "category": [
+                    "setting"
+                ]
+            },
+            {
+                "question": "what did they find in the cave ?",
+                "answer": "no blue seashell .",
+                "start_idx": "-1",
+                "end_idx": "17",
+                "back_eval_a": "nothing .",
+                "score": 0.0,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "who was the first to go into a cave ?",
+                "answer": "dash , peering in . '",
+                "start_idx": "-1",
+                "end_idx": "20",
+                "back_eval_a": "charlie .",
+                "score": 0.0,
+                "category": [
+                    "action",
+                    "character"
+                ]
+            },
+            {
+                "question": "what did dash snort at ?",
+                "answer": "she snorted , and the other followed .",
+                "start_idx": "-1",
+                "end_idx": "37",
+                "back_eval_a": "a blue seashell .",
+                "score": 0.0,
+                "category": [
+                    "action"
+                ]
+            }
+        ]
+    },
+    {
+        "text": "The three were most unhappy, and stared at each other with very squinty, very mad bear eyes, all the way back to their boat. They had no blue seashell, and they felt very far from home. Back on the boat, the three bears began to argue. Dash said to Theo, \u201cWe're all stuck out their because you broke the seashell\u201d And Theo yelled, \u201cIt's Charlie's fault because she was too wobbly!\u201d And Charlie growled, \u201cNo I wasn't! And it was Dash's idea to sneak the honey in the first place\u201d And round and round they went, getting madder and madder, and louder and louder, yelling and pointing their paws at each other. They didn't even notice how the sky had been turning darker and darker, and how the sea had turned rougher and rougher.",
+        "qa_pair_list": [
+            {
+                "question": "how many bears were on the boat with them when they got back to their home ?",
+                "answer": "three .",
+                "start_idx": "-1",
+                "end_idx": "6",
+                "back_eval_a": "three .",
+                "score": 1.0,
+                "category": [
+                    "character",
+                    "setting"
+                ]
+            },
+            {
+                "question": "who was the wobbly bear ?",
+                "answer": "charlie .",
+                "start_idx": "-1",
+                "end_idx": "8",
+                "back_eval_a": "charlie .",
+                "score": 1.0,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "where did the three bears go back to ?",
+                "answer": "their boat .",
+                "start_idx": "-1",
+                "end_idx": "11",
+                "back_eval_a": "their boat .",
+                "score": 1.0,
+                "category": [
+                    "setting"
+                ]
+            },
+            {
+                "question": "who began to argue on the boat ?",
+                "answer": "the three bears .",
+                "start_idx": "-1",
+                "end_idx": "16",
+                "back_eval_a": "the three bears .",
+                "score": 1.0,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "what was turning darker and dark ?",
+                "answer": "the sky .",
+                "start_idx": "-1",
+                "end_idx": "8",
+                "back_eval_a": "the sky .",
+                "score": 1.0,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what was rougher and more rough than before ?",
+                "answer": "the sea .",
+                "start_idx": "-1",
+                "end_idx": "8",
+                "back_eval_a": "the sea .",
+                "score": 1.0,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did the three bears feel when they got back to their boat ?",
+                "answer": "they had no blue seashell , and they felt very far from home .",
+                "start_idx": "-1",
+                "end_idx": "61",
+                "back_eval_a": "they had no blue seashell and felt very far from home .",
+                "score": 0.9565217391304348,
+                "category": [
+                    "action",
+                    "setting",
+                    "feeling"
+                ]
+            },
+            {
+                "question": "what did the bears point at each other with ?",
+                "answer": "their paws .",
+                "start_idx": "-1",
+                "end_idx": "11",
+                "back_eval_a": "paws .",
+                "score": 0.6666666666666666,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "where did the three bears go back to ?",
+                "answer": "the boat .",
+                "start_idx": "-1",
+                "end_idx": "9",
+                "back_eval_a": "their boat .",
+                "score": 0.5,
+                "category": [
+                    "setting"
+                ]
+            },
+            {
+                "question": "what did theo break ?",
+                "answer": "the seashell .",
+                "start_idx": "-1",
+                "end_idx": "13",
+                "back_eval_a": "a seashell .",
+                "score": 0.5,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "how did the three bears look when they were arguing ?",
+                "answer": "very squinty .",
+                "start_idx": "-1",
+                "end_idx": "13",
+                "back_eval_a": "squinty bear eyes .",
+                "score": 0.4,
+                "category": [
+                    "action",
+                    "setting"
+                ]
+            },
+            {
+                "question": "what did theo break ?",
+                "answer": "no blue seashell .",
+                "start_idx": "-1",
+                "end_idx": "17",
+                "back_eval_a": "a seashell .",
+                "score": 0.4,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what was dash s idea to sneak the honey ?",
+                "answer": "the first place .",
+                "start_idx": "-1",
+                "end_idx": "16",
+                "back_eval_a": "it was dash s idea to sneak the honey in first place .",
+                "score": 0.4,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did theo and charlie not notice as they were arguing ?",
+                "answer": "they did n't even notice how the sky had been turning darker and darker , and how the sea had turned rougher and rougher .",
+                "start_idx": "-1",
+                "end_idx": "121",
+                "back_eval_a": "how the sky was turning darker and more stormy .",
+                "score": 0.36363636363636365,
+                "category": [
+                    "action",
+                    "casual relationship"
+                ]
+            },
+            {
+                "question": "what did charlie growl ?",
+                "answer": "and charlie growled , \u201c",
+                "start_idx": "-1",
+                "end_idx": "22",
+                "back_eval_a": "charlie growled , it was dash s idea to sneak the honey in first place .",
+                "score": 0.23529411764705882,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what was theo s fault for not sneaking honey ?",
+                "answer": "dash's idea .",
+                "start_idx": "-1",
+                "end_idx": "12",
+                "back_eval_a": "charlie s fault for being too wobbly .",
+                "score": 0.2,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what was theo yelling at dash and charlie ?",
+                "answer": "charlie's fault .",
+                "start_idx": "-1",
+                "end_idx": "16",
+                "back_eval_a": "theo was yelling at dash and charlie because they broke their seashell .",
+                "score": 0.13333333333333333,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did theo yell ?",
+                "answer": "and it was dash 's idea to sneak the honey in the first place \u201d and round and round they went , getting madder and madder , and louder and louder , yelling and pointing their paws at each other .",
+                "start_idx": "-1",
+                "end_idx": "194",
+                "back_eval_a": "theo yelled , it was charlie s fault because she wobbly .",
+                "score": 0.13043478260869565,
+                "category": [
+                    "action",
+                    "casual relationship"
+                ]
+            },
+            {
+                "question": "what happened when the three bears got back to their boat ?",
+                "answer": "the three were most unhappy , and stared at each other with very squinty , very mad bear eyes , all the way back to their boat .",
+                "start_idx": "-1",
+                "end_idx": "127",
+                "back_eval_a": "they had no blue seashell , and were very unhappy .",
+                "score": 0.12121212121212122,
+                "category": [
+                    "action",
+                    "setting",
+                    "outcome resolution"
+                ]
+            },
+            {
+                "question": "what happened when the three bears got back to their boat ?",
+                "answer": "dash said to theo , \u201c we 're all stuck out their because you broke the seashell \u201d and theo yelled , \u201c it 's charlie 's fault because she was too wobbly ! \u201d",
+                "start_idx": "-1",
+                "end_idx": "154",
+                "back_eval_a": "they had no blue seashell , and were very unhappy .",
+                "score": 0.10810810810810811,
+                "category": [
+                    "action",
+                    "casual relationship",
+                    "setting",
+                    "outcome resolution"
+                ]
+            },
+            {
+                "question": "what did theo yell at charlie ?",
+                "answer": "first .",
+                "start_idx": "-1",
+                "end_idx": "6",
+                "back_eval_a": "theo yelled at charlie because she was too wobbly .",
+                "score": 0.0,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did the three bears have when they got back to their boat ?",
+                "answer": "very mad bear eyes .",
+                "start_idx": "-1",
+                "end_idx": "19",
+                "back_eval_a": "they had no blue seashell .",
+                "score": 0.0,
+                "category": [
+                    "action",
+                    "setting"
+                ]
+            },
+            {
+                "question": "what did theo break ?",
+                "answer": "the honey .",
+                "start_idx": "-1",
+                "end_idx": "10",
+                "back_eval_a": "a seashell .",
+                "score": 0.0,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what happened when the three bears got back to their boat ?",
+                "answer": "back on the boat , the three bears began to argue .",
+                "start_idx": "-1",
+                "end_idx": "50",
+                "back_eval_a": "they had no blue seashell , and were very unhappy .",
+                "score": 0.0,
+                "category": [
+                    "action",
+                    "setting",
+                    "outcome resolution"
+                ]
+            }
+        ]
+    },
+    {
+        "text": "BOOM! Look at the picture, there is a huge flash of lightning. Look at the giant green wave about to tip over the boat.",
+        "qa_pair_list": [
+            {
+                "question": "what is about to tip over the boat ?",
+                "answer": "the giant green wave .",
+                "start_idx": "-1",
+                "end_idx": "21",
+                "back_eval_a": "a giant green wave .",
+                "score": 0.75,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what is about to tip over ?",
+                "answer": "the boat .",
+                "start_idx": "-1",
+                "end_idx": "9",
+                "back_eval_a": "a boat over .",
+                "score": 0.4,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what is lightning ?",
+                "answer": "a huge flash .",
+                "start_idx": "-1",
+                "end_idx": "13",
+                "back_eval_a": "what is lightning ? flash of lightening .",
+                "score": 0.2222222222222222,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what is the big flash of lightning ?",
+                "answer": "look at the picture , there is a huge flash of lightning .",
+                "start_idx": "-1",
+                "end_idx": "57",
+                "back_eval_a": "a boom .",
+                "score": 0.15384615384615385,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what is the main theme of this story ?",
+                "answer": "look at the giant green wave about to tip over the boat .",
+                "start_idx": "-1",
+                "end_idx": "56",
+                "back_eval_a": "the theme of love and loss .",
+                "score": 0.1111111111111111,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what is the flash of lightning in ?",
+                "answer": "the picture .",
+                "start_idx": "-1",
+                "end_idx": "12",
+                "back_eval_a": "a green wave .",
+                "score": 0.0,
+                "category": [
+                    "action"
+                ]
+            }
+        ]
+    },
+    {
+        "text": "Dash, Charlie, and Theo were scared.  They didn't care whose fault it was anymore, they were all in the same boat. Wet and blinking, the three bears looked at each other. And Dash said, \u201cIt was my really bad idea.' And Theo said, `It was an accident, but I did knock the shell over.` And Charlie said, \u201cWell, I guess I was sort of wobbly.` They reached out their paws and clung to each other very tightly. ",
+        "qa_pair_list": [
+            {
+                "question": "what did the bears do when they realized who was really at fault ?",
+                "answer": "` they reached out their paws and clung to each other very tightly .",
+                "start_idx": "-1",
+                "end_idx": "67",
+                "back_eval_a": "they clung to each other very tightly .",
+                "score": 0.7368421052631579,
+                "category": [
+                    "action",
+                    "character",
+                    "setting"
+                ]
+            },
+            {
+                "question": "what did dash say ?",
+                "answer": "and dash said , \u201c it was my really bad idea . '",
+                "start_idx": "-1",
+                "end_idx": "46",
+                "back_eval_a": "he said it was his really bad idea .",
+                "score": 0.7058823529411765,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "how many bears were in the group ?",
+                "answer": "three .",
+                "start_idx": "-1",
+                "end_idx": "6",
+                "back_eval_a": "three bears .",
+                "score": 0.6666666666666666,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "what did the bears use to hold each other tight ?",
+                "answer": "their paws .",
+                "start_idx": "-1",
+                "end_idx": "11",
+                "back_eval_a": "paws .",
+                "score": 0.6666666666666666,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did theo say ?",
+                "answer": "and theo said , ` it was an accident , but i did knock the shell over .",
+                "start_idx": "-1",
+                "end_idx": "70",
+                "back_eval_a": "theo said it was an accident .",
+                "score": 0.6,
+                "category": [
+                    "action",
+                    "casual relationship"
+                ]
+            },
+            {
+                "question": "what did theo say happened ?",
+                "answer": "an accident .",
+                "start_idx": "-1",
+                "end_idx": "12",
+                "back_eval_a": "theo said it was an accident .",
+                "score": 0.5,
+                "category": [
+                    "action",
+                    "outcome resolution"
+                ]
+            },
+            {
+                "question": "what did theo knock over ?",
+                "answer": "the shell .",
+                "start_idx": "-1",
+                "end_idx": "10",
+                "back_eval_a": "a shell .",
+                "score": 0.5,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what were the three bears feeling when they saw each other ?",
+                "answer": "dash , charlie , and theo were scared .",
+                "start_idx": "-1",
+                "end_idx": "38",
+                "back_eval_a": "they were scared .",
+                "score": 0.4444444444444444,
+                "category": [
+                    "action",
+                    "setting",
+                    "feeling"
+                ]
+            },
+            {
+                "question": "whose fault was it ?",
+                "answer": "whose fault .",
+                "start_idx": "-1",
+                "end_idx": "12",
+                "back_eval_a": "whose fault was it ? theo , charlie and dash .",
+                "score": 0.4,
+                "category": [
+                    "others"
+                ]
+            },
+            {
+                "question": "what did charlie say about the accident ?",
+                "answer": "` and charlie said , \u201c well , i guess i was sort of wobbly .",
+                "start_idx": "-1",
+                "end_idx": "59",
+                "back_eval_a": "charlie said it was his bad idea .",
+                "score": 0.33333333333333326,
+                "category": [
+                    "action",
+                    "casual relationship"
+                ]
+            },
+            {
+                "question": "what did the bears think about their bad idea ?",
+                "answer": "they did n't care whose fault it was anymore , they were all in the same boat .",
+                "start_idx": "-1",
+                "end_idx": "78",
+                "back_eval_a": "they were scared it was their bad idea .",
+                "score": 0.24,
+                "category": [
+                    "action",
+                    "casual relationship"
+                ]
+            },
+            {
+                "question": "what did the three bears do when they realized who was at fault ?",
+                "answer": "wet and blinking , the three bears looked at each other .",
+                "start_idx": "-1",
+                "end_idx": "56",
+                "back_eval_a": "they clung to each other very tightly .",
+                "score": 0.23529411764705882,
+                "category": [
+                    "action",
+                    "character",
+                    "setting"
+                ]
+            },
+            {
+                "question": "what did the bears realize ?",
+                "answer": "the same boat .",
+                "start_idx": "-1",
+                "end_idx": "14",
+                "back_eval_a": "they were scared what would happen if the shell fell over .",
+                "score": 0.14285714285714288,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "who was the first bear to say something about it being his fault ?",
+                "answer": "charlie .",
+                "start_idx": "-1",
+                "end_idx": "8",
+                "back_eval_a": "theo .",
+                "score": 0.0,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "who was scared ?",
+                "answer": "the three bears .",
+                "start_idx": "-1",
+                "end_idx": "16",
+                "back_eval_a": "theo , charlie and dash were scared .",
+                "score": 0.0,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "what was dash s fault ?",
+                "answer": "my really bad idea .",
+                "start_idx": "-1",
+                "end_idx": "19",
+                "back_eval_a": "it was dash s fault .",
+                "score": 0.0,
+                "category": [
+                    "action"
+                ]
+            }
+        ]
+    },
+    {
+        "text": "And then, like turning a page, the little boat sailed out of the storm and into the sun. The three bears floated on water as smooth and calm as glass. The storm already seemed far, far behind them. And there, straight ahead, was their very own island. The bears set sail for home. They knew what they had to do.",
+        "qa_pair_list": [
+            {
+                "question": "what did the bears know ?",
+                "answer": "they knew what they had to do .",
+                "start_idx": "-1",
+                "end_idx": "30",
+                "back_eval_a": "they knew what to do .",
+                "score": 0.8333333333333333,
+                "category": [
+                    "action",
+                    "casual relationship"
+                ]
+            },
+            {
+                "question": "what did the bears do ?",
+                "answer": "the bears set sail for home .",
+                "start_idx": "-1",
+                "end_idx": "28",
+                "back_eval_a": "set sail for home .",
+                "score": 0.8,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "who floated on water as smooth and calm ?",
+                "answer": "the three bears .",
+                "start_idx": "-1",
+                "end_idx": "16",
+                "back_eval_a": "the three bears as smooth and calm .",
+                "score": 0.6,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "what was the turning of a page like ?",
+                "answer": "a page .",
+                "start_idx": "-1",
+                "end_idx": "7",
+                "back_eval_a": "it was like turning a page .",
+                "score": 0.5,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what was the bears ' vessel ?",
+                "answer": "the little boat .",
+                "start_idx": "-1",
+                "end_idx": "16",
+                "back_eval_a": "a boat .",
+                "score": 0.4,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what was the bears looking for ?",
+                "answer": "their very own island .",
+                "start_idx": "-1",
+                "end_idx": "22",
+                "back_eval_a": "island .",
+                "score": 0.4,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "how many bears were in the boat ?",
+                "answer": "three .",
+                "start_idx": "-1",
+                "end_idx": "6",
+                "back_eval_a": "three bears were in the boat .",
+                "score": 0.2857142857142857,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "what did the bears do ?",
+                "answer": "and then , like turning a page , the little boat sailed out of the storm and into the sun .",
+                "start_idx": "-1",
+                "end_idx": "90",
+                "back_eval_a": "set sail for home .",
+                "score": 0.0909090909090909,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what was the last thing that happened to them ?",
+                "answer": "the storm .",
+                "start_idx": "-1",
+                "end_idx": "10",
+                "back_eval_a": "they were set sail for home .",
+                "score": 0.0,
+                "category": [
+                    "action",
+                    "outcome resolution"
+                ]
+            },
+            {
+                "question": "what was the first thing they saw after sailing out of their storm ?",
+                "answer": "the sun .",
+                "start_idx": "-1",
+                "end_idx": "8",
+                "back_eval_a": "their very own island .",
+                "score": 0.0,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did the three bears do ?",
+                "answer": "the bears .",
+                "start_idx": "-1",
+                "end_idx": "10",
+                "back_eval_a": "they set sail for home .",
+                "score": 0.0,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what happened when the bears set sail for home ?",
+                "answer": "the three bears floated on water as smooth and calm as glass .",
+                "start_idx": "-1",
+                "end_idx": "61",
+                "back_eval_a": "they knew what to do .",
+                "score": 0.0,
+                "category": [
+                    "action",
+                    "setting",
+                    "outcome resolution"
+                ]
+            },
+            {
+                "question": "what did the bears do ?",
+                "answer": "the storm already seemed far , far behind them .",
+                "start_idx": "-1",
+                "end_idx": "47",
+                "back_eval_a": "set sail for home .",
+                "score": 0.0,
+                "category": [
+                    "action"
+                ]
+            }
+        ]
+    },
+    {
+        "text": "They pulled their boat up on their own shore, and at the edge of the beach sat a beautiful blue seashell. Picking up the shell, Dash remembered the words of the old, salty bear. \u201cSo, this was the right place?\u201d he asked, looking at his brother and sister. Then the three bears walked up the long dune to their home. Mama was waiting for them.  \u201cI'm sorry I broke your shell,\u201d said Theo. \u201cMe too,\u201d said Dash. \u201cMe three,\u201d said Charlie. \u201cBut look what we found for you!\u201d Dash held up the beautiful new shell. ",
+        "qa_pair_list": [
+            {
+                "question": "what shore did they pull their boat up on ?",
+                "answer": "their own shore .",
+                "start_idx": "-1",
+                "end_idx": "16",
+                "back_eval_a": "their own shore .",
+                "score": 1.0,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did they find on the beach ?",
+                "answer": "a beautiful blue seashell .",
+                "start_idx": "-1",
+                "end_idx": "26",
+                "back_eval_a": "a beautiful blue seashell .",
+                "score": 1.0,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "where did the bears go ?",
+                "answer": "their home .",
+                "start_idx": "-1",
+                "end_idx": "11",
+                "back_eval_a": "their home .",
+                "score": 1.0,
+                "category": [
+                    "setting"
+                ]
+            },
+            {
+                "question": "who said the words that helped dash ?",
+                "answer": "the old, salty bear .",
+                "start_idx": "-1",
+                "end_idx": "20",
+                "back_eval_a": "the salty bear .",
+                "score": 0.8571428571428571,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "how many bears are there in the story ?",
+                "answer": "three .",
+                "start_idx": "-1",
+                "end_idx": "6",
+                "back_eval_a": "three bears .",
+                "score": 0.6666666666666666,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "what was the old salty bear s words ?",
+                "answer": "the right place .",
+                "start_idx": "-1",
+                "end_idx": "16",
+                "back_eval_a": "that they would find the right place .",
+                "score": 0.6,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did dash hold up ?",
+                "answer": "the beautiful new shell .",
+                "start_idx": "-1",
+                "end_idx": "24",
+                "back_eval_a": "a new shell .",
+                "score": 0.5714285714285715,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "who walked up the dune to their home ?",
+                "answer": "the three bears .",
+                "start_idx": "-1",
+                "end_idx": "16",
+                "back_eval_a": "the three bears walked up to their home .",
+                "score": 0.5454545454545454,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "where did theo find a beautiful blue seashell ?",
+                "answer": "the edge .",
+                "start_idx": "-1",
+                "end_idx": "9",
+                "back_eval_a": "at the edge of a beach .",
+                "score": 0.5,
+                "category": [
+                    "setting"
+                ]
+            },
+            {
+                "question": "what words did dash remember from the old salty bear ?",
+                "answer": "the words .",
+                "start_idx": "-1",
+                "end_idx": "10",
+                "back_eval_a": "the words of old salty bear .",
+                "score": 0.5,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what is the home of mama bear ?",
+                "answer": "the long dune .",
+                "start_idx": "-1",
+                "end_idx": "14",
+                "back_eval_a": "the home of mama bear is on a long dune .",
+                "score": 0.4615384615384615,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did dash hold up ?",
+                "answer": "dash held up the beautiful new shell .",
+                "start_idx": "-1",
+                "end_idx": "37",
+                "back_eval_a": "a new shell .",
+                "score": 0.4,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did theo break ?",
+                "answer": "the shell .",
+                "start_idx": "-1",
+                "end_idx": "10",
+                "back_eval_a": "theo broke his shell .",
+                "score": 0.3333333333333333,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did theo break ?",
+                "answer": "your shell .",
+                "start_idx": "-1",
+                "end_idx": "11",
+                "back_eval_a": "theo broke his shell .",
+                "score": 0.3333333333333333,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "how many bears were there in the boat ?",
+                "answer": "\u201c me three , \u201d said charlie .",
+                "start_idx": "-1",
+                "end_idx": "28",
+                "back_eval_a": "three bears .",
+                "score": 0.3333333333333333,
+                "category": [
+                    "action",
+                    "character"
+                ]
+            },
+            {
+                "question": "what was theo sorry for ?",
+                "answer": "\u201c i 'm sorry i broke your shell , \u201d said theo .",
+                "start_idx": "-1",
+                "end_idx": "46",
+                "back_eval_a": "he broke his shell .",
+                "score": 0.30769230769230765,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "who was theo ?",
+                "answer": "his brother .",
+                "start_idx": "-1",
+                "end_idx": "12",
+                "back_eval_a": "theo was dash s brother .",
+                "score": 0.28571428571428575,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "how many bears were there in the group ?",
+                "answer": "then the three bears walked up the long dune to their home .",
+                "start_idx": "-1",
+                "end_idx": "59",
+                "back_eval_a": "three bears .",
+                "score": 0.2857142857142857,
+                "category": [
+                    "action",
+                    "character"
+                ]
+            },
+            {
+                "question": "where did the bears find a beautiful blue seashell ?",
+                "answer": "the beach .",
+                "start_idx": "-1",
+                "end_idx": "10",
+                "back_eval_a": "at the edge of their own shoreline .",
+                "score": 0.22222222222222224,
+                "category": [
+                    "setting"
+                ]
+            },
+            {
+                "question": "what did theo say when he saw them ?",
+                "answer": "mama was waiting for them .",
+                "start_idx": "-1",
+                "end_idx": "26",
+                "back_eval_a": "he said sorry for breaking their shell .",
+                "score": 0.16666666666666666,
+                "category": [
+                    "action",
+                    "setting"
+                ]
+            },
+            {
+                "question": "what did dash say to theo when he saw him holding up a new shell ?",
+                "answer": "\u201c but look what we found for you ! \u201d",
+                "start_idx": "-1",
+                "end_idx": "35",
+                "back_eval_a": "he said sorry for breaking his shell .",
+                "score": 0.14285714285714285,
+                "category": [
+                    "action",
+                    "setting"
+                ]
+            },
+            {
+                "question": "how many bears were there in the group ?",
+                "answer": "picking up the shell , dash remembered the words of the old , salty bear .",
+                "start_idx": "-1",
+                "end_idx": "73",
+                "back_eval_a": "three bears .",
+                "score": 0.13333333333333336,
+                "category": [
+                    "action",
+                    "character"
+                ]
+            },
+            {
+                "question": "charlie .  how many bears are there in the group ?",
+                "answer": "charlie .",
+                "start_idx": "-1",
+                "end_idx": "8",
+                "back_eval_a": "three .",
+                "score": 0.0,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "what did they pull up on shore ?",
+                "answer": "their boat .",
+                "start_idx": "-1",
+                "end_idx": "11",
+                "back_eval_a": "a blue seashell .",
+                "score": 0.0,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "how many bears were there in the group ?",
+                "answer": "they pulled their boat up on their own shore , and at the edge of the beach sat a beautiful blue seashell .",
+                "start_idx": "-1",
+                "end_idx": "106",
+                "back_eval_a": "three bears .",
+                "score": 0.0,
+                "category": [
+                    "action",
+                    "character"
+                ]
+            },
+            {
+                "question": "how many bears were there in the group ?",
+                "answer": "he asked , looking at his brother and sister .",
+                "start_idx": "-1",
+                "end_idx": "45",
+                "back_eval_a": "three bears .",
+                "score": 0.0,
+                "category": [
+                    "action",
+                    "character"
+                ]
+            },
+            {
+                "question": "\u201c me too , \u201d said dash .  what was the first thing they found ?",
+                "answer": "\u201c me too , \u201d said dash .",
+                "start_idx": "-1",
+                "end_idx": "23",
+                "back_eval_a": "a blue seashell .",
+                "score": 0.0,
+                "category": [
+                    "action"
+                ]
+            }
+        ]
+    },
+    {
+        "text": "And Mama bear, being a mother,  looked at each one of her three little bears, hugged them all very, very tight, kissed the top of their furry heads, and forgave them. Then she brought them inside for a warm supper. But they didn't get any dessert.",
+        "qa_pair_list": [
+            {
+                "question": "what did mama bear bring the bears inside for ?",
+                "answer": "a warm supper .",
+                "start_idx": "-1",
+                "end_idx": "14",
+                "back_eval_a": "warm supper .",
+                "score": 0.8,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did mama bear kiss on ?",
+                "answer": "their furry heads .",
+                "start_idx": "-1",
+                "end_idx": "18",
+                "back_eval_a": "top of their furry heads .",
+                "score": 0.7499999999999999,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "how many bears were there ?",
+                "answer": "three .",
+                "start_idx": "-1",
+                "end_idx": "6",
+                "back_eval_a": "three bears .",
+                "score": 0.6666666666666666,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "what is mama bear ?",
+                "answer": "a mother .",
+                "start_idx": "-1",
+                "end_idx": "9",
+                "back_eval_a": "she is a mother .",
+                "score": 0.6666666666666666,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did the bears not get ?",
+                "answer": "any dessert .",
+                "start_idx": "-1",
+                "end_idx": "12",
+                "back_eval_a": "dessert .",
+                "score": 0.6666666666666666,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "what did mama bear do after she forgave her bears ?",
+                "answer": ", looked at each one of her three little bears , hugged them all very , very tight , kissed the top of their furry heads , and forgave them .",
+                "start_idx": "-1",
+                "end_idx": "140",
+                "back_eval_a": "she hugged them tight and kissed their heads .",
+                "score": 0.36363636363636365,
+                "category": [
+                    "action",
+                    "casual relationship"
+                ]
+            },
+            {
+                "question": "who did mama bear hug ?",
+                "answer": "her three little bears .",
+                "start_idx": "-1",
+                "end_idx": "23",
+                "back_eval_a": "each bear .",
+                "score": 0.3333333333333333,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "where did mama bear kiss her bears ?",
+                "answer": "the top .",
+                "start_idx": "-1",
+                "end_idx": "8",
+                "back_eval_a": "on top of their furry heads .",
+                "score": 0.25,
+                "category": [
+                    "setting"
+                ]
+            },
+            {
+                "question": "what did mama bear do after she forgave her bears ?",
+                "answer": "then she brought them inside for a warm supper .",
+                "start_idx": "-1",
+                "end_idx": "47",
+                "back_eval_a": "she hugged them tight and kissed their heads .",
+                "score": 0.23529411764705882,
+                "category": [
+                    "action"
+                ]
+            },
+            {
+                "question": "how many little bears did mama bear have ?",
+                "answer": "one .",
+                "start_idx": "-1",
+                "end_idx": "4",
+                "back_eval_a": "three bears .",
+                "score": 0.0,
+                "category": [
+                    "character"
+                ]
+            },
+            {
+                "question": "what did mama bear do ?",
+                "answer": "and mama bear .",
+                "start_idx": "-1",
+                "end_idx": "14",
+                "back_eval_a": "she forgave them .",
+                "score": 0.0,
+                "category": [
+                    "action"
+                ]
+            }
+        ]
+    }
+]

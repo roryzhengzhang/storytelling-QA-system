@@ -47,7 +47,7 @@ export const speakFn = speechSynthesisOptions => (step, previousValue) => {
   console.log(ttsRequest)
 
   axios
-    .post('https://texttospeech.googleapis.com/v1beta1/text:synthesize?key=AIzaSyDbAoO-MIi1PFP64Rfxvho7jN4DB2qTb5M', ttsRequest)
+    .post('https://texttospeech.googleapis.com/v1beta1/text:synthesize?key=AIzaSyC92d2V2tFuaTWQlV03HMveuEIxj9vfRC0', ttsRequest)
     .then(response => {
       var audio = new Audio("data:audio/wav;base64," + response.data.audioContent);
       audio.play();

@@ -57,6 +57,105 @@ class ChatBot extends Component {
     this.speak = speakFn(props.speechSynthesis);
   }
 
+  componentDidUpdate(prevProps) {
+    if (prevProps.steps !== this.props.steps ) {
+      const { steps } = this.props;
+      const {
+        botDelay,
+        botAvatar,
+        botName,
+        cache,
+        cacheName,
+        customDelay,
+        enableMobileAutoFocus,
+        userAvatar,
+        userDelay
+      } = this.props;
+      const chatSteps = {};
+  
+      const defaultBotSettings = { delay: botDelay, avatar: botAvatar, botName };
+      const defaultUserSettings = {
+        delay: userDelay,
+        avatar: userAvatar,
+        hideInput: false,
+        hideExtraControl: false
+      };
+      const defaultCustomSettings = { delay: customDelay };
+  
+      for (let i = 0, len = steps.length; i < len; i += 1) {
+        const step = steps[i];
+        let settings = {};
+  
+        if (step.user) {
+          settings = defaultUserSettings;
+        } else if (step.message || step.asMessage) {
+          settings = defaultBotSettings;
+        } else if (step.component) {
+          settings = defaultCustomSettings;
+        }
+  
+        chatSteps[step.id] = Object.assign({}, settings, schema.parse(step));
+      }
+  
+      schema.checkInvalidIds(chatSteps);
+  
+      const firstStep = steps[0];
+  
+      if (firstStep.message) {
+        const { message } = firstStep;
+        firstStep.message = typeof message === 'function' ? message() : message;
+        chatSteps[firstStep.id].message = firstStep.message;
+      }
+  
+      const { recognitionEnable } = this.state;
+      const { recognitionLang } = this.props;
+  
+      if (recognitionEnable) {
+        this.recognition = new Recognition(
+          this.onRecognitionChange,
+          this.onRecognitionEnd,
+          this.onRecognitionStop,
+          recognitionLang
+        );
+      }
+  
+      this.supportsScrollBehavior = 'scrollBehavior' in document.documentElement.style;
+  
+      if (this.content) {
+        this.content.addEventListener('DOMNodeInserted', this.onNodeInserted);
+        window.addEventListener('resize', this.onResize);
+      }
+  
+      const { currentStep, previousStep, previousSteps, renderedSteps } = storage.getData(
+        {
+          cacheName,
+          cache,
+          firstStep,
+          steps: chatSteps
+        },
+        () => {
+          // focus input if last step cached is a user step
+          this.setState({ disabled: false }, () => {
+            if (enableMobileAutoFocus || !isMobile()) {
+              if (this.input) {
+                this.input.focus();
+              }
+            }
+          });
+        }
+      );
+  
+      this.setState({
+        currentStep,
+        defaultUserSettings,
+        previousStep,
+        previousSteps,
+        renderedSteps,
+        steps: chatSteps
+      });
+    }
+  }
+
   componentDidMount() {
     const { steps } = this.props;
     const {
@@ -192,15 +291,18 @@ class ChatBot extends Component {
   };
 
   onRecognitionChange = value => {
+    console.log("Chatbot: onRecognitionChange")
     this.setState({ inputValue: value });
   };
 
   onRecognitionEnd = () => {
+    console.log("Chatbot: onRecognitionEnd")
     this.setState({ speaking: false });
     this.handleSubmitButton();
   };
 
   onRecognitionStop = () => {
+    console.log("Chatbot: onRecognitionStop")
     this.setState({ speaking: false });
   };
 
@@ -682,8 +784,8 @@ class ChatBot extends Component {
           >
             {renderedSteps.map(this.renderStep)}
           </Content>
-          <Footer className="rsc-footer" style={footerStyle}>
-            {!currentStep.hideInput && (
+          <Footer className="rsc-footer" style={{ display: "flex", justifyContent: "center"}}>
+            {/* {!currentStep.hideInput && (
               <Input
                 type="textarea"
                 style={inputStyle}
@@ -699,8 +801,8 @@ class ChatBot extends Component {
                 hasButton={!hideSubmitButton}
                 {...inputAttributesOverride}
               />
-            )}
-            <div style={controlStyle} className="rsc-controls">
+            )} */}
+            <div style={{ display: "flex", justifyContent: "center"}} className="rsc-controls">
               {!currentStep.hideInput && !currentStep.hideExtraControl && customControl}
               {!currentStep.hideInput && !hideSubmitButton && (
                 <SubmitButton

@@ -4,8 +4,7 @@ import { Card, CardActionArea, CardContent, CardMedia, Typography, CardActions, 
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 import { useHistory } from "react-router-dom";
 import { selectStory } from '../StoryBook/storybookSlice';
-import { useDispatch } from 'react-redux';
-import { MODE } from '../../config'
+import { useDispatch, useSelector } from 'react-redux';
 const useStyles = makeStyles({
   root: {
     maxWidth: 500,
@@ -22,6 +21,8 @@ const useStyles = makeStyles({
 
 export default function StoryCard(props) {
   const classes = useStyles();
+
+  const MODE = useSelector(state => state.storybook.MODE);
 
   const { imgSrc } = props;
 

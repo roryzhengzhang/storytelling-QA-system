@@ -1,0 +1,4798 @@
+[
+    [
+        {
+            "question": "Chris p. bacon. what is his nickname?",
+            "answer": "Chris p. bacon.",
+            "start_idx": "0",
+            "end_idx": "14",
+            "back_eval_a": "chris p .",
+            "score": 0.8,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": []
+        },
+        {
+            "question": "What is bacon s. life. chris p. bacon: my life so far?",
+            "answer": "My life.",
+            "start_idx": "16",
+            "end_idx": "23",
+            "back_eval_a": "what is bacon s life so far ? .",
+            "score": 0.22222222222222224,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": []
+        }
+    ],
+    [
+        {
+            "question": "What has been exciting so far?",
+            "answer": "My life.",
+            "start_idx": "44",
+            "end_idx": "51",
+            "back_eval_a": "my life .",
+            "score": 1.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What is my age?",
+                    "answer": "Just a little pigletm.",
+                    "start_idx": "18",
+                    "end_idx": "39",
+                    "back_eval_a": "what is my age ?i am a little pigletm .",
+                    "score": 0.46153846153846156,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What is my age?",
+            "answer": "Just a little pigletm.",
+            "start_idx": "18",
+            "end_idx": "39",
+            "back_eval_a": "what is my age ?i am a little pigletm .",
+            "score": 0.46153846153846156,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": []
+        }
+    ],
+    [
+        {
+            "question": "What is my name?",
+            "answer": "Chris p. bacon.",
+            "start_idx": "20",
+            "end_idx": "34",
+            "back_eval_a": "chris p .",
+            "score": 0.8,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What is chris p. bacon s name?",
+                    "answer": "My name.",
+                    "start_idx": "9",
+                    "end_idx": "16",
+                    "back_eval_a": "what is chris p .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is chris p. bacon s?",
+                    "answer": "Funny name.",
+                    "start_idx": "46",
+                    "end_idx": "56",
+                    "back_eval_a": "what is chris p .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is chris p. bacon?",
+                    "answer": "A pig.",
+                    "start_idx": "61",
+                    "end_idx": "66",
+                    "back_eval_a": "what is chris p .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is chris p. bacon s nickname?",
+                    "answer": "You see , my name is chris p. bacon.",
+                    "start_idx": "-1",
+                    "end_idx": "36",
+                    "back_eval_a": "chris bacon is his nickname .",
+                    "score": 0.3076923076923077,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What is chris p. bacon s name?",
+                    "answer": "My name.",
+                    "start_idx": "9",
+                    "end_idx": "16",
+                    "back_eval_a": "what is chris p .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What is chris p. bacon s name?",
+            "answer": "My name.",
+            "start_idx": "9",
+            "end_idx": "16",
+            "back_eval_a": "what is chris p .",
+            "score": 0.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": []
+        },
+        {
+            "question": "What is chris p. bacon s?",
+            "answer": "Funny name.",
+            "start_idx": "46",
+            "end_idx": "56",
+            "back_eval_a": "what is chris p .",
+            "score": 0.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": []
+        },
+        {
+            "question": "What is chris p. bacon?",
+            "answer": "A pig.",
+            "start_idx": "61",
+            "end_idx": "66",
+            "back_eval_a": "what is chris p .",
+            "score": 0.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": []
+        },
+        {
+            "question": "What is chris p. bacon s nickname?",
+            "answer": "You see , my name is chris p. bacon.",
+            "start_idx": "-1",
+            "end_idx": "36",
+            "back_eval_a": "chris bacon is his nickname .",
+            "score": 0.3076923076923077,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        },
+        {
+            "question": "What is chris p. bacon s name?",
+            "answer": "I know.",
+            "start_idx": "-1",
+            "end_idx": "9",
+            "back_eval_a": "what is chris p .",
+            "score": 0.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        }
+    ],
+    [
+        {
+            "question": "What is the beginning of this story about?",
+            "answer": "The beginning.",
+            "start_idx": "75",
+            "end_idx": "88",
+            "back_eval_a": "what is the beginning of this story about ? .",
+            "score": 0.4,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": []
+        },
+        {
+            "question": "What is the title of this story?",
+            "answer": "Well , if not , let me start from the beginning.",
+            "start_idx": "-1",
+            "end_idx": "50",
+            "back_eval_a": "the beginning is title of this story .",
+            "score": 0.25,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        },
+        {
+            "question": "What is my name?",
+            "answer": "Maybe you 've heard of me or seen me on tv ?.",
+            "start_idx": "-1",
+            "end_idx": "43",
+            "back_eval_a": "what is my name ? .",
+            "score": 0.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        }
+    ],
+    [
+        {
+            "question": "Where was i taken to?",
+            "answer": "The veterinarian's office.",
+            "start_idx": "45",
+            "end_idx": "70",
+            "back_eval_a": "the veterinarian s office .",
+            "score": 1.0,
+            "category": [
+                "setting"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What is my first memory?",
+                    "answer": "My first memory.",
+                    "start_idx": "0",
+                    "end_idx": "15",
+                    "back_eval_a": "my first memory is of the day i was taken to a veterinarian .",
+                    "score": 0.375,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a doctor?",
+                    "answer": "A veterinarian.",
+                    "start_idx": "100",
+                    "end_idx": "114",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.3636363636363636,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is my first memory?",
+                    "answer": "My first memory.",
+                    "start_idx": "0",
+                    "end_idx": "15",
+                    "back_eval_a": "my first memory is of the day i was taken to a veterinarian .",
+                    "score": 0.375,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is my first memory?",
+                    "answer": "My first memory.",
+                    "start_idx": "0",
+                    "end_idx": "15",
+                    "back_eval_a": "my first memory is of the day i was taken to a veterinarian .",
+                    "score": 0.375,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is my first memory?",
+                    "answer": "My first memory.",
+                    "start_idx": "0",
+                    "end_idx": "15",
+                    "back_eval_a": "my first memory is of the day i was taken to a veterinarian .",
+                    "score": 0.375,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What is my first memory?",
+            "answer": "My first memory.",
+            "start_idx": "0",
+            "end_idx": "15",
+            "back_eval_a": "my first memory is of the day i was taken to a veterinarian .",
+            "score": 0.375,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What is a doctor?",
+                    "answer": "A veterinarian.",
+                    "start_idx": "100",
+                    "end_idx": "114",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.3636363636363636,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What is a doctor?",
+            "answer": "A veterinarian.",
+            "start_idx": "100",
+            "end_idx": "114",
+            "back_eval_a": "a veterinarian is someone who takes care of animals .",
+            "score": 0.3636363636363636,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What is my first memory?",
+                    "answer": "My first memory.",
+                    "start_idx": "0",
+                    "end_idx": "15",
+                    "back_eval_a": "my first memory is of the day i was taken to a veterinarian .",
+                    "score": 0.375,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is my first memory?",
+                    "answer": "My first memory.",
+                    "start_idx": "0",
+                    "end_idx": "15",
+                    "back_eval_a": "my first memory is of the day i was taken to a veterinarian .",
+                    "score": 0.375,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is my first memory?",
+                    "answer": "My first memory.",
+                    "start_idx": "0",
+                    "end_idx": "15",
+                    "back_eval_a": "my first memory is of the day i was taken to a veterinarian .",
+                    "score": 0.375,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What is my first memory?",
+            "answer": "The day.",
+            "start_idx": "22",
+            "end_idx": "29",
+            "back_eval_a": "my first memory is of the day i was taken to a veterinarian .",
+            "score": 0.2666666666666667,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What is a doctor?",
+                    "answer": "A veterinarian.",
+                    "start_idx": "100",
+                    "end_idx": "114",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.3636363636363636,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What is a veterinarian?",
+            "answer": "Veterinarian.",
+            "start_idx": "49",
+            "end_idx": "61",
+            "back_eval_a": "a veterinarian is someone who takes care of animals .",
+            "score": 0.19999999999999998,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is my first memory?",
+                    "answer": "My first memory.",
+                    "start_idx": "0",
+                    "end_idx": "15",
+                    "back_eval_a": "my first memory is of the day i was taken to a veterinarian .",
+                    "score": 0.375,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is my first memory?",
+                    "answer": "My first memory.",
+                    "start_idx": "0",
+                    "end_idx": "15",
+                    "back_eval_a": "my first memory is of the day i was taken to a veterinarian .",
+                    "score": 0.375,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is my first memory?",
+                    "answer": "My first memory.",
+                    "start_idx": "0",
+                    "end_idx": "15",
+                    "back_eval_a": "my first memory is of the day i was taken to a veterinarian .",
+                    "score": 0.375,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is my first memory?",
+                    "answer": "My first memory.",
+                    "start_idx": "0",
+                    "end_idx": "15",
+                    "back_eval_a": "my first memory is of the day i was taken to a veterinarian .",
+                    "score": 0.375,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What is a veterinarian?",
+            "answer": "A doctor.",
+            "start_idx": "118",
+            "end_idx": "126",
+            "back_eval_a": "a veterinarian is someone who takes care of animals .",
+            "score": 0.1818181818181818,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is my first memory?",
+                    "answer": "My first memory.",
+                    "start_idx": "0",
+                    "end_idx": "15",
+                    "back_eval_a": "my first memory is of the day i was taken to a veterinarian .",
+                    "score": 0.375,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is my first memory?",
+                    "answer": "My first memory.",
+                    "start_idx": "0",
+                    "end_idx": "15",
+                    "back_eval_a": "my first memory is of the day i was taken to a veterinarian .",
+                    "score": 0.375,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is my first memory?",
+                    "answer": "My first memory.",
+                    "start_idx": "0",
+                    "end_idx": "15",
+                    "back_eval_a": "my first memory is of the day i was taken to a veterinarian .",
+                    "score": 0.375,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is my first memory?",
+                    "answer": "My first memory.",
+                    "start_idx": "0",
+                    "end_idx": "15",
+                    "back_eval_a": "my first memory is of the day i was taken to a veterinarian .",
+                    "score": 0.375,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What is my first memory?",
+            "answer": "First.",
+            "start_idx": "3",
+            "end_idx": "8",
+            "back_eval_a": "my first memory is of the day i was taken to a veterinarian .",
+            "score": 0.14285714285714288,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What is a doctor?",
+                    "answer": "A veterinarian.",
+                    "start_idx": "100",
+                    "end_idx": "114",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.3636363636363636,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What is my first memory?",
+            "answer": "My first memory is of the day i was taken to the veterinarian 's office.",
+            "start_idx": "-1",
+            "end_idx": "72",
+            "back_eval_a": "my first memory is of the day i was taken to a veterinarian .",
+            "score": 0.8571428571428571,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": false,
+            "follow_ups": [
+                {
+                    "question": "What is a doctor?",
+                    "answer": "A veterinarian.",
+                    "start_idx": "100",
+                    "end_idx": "114",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.3636363636363636,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What is a veterinarian?",
+            "answer": "You probably know this , but a veterinarian is a doctor who takes care of animals.",
+            "start_idx": "-1",
+            "end_idx": "82",
+            "back_eval_a": "a veterinarian is someone who takes care of animals .",
+            "score": 0.6666666666666667,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": false,
+            "follow_ups": [
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is a veterinarian?",
+                    "answer": "Veterinarian.",
+                    "start_idx": "49",
+                    "end_idx": "61",
+                    "back_eval_a": "a veterinarian is someone who takes care of animals .",
+                    "score": 0.19999999999999998,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is my first memory?",
+                    "answer": "My first memory.",
+                    "start_idx": "0",
+                    "end_idx": "15",
+                    "back_eval_a": "my first memory is of the day i was taken to a veterinarian .",
+                    "score": 0.375,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is my first memory?",
+                    "answer": "My first memory.",
+                    "start_idx": "0",
+                    "end_idx": "15",
+                    "back_eval_a": "my first memory is of the day i was taken to a veterinarian .",
+                    "score": 0.375,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is my first memory?",
+                    "answer": "My first memory.",
+                    "start_idx": "0",
+                    "end_idx": "15",
+                    "back_eval_a": "my first memory is of the day i was taken to a veterinarian .",
+                    "score": 0.375,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is my first memory?",
+                    "answer": "My first memory.",
+                    "start_idx": "0",
+                    "end_idx": "15",
+                    "back_eval_a": "my first memory is of the day i was taken to a veterinarian .",
+                    "score": 0.375,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "question": "What was the name of dr.len?",
+            "answer": "Len.",
+            "start_idx": "64",
+            "end_idx": "67",
+            "back_eval_a": "he smelled like cinnamon .",
+            "score": 0.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "Who was dr. len?",
+                    "answer": "A kind-looking man.",
+                    "start_idx": "35",
+                    "end_idx": "53",
+                    "back_eval_a": "who was dr .",
+                    "score": 0.0,
+                    "category": [
+                        "character"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "Who smelled like cinnamon?",
+                    "answer": "Anyway , i remember being handed to a kind - looking man named dr. len who smelled like cinnamon.",
+                    "start_idx": "-1",
+                    "end_idx": "98",
+                    "back_eval_a": "dr .",
+                    "score": 0.1111111111111111,
+                    "category": [
+                        "action",
+                        "casual relationship",
+                        "character"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "Who was dr. len?",
+            "answer": "A kind-looking man.",
+            "start_idx": "35",
+            "end_idx": "53",
+            "back_eval_a": "who was dr .",
+            "score": 0.0,
+            "category": [
+                "character"
+            ],
+            "answer_in_text": true,
+            "follow_ups": []
+        },
+        {
+            "question": "Who smelled like cinnamon?",
+            "answer": "Anyway , i remember being handed to a kind - looking man named dr. len who smelled like cinnamon.",
+            "start_idx": "-1",
+            "end_idx": "98",
+            "back_eval_a": "dr .",
+            "score": 0.1111111111111111,
+            "category": [
+                "action",
+                "casual relationship",
+                "character"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        }
+    ],
+    [
+        {
+            "question": "What will we have together?",
+            "answer": "A good life.",
+            "start_idx": "88",
+            "end_idx": "99",
+            "back_eval_a": "a good life .",
+            "score": 1.0,
+            "category": [
+                "action",
+                "prediction"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What did he look into?",
+                    "answer": "My eyes.",
+                    "start_idx": "15",
+                    "end_idx": "22",
+                    "back_eval_a": "his eyes .",
+                    "score": 0.5,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What did he say to mee?",
+                    "answer": "He looked into my eyes and smiled and said , \" you can come home with mee , and we 'll have a good life together. \".",
+                    "start_idx": "-1",
+                    "end_idx": "115",
+                    "back_eval_a": "he said you can come home with mee and we'll have a good life together .",
+                    "score": 0.8205128205128205,
+                    "category": [
+                        "action",
+                        "casual relationship"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What did he look into?",
+            "answer": "My eyes.",
+            "start_idx": "15",
+            "end_idx": "22",
+            "back_eval_a": "his eyes .",
+            "score": 0.5,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": []
+        },
+        {
+            "question": "What did he say to mee?",
+            "answer": "He looked into my eyes and smiled and said , \" you can come home with mee , and we 'll have a good life together. \".",
+            "start_idx": "-1",
+            "end_idx": "115",
+            "back_eval_a": "he said you can come home with mee and we'll have a good life together .",
+            "score": 0.8205128205128205,
+            "category": [
+                "action",
+                "casual relationship"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        }
+    ],
+    [
+        {
+            "question": "What happened as we drove home?",
+            "answer": "That night.",
+            "start_idx": "17",
+            "end_idx": "27",
+            "back_eval_a": "he explained something to me the past that i had been wondering about .",
+            "score": 0.13333333333333336,
+            "category": [
+                "action",
+                "outcome resolution"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What is dr. len s name?",
+                    "answer": "Len.",
+                    "start_idx": "33",
+                    "end_idx": "36",
+                    "back_eval_a": "dad .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What is dr. len s name?",
+            "answer": "Len.",
+            "start_idx": "33",
+            "end_idx": "36",
+            "back_eval_a": "dad .",
+            "score": 0.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": []
+        },
+        {
+            "question": "What did dr. len explain to me as we drove home?",
+            "answer": "As we drove home that night , dr. len - or dad , as i call him now - explained something to me that i had been wondering about.",
+            "start_idx": "-1",
+            "end_idx": "128",
+            "back_eval_a": "something i had been wondering about .",
+            "score": 0.3870967741935484,
+            "category": [
+                "action",
+                "casual relationship"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        }
+    ],
+    [
+        {
+            "question": "What do you think your back legs don't work like?",
+            "answer": "Most pigs.",
+            "start_idx": "55",
+            "end_idx": "64",
+            "back_eval_a": "most pigs .",
+            "score": 1.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What is a pig?",
+                    "answer": "A special pig.",
+                    "start_idx": "9",
+                    "end_idx": "22",
+                    "back_eval_a": "a pig is unique .",
+                    "score": 0.5714285714285715,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What is a pig?",
+            "answer": "A special pig.",
+            "start_idx": "9",
+            "end_idx": "22",
+            "back_eval_a": "a pig is unique .",
+            "score": 0.5714285714285715,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What is unique about you pig?",
+                    "answer": "Your back legs.",
+                    "start_idx": "24",
+                    "end_idx": "38",
+                    "back_eval_a": "it is unique because your back legs don't work like most pigs .",
+                    "score": 0.375,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What is unique about you pig?",
+            "answer": "Your back legs.",
+            "start_idx": "24",
+            "end_idx": "38",
+            "back_eval_a": "it is unique because your back legs don't work like most pigs .",
+            "score": 0.375,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": []
+        },
+        {
+            "question": "What does this say about you?",
+            "answer": "Your back legs do n't work like most pigs , but that 's okay.",
+            "start_idx": "-1",
+            "end_idx": "61",
+            "back_eval_a": "what does this say about you ? .",
+            "score": 0.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        }
+    ],
+    [
+        {
+            "question": "What is the sound of oink-oinks?",
+            "answer": "Yooooo-neek.",
+            "start_idx": "48",
+            "end_idx": "59",
+            "back_eval_a": "it is the sound of yooooo-neek .",
+            "score": 0.4444444444444445,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What did i think?",
+                    "answer": "I thought.",
+                    "start_idx": "-1",
+                    "end_idx": "10",
+                    "back_eval_a": "i like the sound of that .",
+                    "score": 0.25,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What does oink-oinks mean to you?",
+            "answer": "The sound.",
+            "start_idx": "27",
+            "end_idx": "36",
+            "back_eval_a": "what does oink-oinks mean to you ? .",
+            "score": 0.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What did i think?",
+                    "answer": "I thought.",
+                    "start_idx": "-1",
+                    "end_idx": "10",
+                    "back_eval_a": "i like the sound of that .",
+                    "score": 0.25,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What did i think?",
+            "answer": "I thought.",
+            "start_idx": "-1",
+            "end_idx": "10",
+            "back_eval_a": "i like the sound of that .",
+            "score": 0.25,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": false,
+            "follow_ups": [
+                {
+                    "question": "What did i say?",
+                    "answer": "Oink - oink , \" i said.",
+                    "start_idx": "-1",
+                    "end_idx": "23",
+                    "back_eval_a": "what did i say ? .",
+                    "score": 0.25,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What does oink-oinks mean to you?",
+                    "answer": "The sound.",
+                    "start_idx": "27",
+                    "end_idx": "36",
+                    "back_eval_a": "what does oink-oinks mean to you ? .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What did i say?",
+            "answer": "Oink - oink , \" i said.",
+            "start_idx": "-1",
+            "end_idx": "23",
+            "back_eval_a": "what did i say ? .",
+            "score": 0.25,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": false,
+            "follow_ups": [
+                {
+                    "question": "What does oink-oinks mean to you?",
+                    "answer": "The sound.",
+                    "start_idx": "27",
+                    "end_idx": "36",
+                    "back_eval_a": "what does oink-oinks mean to you ? .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What does oink-oinks mean to you?",
+            "answer": "I like the sound of that.",
+            "start_idx": "-1",
+            "end_idx": "27",
+            "back_eval_a": "what does oink-oinks mean to you ? .",
+            "score": 0.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": false,
+            "follow_ups": [
+                {
+                    "question": "What did i think?",
+                    "answer": "I thought.",
+                    "start_idx": "-1",
+                    "end_idx": "10",
+                    "back_eval_a": "i like the sound of that .",
+                    "score": 0.25,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "question": "Like what animal did i squeeeeealeek with delight?",
+            "answer": "Like duma.",
+            "start_idx": "79",
+            "end_idx": "88",
+            "back_eval_a": "like duma and aspen .",
+            "score": 0.6666666666666666,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What do you think the animals will be called?",
+                    "answer": "My new pals.",
+                    "start_idx": "65",
+                    "end_idx": "76",
+                    "back_eval_a": "duma and aspen .",
+                    "score": 0.0,
+                    "category": [
+                        "action",
+                        "prediction"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "Who is duma?",
+                    "answer": "The cat.",
+                    "start_idx": "90",
+                    "end_idx": "97",
+                    "back_eval_a": "who is duma the cat .",
+                    "score": 0.5714285714285715,
+                    "category": [
+                        "character"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "When did i get excited about the new house?",
+                    "answer": "When we got home.",
+                    "start_idx": "0",
+                    "end_idx": "16",
+                    "back_eval_a": "when i saw the animals .",
+                    "score": 0.22222222222222224,
+                    "category": [
+                        "setting",
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "Who is duma?",
+            "answer": "The cat.",
+            "start_idx": "90",
+            "end_idx": "97",
+            "back_eval_a": "who is duma the cat .",
+            "score": 0.5714285714285715,
+            "category": [
+                "character"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What made me squeeeeealed with delight?",
+                    "answer": "All the animals.",
+                    "start_idx": "27",
+                    "end_idx": "42",
+                    "back_eval_a": "when i saw the animals and aspen .",
+                    "score": 0.4,
+                    "category": [
+                        "causal relationship"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "When did i get excited about the new house?",
+                    "answer": "When we got home.",
+                    "start_idx": "0",
+                    "end_idx": "16",
+                    "back_eval_a": "when i saw the animals .",
+                    "score": 0.22222222222222224,
+                    "category": [
+                        "setting",
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What do you think the animals will be called?",
+                    "answer": "My new pals.",
+                    "start_idx": "65",
+                    "end_idx": "76",
+                    "back_eval_a": "duma and aspen .",
+                    "score": 0.0,
+                    "category": [
+                        "action",
+                        "prediction"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What did i do when we got home?",
+                    "answer": "I squeeeeealed with delight.",
+                    "start_idx": "-1",
+                    "end_idx": "28",
+                    "back_eval_a": "i squealed with delight .",
+                    "score": 0.75,
+                    "category": [
+                        "setting",
+                        "action"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What did i do when we got home?",
+                    "answer": "I squeeeeealed with delight.",
+                    "start_idx": "-1",
+                    "end_idx": "28",
+                    "back_eval_a": "i squealed with delight .",
+                    "score": 0.75,
+                    "category": [
+                        "setting",
+                        "action"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What made me squeeeeealed with delight?",
+            "answer": "All the animals.",
+            "start_idx": "27",
+            "end_idx": "42",
+            "back_eval_a": "when i saw the animals and aspen .",
+            "score": 0.4,
+            "category": [
+                "causal relationship"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "When did i get excited about the new house?",
+                    "answer": "When we got home.",
+                    "start_idx": "0",
+                    "end_idx": "16",
+                    "back_eval_a": "when i saw the animals .",
+                    "score": 0.22222222222222224,
+                    "category": [
+                        "setting",
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What do you think the animals will be called?",
+                    "answer": "My new pals.",
+                    "start_idx": "65",
+                    "end_idx": "76",
+                    "back_eval_a": "duma and aspen .",
+                    "score": 0.0,
+                    "category": [
+                        "action",
+                        "prediction"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "When did i get excited about the new house?",
+            "answer": "When we got home.",
+            "start_idx": "0",
+            "end_idx": "16",
+            "back_eval_a": "when i saw the animals .",
+            "score": 0.22222222222222224,
+            "category": [
+                "setting",
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What did i do when we got home?",
+                    "answer": "I squeeeeealed with delight.",
+                    "start_idx": "-1",
+                    "end_idx": "28",
+                    "back_eval_a": "i squealed with delight .",
+                    "score": 0.75,
+                    "category": [
+                        "setting",
+                        "action"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What did i do when we got home?",
+                    "answer": "I squeeeeealed with delight.",
+                    "start_idx": "-1",
+                    "end_idx": "28",
+                    "back_eval_a": "i squealed with delight .",
+                    "score": 0.75,
+                    "category": [
+                        "setting",
+                        "action"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What do you think the animals will be called?",
+            "answer": "My new pals.",
+            "start_idx": "65",
+            "end_idx": "76",
+            "back_eval_a": "duma and aspen .",
+            "score": 0.0,
+            "category": [
+                "action",
+                "prediction"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What did i do when we got home?",
+                    "answer": "I squeeeeealed with delight.",
+                    "start_idx": "-1",
+                    "end_idx": "28",
+                    "back_eval_a": "i squealed with delight .",
+                    "score": 0.75,
+                    "category": [
+                        "setting",
+                        "action"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What did i do when we got home?",
+                    "answer": "I squeeeeealed with delight.",
+                    "start_idx": "-1",
+                    "end_idx": "28",
+                    "back_eval_a": "i squealed with delight .",
+                    "score": 0.75,
+                    "category": [
+                        "setting",
+                        "action"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What did i do when we got home?",
+            "answer": "I squeeeeealed with delight.",
+            "start_idx": "-1",
+            "end_idx": "28",
+            "back_eval_a": "i squealed with delight .",
+            "score": 0.75,
+            "category": [
+                "setting",
+                "action"
+            ],
+            "answer_in_text": false,
+            "follow_ups": [
+                {
+                    "question": "What did i do when we got home?",
+                    "answer": "I squeeeeealed with delight.",
+                    "start_idx": "-1",
+                    "end_idx": "28",
+                    "back_eval_a": "i squealed with delight .",
+                    "score": 0.75,
+                    "category": [
+                        "setting",
+                        "action"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What did i do when we got home?",
+            "answer": "And i saw all the animals that were going to be my new pals - like duma ( the cat ) and aspen ( the dog ) -.",
+            "start_idx": "-1",
+            "end_idx": "106",
+            "back_eval_a": "i squealed with delight .",
+            "score": 0.07692307692307693,
+            "category": [
+                "setting",
+                "action",
+                "casual relationship"
+            ],
+            "answer_in_text": false,
+            "follow_ups": [
+                {
+                    "question": "What did i do when we got home?",
+                    "answer": "I squeeeeealed with delight.",
+                    "start_idx": "-1",
+                    "end_idx": "28",
+                    "back_eval_a": "i squealed with delight .",
+                    "score": 0.75,
+                    "category": [
+                        "setting",
+                        "action"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "question": "Who welcomed me with hugs and kisses?",
+            "answer": "Dr. len's family.",
+            "start_idx": "0",
+            "end_idx": "16",
+            "back_eval_a": "dr .",
+            "score": 0.4,
+            "category": [
+                "character"
+            ],
+            "answer_in_text": true,
+            "follow_ups": []
+        },
+        {
+            "question": "Who welcomed me with hugs and kisses?",
+            "answer": "Len.",
+            "start_idx": "4",
+            "end_idx": "7",
+            "back_eval_a": "dr .",
+            "score": 0.0,
+            "category": [
+                "character"
+            ],
+            "answer_in_text": true,
+            "follow_ups": []
+        },
+        {
+            "question": "What was the first thing i noticed about dr.dr. len 's family?",
+            "answer": "Dr. len 's family welcomed me with hugs and kisses , and i knew i was going to like it there !.",
+            "start_idx": "-1",
+            "end_idx": "94",
+            "back_eval_a": "hugs and kisses .",
+            "score": 0.2608695652173913,
+            "category": [
+                "action",
+                "casual relationship"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        }
+    ],
+    [
+        {
+            "question": "What did i drift off to?",
+            "answer": "A happy sleep.",
+            "start_idx": "144",
+            "end_idx": "157",
+            "back_eval_a": "a happy sleep .",
+            "score": 1.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What was comforting to me at the end of my long day?",
+                    "answer": "The warm fire.",
+                    "start_idx": "81",
+                    "end_idx": "94",
+                    "back_eval_a": "warm fire .",
+                    "score": 0.8,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What had been the longest day of my life?",
+                    "answer": "The longest day.",
+                    "start_idx": "12",
+                    "end_idx": "27",
+                    "back_eval_a": "it had been the longest day of my life .",
+                    "score": 0.5,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What was the longest day of my life?",
+                    "answer": "My short life.",
+                    "start_idx": "31",
+                    "end_idx": "44",
+                    "back_eval_a": "it was the longest day of my life .",
+                    "score": 0.36363636363636365,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What was in the pile of blankets?",
+                    "answer": "Snuggly blankets.",
+                    "start_idx": "108",
+                    "end_idx": "124",
+                    "back_eval_a": "what was in the pile of blankets ? .",
+                    "score": 0.22222222222222224,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What was the blanket made of?",
+                    "answer": "A pile.",
+                    "start_idx": "98",
+                    "end_idx": "104",
+                    "back_eval_a": "it was made of snuggly blankets .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What was comforting to me at the end of my long day?",
+            "answer": "The warm fire.",
+            "start_idx": "81",
+            "end_idx": "94",
+            "back_eval_a": "warm fire .",
+            "score": 0.8,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What was the longest day of my life?",
+                    "answer": "My short life.",
+                    "start_idx": "31",
+                    "end_idx": "44",
+                    "back_eval_a": "it was the longest day of my life .",
+                    "score": 0.36363636363636365,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What was in the pile of blankets?",
+                    "answer": "Snuggly blankets.",
+                    "start_idx": "108",
+                    "end_idx": "124",
+                    "back_eval_a": "what was in the pile of blankets ? .",
+                    "score": 0.22222222222222224,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What was the blanket made of?",
+                    "answer": "A pile.",
+                    "start_idx": "98",
+                    "end_idx": "104",
+                    "back_eval_a": "it was made of snuggly blankets .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What had been the longest day of my life?",
+            "answer": "The longest day.",
+            "start_idx": "12",
+            "end_idx": "27",
+            "back_eval_a": "it had been the longest day of my life .",
+            "score": 0.5,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What was in the pile of blankets?",
+                    "answer": "Snuggly blankets.",
+                    "start_idx": "108",
+                    "end_idx": "124",
+                    "back_eval_a": "what was in the pile of blankets ? .",
+                    "score": 0.22222222222222224,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What was the blanket made of?",
+                    "answer": "A pile.",
+                    "start_idx": "98",
+                    "end_idx": "104",
+                    "back_eval_a": "it was made of snuggly blankets .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What was the longest day of my life?",
+            "answer": "My short life.",
+            "start_idx": "31",
+            "end_idx": "44",
+            "back_eval_a": "it was the longest day of my life .",
+            "score": 0.36363636363636365,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What was in the pile of blankets?",
+                    "answer": "Snuggly blankets.",
+                    "start_idx": "108",
+                    "end_idx": "124",
+                    "back_eval_a": "what was in the pile of blankets ? .",
+                    "score": 0.22222222222222224,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What was the blanket made of?",
+                    "answer": "A pile.",
+                    "start_idx": "98",
+                    "end_idx": "104",
+                    "back_eval_a": "it was made of snuggly blankets .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What was in the pile of blankets?",
+            "answer": "Snuggly blankets.",
+            "start_idx": "108",
+            "end_idx": "124",
+            "back_eval_a": "what was in the pile of blankets ? .",
+            "score": 0.22222222222222224,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": []
+        },
+        {
+            "question": "What was the blanket made of?",
+            "answer": "A pile.",
+            "start_idx": "98",
+            "end_idx": "104",
+            "back_eval_a": "it was made of snuggly blankets .",
+            "score": 0.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": []
+        },
+        {
+            "question": "What did i do when it was time to go home?",
+            "answer": "It had been the longest day of my short life , and i was tired , so i curled up by the warm fire in a pile of snuggly blankets and drifted off to a happy sleep.",
+            "start_idx": "-1",
+            "end_idx": "160",
+            "back_eval_a": "i curled up by the warm fire in a pile of snuggly blankets and .",
+            "score": 0.5714285714285715,
+            "category": [
+                "setting",
+                "action",
+                "casual relationship"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        }
+    ],
+    [
+        {
+            "question": "What kind of shop did i dream about?",
+            "answer": "A pie shop.",
+            "start_idx": "62",
+            "end_idx": "72",
+            "back_eval_a": "a pie shop .",
+            "score": 1.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What did i dream about?",
+                    "answer": "My new family.",
+                    "start_idx": "26",
+                    "end_idx": "39",
+                    "back_eval_a": "playing with my new family and being set free in a pie shop .",
+                    "score": 0.375,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What did i dream about?",
+            "answer": "My new family.",
+            "start_idx": "26",
+            "end_idx": "39",
+            "back_eval_a": "playing with my new family and being set free in a pie shop .",
+            "score": 0.375,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": []
+        },
+        {
+            "question": "What did i dream of?",
+            "answer": "I dreamed of playing with my new family and being set free in a pie shop !.",
+            "start_idx": "-1",
+            "end_idx": "73",
+            "back_eval_a": "playing with my new family and being set free in a pie shop .",
+            "score": 0.896551724137931,
+            "category": [
+                "action",
+                "casual relationship"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        }
+    ],
+    [
+        {
+            "question": "What did it look like?",
+            "answer": "A toy.",
+            "start_idx": "141",
+            "end_idx": "146",
+            "back_eval_a": "it looked like a toy .",
+            "score": 0.5714285714285715,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What time of day did dad show me the toy?",
+                    "answer": "The morning.",
+                    "start_idx": "3",
+                    "end_idx": "14",
+                    "back_eval_a": "morning time of day .",
+                    "score": 0.3333333333333333,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What was oatmeal?",
+                    "answer": "A breakfast.",
+                    "start_idx": "22",
+                    "end_idx": "33",
+                    "back_eval_a": "topped with blueberries .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What time of day did dad show me the toy?",
+            "answer": "The morning.",
+            "start_idx": "3",
+            "end_idx": "14",
+            "back_eval_a": "morning time of day .",
+            "score": 0.3333333333333333,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What did dad show me?",
+                    "answer": "A funny-looking thing.",
+                    "start_idx": "91",
+                    "end_idx": "112",
+                    "back_eval_a": "a toy with wheelsed .",
+                    "score": 0.25,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What was oatmeal?",
+                    "answer": "A breakfast.",
+                    "start_idx": "22",
+                    "end_idx": "33",
+                    "back_eval_a": "topped with blueberries .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What did dad show me?",
+            "answer": "A funny-looking thing.",
+            "start_idx": "91",
+            "end_idx": "112",
+            "back_eval_a": "a toy with wheelsed .",
+            "score": 0.25,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What did dad think of the wheels?",
+                    "answer": "It looked like a toy !.",
+                    "start_idx": "-1",
+                    "end_idx": "21",
+                    "back_eval_a": "he thought it looked like a toy .",
+                    "score": 0.8333333333333333,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What was oatmeal?",
+                    "answer": "A breakfast.",
+                    "start_idx": "22",
+                    "end_idx": "33",
+                    "back_eval_a": "topped with blueberries .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What was oatmeal?",
+            "answer": "A breakfast.",
+            "start_idx": "22",
+            "end_idx": "33",
+            "back_eval_a": "topped with blueberries .",
+            "score": 0.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What did dad think of the wheels?",
+                    "answer": "It looked like a toy !.",
+                    "start_idx": "-1",
+                    "end_idx": "21",
+                    "back_eval_a": "he thought it looked like a toy .",
+                    "score": 0.8333333333333333,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What did dad think of the wheels?",
+            "answer": "It looked like a toy !.",
+            "start_idx": "-1",
+            "end_idx": "21",
+            "back_eval_a": "he thought it looked like a toy .",
+            "score": 0.8333333333333333,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        },
+        {
+            "question": "What was the funny looking thing with wheels?",
+            "answer": "In the morning , after a breakfast of oatmeal topped with blueberries ( yum ! ) , dad showed me a funny - looking thing with wheels.",
+            "start_idx": "-1",
+            "end_idx": "132",
+            "back_eval_a": "it looked like a toy .",
+            "score": 0.07692307692307693,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        }
+    ],
+    [
+        {
+            "question": "What does the cart hold up?",
+            "answer": "Your back legs.",
+            "start_idx": "60",
+            "end_idx": "74",
+            "back_eval_a": "back legs .",
+            "score": 0.8,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What is chris s nickname?",
+                    "answer": "Chris.",
+                    "start_idx": "18",
+                    "end_idx": "23",
+                    "back_eval_a": "he is called chris .",
+                    "score": 0.4,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What did i say?",
+                    "answer": "Oink - oink , \" i said.",
+                    "start_idx": "-1",
+                    "end_idx": "23",
+                    "back_eval_a": "i said oink-oinks .",
+                    "score": 0.5,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "How awesome , i thought. \"oink- oinks,\" said chris as he?",
+                    "answer": "\" how awesome , i thought.",
+                    "start_idx": "-1",
+                    "end_idx": "26",
+                    "back_eval_a": "he said oink-oinks .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What is this for chris?",
+            "answer": "A cart.",
+            "start_idx": "31",
+            "end_idx": "37",
+            "back_eval_a": "it is a cart .",
+            "score": 0.6666666666666666,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What is chris s nickname?",
+                    "answer": "Chris.",
+                    "start_idx": "18",
+                    "end_idx": "23",
+                    "back_eval_a": "he is called chris .",
+                    "score": 0.4,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "How awesome , i thought. \"oink- oinks,\" said chris as he?",
+                    "answer": "\" how awesome , i thought.",
+                    "start_idx": "-1",
+                    "end_idx": "26",
+                    "back_eval_a": "he said oink-oinks .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What did i say?",
+                    "answer": "Oink - oink , \" i said.",
+                    "start_idx": "-1",
+                    "end_idx": "23",
+                    "back_eval_a": "i said oink-oinks .",
+                    "score": 0.5,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What did the lady say about her cart?",
+                    "answer": "I made it to hold up your back legs so you can run around and play.",
+                    "start_idx": "-1",
+                    "end_idx": "67",
+                    "back_eval_a": "she said it was for chris .",
+                    "score": 0.09090909090909091,
+                    "category": [
+                        "action",
+                        "casual relationship"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What is chris s nickname?",
+            "answer": "Chris.",
+            "start_idx": "18",
+            "end_idx": "23",
+            "back_eval_a": "he is called chris .",
+            "score": 0.4,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "How awesome , i thought. \"oink- oinks,\" said chris as he?",
+                    "answer": "\" how awesome , i thought.",
+                    "start_idx": "-1",
+                    "end_idx": "26",
+                    "back_eval_a": "he said oink-oinks .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What did i say?",
+                    "answer": "Oink - oink , \" i said.",
+                    "start_idx": "-1",
+                    "end_idx": "23",
+                    "back_eval_a": "i said oink-oinks .",
+                    "score": 0.5,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What did the lady say about her cart?",
+                    "answer": "I made it to hold up your back legs so you can run around and play.",
+                    "start_idx": "-1",
+                    "end_idx": "67",
+                    "back_eval_a": "she said it was for chris .",
+                    "score": 0.09090909090909091,
+                    "category": [
+                        "action",
+                        "casual relationship"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What did i say?",
+            "answer": "Oink - oink , \" i said.",
+            "start_idx": "-1",
+            "end_idx": "23",
+            "back_eval_a": "i said oink-oinks .",
+            "score": 0.5,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": false,
+            "follow_ups": [
+                {
+                    "question": "What did the lady say about her cart?",
+                    "answer": "I made it to hold up your back legs so you can run around and play.",
+                    "start_idx": "-1",
+                    "end_idx": "67",
+                    "back_eval_a": "she said it was for chris .",
+                    "score": 0.09090909090909091,
+                    "category": [
+                        "action",
+                        "casual relationship"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "How awesome , i thought. \"oink- oinks,\" said chris as he?",
+                    "answer": "\" how awesome , i thought.",
+                    "start_idx": "-1",
+                    "end_idx": "26",
+                    "back_eval_a": "he said oink-oinks .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What did the lady say about her cart?",
+            "answer": "I made it to hold up your back legs so you can run around and play.",
+            "start_idx": "-1",
+            "end_idx": "67",
+            "back_eval_a": "she said it was for chris .",
+            "score": 0.09090909090909091,
+            "category": [
+                "action",
+                "casual relationship"
+            ],
+            "answer_in_text": false,
+            "follow_ups": [
+                {
+                    "question": "How awesome , i thought. \"oink- oinks,\" said chris as he?",
+                    "answer": "\" how awesome , i thought.",
+                    "start_idx": "-1",
+                    "end_idx": "26",
+                    "back_eval_a": "he said oink-oinks .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "How awesome , i thought. \"oink- oinks,\" said chris as he?",
+            "answer": "\" how awesome , i thought.",
+            "start_idx": "-1",
+            "end_idx": "26",
+            "back_eval_a": "he said oink-oinks .",
+            "score": 0.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        }
+    ],
+    [
+        {
+            "question": "What did dad put on me?",
+            "answer": "The cart.",
+            "start_idx": "8",
+            "end_idx": "16",
+            "back_eval_a": "the cart .",
+            "score": 1.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What kept popping up in the air?",
+                    "answer": "My wheels.",
+                    "start_idx": "118",
+                    "end_idx": "127",
+                    "back_eval_a": "my wheels up in the air .",
+                    "score": 0.5,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What kept popping up in the cart?",
+                    "answer": "The air.",
+                    "start_idx": "147",
+                    "end_idx": "154",
+                    "back_eval_a": "my wheels up in the air .",
+                    "score": 0.5,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What felt strange about the cart?",
+                    "answer": "The straps.",
+                    "start_idx": "89",
+                    "end_idx": "99",
+                    "back_eval_a": "straps felt strange .",
+                    "score": 0.4,
+                    "category": [
+                        "feeling",
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What was hard to get going?",
+                    "answer": "First.",
+                    "start_idx": "82",
+                    "end_idx": "87",
+                    "back_eval_a": "it was hard to get going at first .",
+                    "score": 0.2222222222222222,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What was wrong with the cart?",
+                    "answer": "The straps felt strange , and my wheels kept popping up in the air.",
+                    "start_idx": "-1",
+                    "end_idx": "67",
+                    "back_eval_a": "it felt strange and the wheels kept popping up in air dad put me on .",
+                    "score": 0.6428571428571429,
+                    "category": [
+                        "action",
+                        "casual relationship"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What was the first thing i noticed about standing up?",
+                    "answer": "Dad put the cart on me , and i could stand up , but boy was it hard to get going at first.",
+                    "start_idx": "-1",
+                    "end_idx": "90",
+                    "back_eval_a": "it felt strangey .",
+                    "score": 0.08333333333333333,
+                    "category": [
+                        "action",
+                        "casual relationship"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What kept popping up in the air?",
+            "answer": "My wheels.",
+            "start_idx": "118",
+            "end_idx": "127",
+            "back_eval_a": "my wheels up in the air .",
+            "score": 0.5,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What felt strange about the cart?",
+                    "answer": "The straps.",
+                    "start_idx": "89",
+                    "end_idx": "99",
+                    "back_eval_a": "straps felt strange .",
+                    "score": 0.4,
+                    "category": [
+                        "feeling",
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What was hard to get going?",
+                    "answer": "First.",
+                    "start_idx": "82",
+                    "end_idx": "87",
+                    "back_eval_a": "it was hard to get going at first .",
+                    "score": 0.2222222222222222,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What was the first thing i noticed about standing up?",
+                    "answer": "Dad put the cart on me , and i could stand up , but boy was it hard to get going at first.",
+                    "start_idx": "-1",
+                    "end_idx": "90",
+                    "back_eval_a": "it felt strangey .",
+                    "score": 0.08333333333333333,
+                    "category": [
+                        "action",
+                        "casual relationship"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What kept popping up in the cart?",
+            "answer": "The air.",
+            "start_idx": "147",
+            "end_idx": "154",
+            "back_eval_a": "my wheels up in the air .",
+            "score": 0.5,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What felt strange about the cart?",
+                    "answer": "The straps.",
+                    "start_idx": "89",
+                    "end_idx": "99",
+                    "back_eval_a": "straps felt strange .",
+                    "score": 0.4,
+                    "category": [
+                        "feeling",
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What was hard to get going?",
+                    "answer": "First.",
+                    "start_idx": "82",
+                    "end_idx": "87",
+                    "back_eval_a": "it was hard to get going at first .",
+                    "score": 0.2222222222222222,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What felt strange about the cart?",
+            "answer": "The straps.",
+            "start_idx": "89",
+            "end_idx": "99",
+            "back_eval_a": "straps felt strange .",
+            "score": 0.4,
+            "category": [
+                "feeling",
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What was hard to get going?",
+                    "answer": "First.",
+                    "start_idx": "82",
+                    "end_idx": "87",
+                    "back_eval_a": "it was hard to get going at first .",
+                    "score": 0.2222222222222222,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What was hard to get going?",
+            "answer": "First.",
+            "start_idx": "82",
+            "end_idx": "87",
+            "back_eval_a": "it was hard to get going at first .",
+            "score": 0.2222222222222222,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What was wrong with the cart?",
+                    "answer": "The straps felt strange , and my wheels kept popping up in the air.",
+                    "start_idx": "-1",
+                    "end_idx": "67",
+                    "back_eval_a": "it felt strange and the wheels kept popping up in air dad put me on .",
+                    "score": 0.6428571428571429,
+                    "category": [
+                        "action",
+                        "casual relationship"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What was wrong with the cart?",
+            "answer": "The straps felt strange , and my wheels kept popping up in the air.",
+            "start_idx": "-1",
+            "end_idx": "67",
+            "back_eval_a": "it felt strange and the wheels kept popping up in air dad put me on .",
+            "score": 0.6428571428571429,
+            "category": [
+                "action",
+                "casual relationship"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        },
+        {
+            "question": "What was the first thing i noticed about standing up?",
+            "answer": "Dad put the cart on me , and i could stand up , but boy was it hard to get going at first.",
+            "start_idx": "-1",
+            "end_idx": "90",
+            "back_eval_a": "it felt strangey .",
+            "score": 0.08333333333333333,
+            "category": [
+                "action",
+                "casual relationship"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        }
+    ],
+    [
+        {
+            "question": "What happened after lots of practice?",
+            "answer": "But after lots of practice , and with everyone cheering me on , i was rolling !.",
+            "start_idx": "-1",
+            "end_idx": "78",
+            "back_eval_a": "i was rolling .",
+            "score": 0.35294117647058826,
+            "category": [
+                "action",
+                "outcome resolution",
+                "casual relationship"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        }
+    ],
+    [
+        {
+            "question": "What is my name?",
+            "answer": "Chris.",
+            "start_idx": "105",
+            "end_idx": "110",
+            "back_eval_a": "chris .",
+            "score": 1.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What was under the couch?",
+                    "answer": "A marshmallow.",
+                    "start_idx": "45",
+                    "end_idx": "58",
+                    "back_eval_a": "marshmallow .",
+                    "score": 0.6666666666666666,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What part of my body was used for filming?",
+                    "answer": "My head.",
+                    "start_idx": "141",
+                    "end_idx": "148",
+                    "back_eval_a": "my hands .",
+                    "score": 0.5,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "Where was the marshmallow hiding under?",
+                    "answer": "The couch.",
+                    "start_idx": "74",
+                    "end_idx": "83",
+                    "back_eval_a": "under the couchy .",
+                    "score": 0.4,
+                    "category": [
+                        "setting"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What happened after dad saw me on youtube?",
+                    "answer": "A few weeks later.",
+                    "start_idx": "0",
+                    "end_idx": "17",
+                    "back_eval_a": "he told me to look at it again .",
+                    "score": 0.0,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What happened when dad shouted , look at chris?",
+                    "answer": "\" i popped my head up , and sure enough , there i was !.",
+                    "start_idx": "-1",
+                    "end_idx": "54",
+                    "back_eval_a": "i was on youtube .",
+                    "score": 0.26666666666666666,
+                    "category": [
+                        "setting",
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What happened after dad saw me on youtube?",
+                    "answer": "A few weeks later.",
+                    "start_idx": "0",
+                    "end_idx": "17",
+                    "back_eval_a": "he told me to look at it again .",
+                    "score": 0.0,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What was under the couch?",
+            "answer": "A marshmallow.",
+            "start_idx": "45",
+            "end_idx": "58",
+            "back_eval_a": "marshmallow .",
+            "score": 0.6666666666666666,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What part of my body was used for filming?",
+                    "answer": "My head.",
+                    "start_idx": "141",
+                    "end_idx": "148",
+                    "back_eval_a": "my hands .",
+                    "score": 0.5,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What happened after dad saw me on youtube?",
+                    "answer": "A few weeks later.",
+                    "start_idx": "0",
+                    "end_idx": "17",
+                    "back_eval_a": "he told me to look at it again .",
+                    "score": 0.0,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What happened when dad shouted , look at chris?",
+                    "answer": "\" i popped my head up , and sure enough , there i was !.",
+                    "start_idx": "-1",
+                    "end_idx": "54",
+                    "back_eval_a": "i was on youtube .",
+                    "score": 0.26666666666666666,
+                    "category": [
+                        "setting",
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What happened after dad saw me on youtube?",
+                    "answer": "A few weeks later.",
+                    "start_idx": "0",
+                    "end_idx": "17",
+                    "back_eval_a": "he told me to look at it again .",
+                    "score": 0.0,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What part of my body was used for filming?",
+            "answer": "My head.",
+            "start_idx": "141",
+            "end_idx": "148",
+            "back_eval_a": "my hands .",
+            "score": 0.5,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "Where was the marshmallow hiding under?",
+                    "answer": "The couch.",
+                    "start_idx": "74",
+                    "end_idx": "83",
+                    "back_eval_a": "under the couchy .",
+                    "score": 0.4,
+                    "category": [
+                        "setting"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What happened after dad saw me on youtube?",
+                    "answer": "A few weeks later.",
+                    "start_idx": "0",
+                    "end_idx": "17",
+                    "back_eval_a": "he told me to look at it again .",
+                    "score": 0.0,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What happened when dad shouted , look at chris?",
+                    "answer": "\" i popped my head up , and sure enough , there i was !.",
+                    "start_idx": "-1",
+                    "end_idx": "54",
+                    "back_eval_a": "i was on youtube .",
+                    "score": 0.26666666666666666,
+                    "category": [
+                        "setting",
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What happened after dad saw me on youtube?",
+                    "answer": "A few weeks later.",
+                    "start_idx": "0",
+                    "end_idx": "17",
+                    "back_eval_a": "he told me to look at it again .",
+                    "score": 0.0,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "Where was the marshmallow hiding under?",
+            "answer": "The couch.",
+            "start_idx": "74",
+            "end_idx": "83",
+            "back_eval_a": "under the couchy .",
+            "score": 0.4,
+            "category": [
+                "setting"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What happened after dad saw me on youtube?",
+                    "answer": "A few weeks later.",
+                    "start_idx": "0",
+                    "end_idx": "17",
+                    "back_eval_a": "he told me to look at it again .",
+                    "score": 0.0,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What happened when dad shouted , look at chris?",
+                    "answer": "\" i popped my head up , and sure enough , there i was !.",
+                    "start_idx": "-1",
+                    "end_idx": "54",
+                    "back_eval_a": "i was on youtube .",
+                    "score": 0.26666666666666666,
+                    "category": [
+                        "setting",
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What happened after dad saw me on youtube?",
+                    "answer": "A few weeks later.",
+                    "start_idx": "0",
+                    "end_idx": "17",
+                    "back_eval_a": "he told me to look at it again .",
+                    "score": 0.0,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What happened after dad saw me on youtube?",
+            "answer": "A few weeks later.",
+            "start_idx": "0",
+            "end_idx": "17",
+            "back_eval_a": "he told me to look at it again .",
+            "score": 0.0,
+            "category": [
+                "action",
+                "outcome resolution"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What happened when dad shouted , look at chris?",
+                    "answer": "\" i popped my head up , and sure enough , there i was !.",
+                    "start_idx": "-1",
+                    "end_idx": "54",
+                    "back_eval_a": "i was on youtube .",
+                    "score": 0.26666666666666666,
+                    "category": [
+                        "setting",
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What happened when dad shouted , look at chris?",
+            "answer": "\" i popped my head up , and sure enough , there i was !.",
+            "start_idx": "-1",
+            "end_idx": "54",
+            "back_eval_a": "i was on youtube .",
+            "score": 0.26666666666666666,
+            "category": [
+                "setting",
+                "action",
+                "outcome resolution"
+            ],
+            "answer_in_text": false,
+            "follow_ups": [
+                {
+                    "question": "What happened after dad saw me on youtube?",
+                    "answer": "A few weeks later.",
+                    "start_idx": "0",
+                    "end_idx": "17",
+                    "back_eval_a": "he told me to look at it again .",
+                    "score": 0.0,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What happened after dad saw me on youtube?",
+            "answer": "A few weeks later , while i was trying to get a marshmallow out from under the couch , dad shouted , \" look , chris !.",
+            "start_idx": "-1",
+            "end_idx": "116",
+            "back_eval_a": "he told me to look at it again .",
+            "score": 0.13793103448275862,
+            "category": [
+                "action",
+                "outcome resolution",
+                "casual relationship"
+            ],
+            "answer_in_text": false,
+            "follow_ups": [
+                {
+                    "question": "What happened when dad shouted , look at chris?",
+                    "answer": "\" i popped my head up , and sure enough , there i was !.",
+                    "start_idx": "-1",
+                    "end_idx": "54",
+                    "back_eval_a": "i was on youtube .",
+                    "score": 0.26666666666666666,
+                    "category": [
+                        "setting",
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "question": "What video did dad post?",
+            "answer": "My first try.",
+            "start_idx": "34",
+            "end_idx": "46",
+            "back_eval_a": "my first try with a cart .",
+            "score": 0.6666666666666666,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What did dad say would not stop ringing?",
+                    "answer": "The phone.",
+                    "start_idx": "73",
+                    "end_idx": "82",
+                    "back_eval_a": "the phone would not stop ringing .",
+                    "score": 0.5,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What did everyone think i was?",
+                    "answer": "The cutest, most bravest pig.",
+                    "start_idx": "167",
+                    "end_idx": "195",
+                    "back_eval_a": "the cutest, braviest pig ever .",
+                    "score": 0.6,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What did i try first with my cart?",
+                    "answer": "My cart.",
+                    "start_idx": "52",
+                    "end_idx": "59",
+                    "back_eval_a": "what did i try first with my cart ? .",
+                    "score": 0.4,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What was the first thing i did with my cart?",
+                    "answer": "First.",
+                    "start_idx": "37",
+                    "end_idx": "42",
+                    "back_eval_a": "i tried to push it .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What did everyone think i was?",
+            "answer": "The cutest, most bravest pig.",
+            "start_idx": "167",
+            "end_idx": "195",
+            "back_eval_a": "the cutest, braviest pig ever .",
+            "score": 0.6,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What did dad say would not stop ringing?",
+                    "answer": "The phone.",
+                    "start_idx": "73",
+                    "end_idx": "82",
+                    "back_eval_a": "the phone would not stop ringing .",
+                    "score": 0.5,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What did i try first with my cart?",
+                    "answer": "My cart.",
+                    "start_idx": "52",
+                    "end_idx": "59",
+                    "back_eval_a": "what did i try first with my cart ? .",
+                    "score": 0.4,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What did dad post on his facebook page?",
+                    "answer": "A video.",
+                    "start_idx": "23",
+                    "end_idx": "30",
+                    "back_eval_a": "dad posted a video of my first try with the cart .",
+                    "score": 0.3076923076923077,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What did dad post on his facebook page?",
+                    "answer": "A video.",
+                    "start_idx": "23",
+                    "end_idx": "30",
+                    "back_eval_a": "dad posted a video of my first try with the cart .",
+                    "score": 0.3076923076923077,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What was the first thing i did with my cart?",
+                    "answer": "First.",
+                    "start_idx": "37",
+                    "end_idx": "42",
+                    "back_eval_a": "i tried to push it .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What happened after dad posted the video?",
+                    "answer": "After that , the phone would not stop ringing.",
+                    "start_idx": "-1",
+                    "end_idx": "46",
+                    "back_eval_a": "my phone would not stop ringinging .",
+                    "score": 0.5714285714285715,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What happened after dad posted the video?",
+                    "answer": "After that , the phone would not stop ringing.",
+                    "start_idx": "-1",
+                    "end_idx": "46",
+                    "back_eval_a": "my phone would not stop ringinging .",
+                    "score": 0.5714285714285715,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What happened after i posted the video?",
+                    "answer": "I guess dad had posted a video of my first try with my cart.",
+                    "start_idx": "-1",
+                    "end_idx": "60",
+                    "back_eval_a": "the phone would not stop ringinging .",
+                    "score": 0.0,
+                    "category": [
+                        "action",
+                        "outcome resolution",
+                        "casual relationship"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What did dad say would not stop ringing?",
+            "answer": "The phone.",
+            "start_idx": "73",
+            "end_idx": "82",
+            "back_eval_a": "the phone would not stop ringing .",
+            "score": 0.5,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What did dad post on his facebook page?",
+                    "answer": "A video.",
+                    "start_idx": "23",
+                    "end_idx": "30",
+                    "back_eval_a": "dad posted a video of my first try with the cart .",
+                    "score": 0.3076923076923077,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What did dad post on his facebook page?",
+                    "answer": "A video.",
+                    "start_idx": "23",
+                    "end_idx": "30",
+                    "back_eval_a": "dad posted a video of my first try with the cart .",
+                    "score": 0.3076923076923077,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What did i try first with my cart?",
+                    "answer": "My cart.",
+                    "start_idx": "52",
+                    "end_idx": "59",
+                    "back_eval_a": "what did i try first with my cart ? .",
+                    "score": 0.4,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What was the first thing i did with my cart?",
+                    "answer": "First.",
+                    "start_idx": "37",
+                    "end_idx": "42",
+                    "back_eval_a": "i tried to push it .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What did i try first with my cart?",
+            "answer": "My cart.",
+            "start_idx": "52",
+            "end_idx": "59",
+            "back_eval_a": "what did i try first with my cart ? .",
+            "score": 0.4,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What was the first thing i did with my cart?",
+                    "answer": "First.",
+                    "start_idx": "37",
+                    "end_idx": "42",
+                    "back_eval_a": "i tried to push it .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What did dad post on his facebook page?",
+                    "answer": "A video.",
+                    "start_idx": "23",
+                    "end_idx": "30",
+                    "back_eval_a": "dad posted a video of my first try with the cart .",
+                    "score": 0.3076923076923077,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What did dad post on his facebook page?",
+                    "answer": "A video.",
+                    "start_idx": "23",
+                    "end_idx": "30",
+                    "back_eval_a": "dad posted a video of my first try with the cart .",
+                    "score": 0.3076923076923077,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What happened after dad posted the video?",
+                    "answer": "After that , the phone would not stop ringing.",
+                    "start_idx": "-1",
+                    "end_idx": "46",
+                    "back_eval_a": "my phone would not stop ringinging .",
+                    "score": 0.5714285714285715,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What happened after dad posted the video?",
+                    "answer": "After that , the phone would not stop ringing.",
+                    "start_idx": "-1",
+                    "end_idx": "46",
+                    "back_eval_a": "my phone would not stop ringinging .",
+                    "score": 0.5714285714285715,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What did dad post on his facebook page?",
+            "answer": "A video.",
+            "start_idx": "23",
+            "end_idx": "30",
+            "back_eval_a": "dad posted a video of my first try with the cart .",
+            "score": 0.3076923076923077,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What happened after dad posted the video?",
+                    "answer": "After that , the phone would not stop ringing.",
+                    "start_idx": "-1",
+                    "end_idx": "46",
+                    "back_eval_a": "my phone would not stop ringinging .",
+                    "score": 0.5714285714285715,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What happened after dad posted the video?",
+                    "answer": "After that , the phone would not stop ringing.",
+                    "start_idx": "-1",
+                    "end_idx": "46",
+                    "back_eval_a": "my phone would not stop ringinging .",
+                    "score": 0.5714285714285715,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What happened after dad posted the video?",
+                    "answer": "After that , the phone would not stop ringing.",
+                    "start_idx": "-1",
+                    "end_idx": "46",
+                    "back_eval_a": "my phone would not stop ringinging .",
+                    "score": 0.5714285714285715,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What happened after dad posted the video?",
+                    "answer": "After that , the phone would not stop ringing.",
+                    "start_idx": "-1",
+                    "end_idx": "46",
+                    "back_eval_a": "my phone would not stop ringinging .",
+                    "score": 0.5714285714285715,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What was the first thing i did with my cart?",
+                    "answer": "First.",
+                    "start_idx": "37",
+                    "end_idx": "42",
+                    "back_eval_a": "i tried to push it .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What was the first thing i did with my cart?",
+                    "answer": "First.",
+                    "start_idx": "37",
+                    "end_idx": "42",
+                    "back_eval_a": "i tried to push it .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What did dad post on his facebook page?",
+            "answer": "My video.",
+            "start_idx": "140",
+            "end_idx": "148",
+            "back_eval_a": "dad posted a video of my first try with the cart .",
+            "score": 0.15384615384615385,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What happened after dad posted the video?",
+                    "answer": "After that , the phone would not stop ringing.",
+                    "start_idx": "-1",
+                    "end_idx": "46",
+                    "back_eval_a": "my phone would not stop ringinging .",
+                    "score": 0.5714285714285715,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What happened after dad posted the video?",
+                    "answer": "After that , the phone would not stop ringing.",
+                    "start_idx": "-1",
+                    "end_idx": "46",
+                    "back_eval_a": "my phone would not stop ringinging .",
+                    "score": 0.5714285714285715,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What happened after dad posted the video?",
+                    "answer": "After that , the phone would not stop ringing.",
+                    "start_idx": "-1",
+                    "end_idx": "46",
+                    "back_eval_a": "my phone would not stop ringinging .",
+                    "score": 0.5714285714285715,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What happened after dad posted the video?",
+                    "answer": "After that , the phone would not stop ringing.",
+                    "start_idx": "-1",
+                    "end_idx": "46",
+                    "back_eval_a": "my phone would not stop ringinging .",
+                    "score": 0.5714285714285715,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What was the first thing i did with my cart?",
+                    "answer": "First.",
+                    "start_idx": "37",
+                    "end_idx": "42",
+                    "back_eval_a": "i tried to push it .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What was the first thing i did with my cart?",
+                    "answer": "First.",
+                    "start_idx": "37",
+                    "end_idx": "42",
+                    "back_eval_a": "i tried to push it .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What was the first thing i did with my cart?",
+            "answer": "First.",
+            "start_idx": "37",
+            "end_idx": "42",
+            "back_eval_a": "i tried to push it .",
+            "score": 0.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What happened after dad posted the video?",
+                    "answer": "After that , the phone would not stop ringing.",
+                    "start_idx": "-1",
+                    "end_idx": "46",
+                    "back_eval_a": "my phone would not stop ringinging .",
+                    "score": 0.5714285714285715,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What happened after dad posted the video?",
+                    "answer": "After that , the phone would not stop ringing.",
+                    "start_idx": "-1",
+                    "end_idx": "46",
+                    "back_eval_a": "my phone would not stop ringinging .",
+                    "score": 0.5714285714285715,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What happened after dad posted the video?",
+            "answer": "After that , the phone would not stop ringing.",
+            "start_idx": "-1",
+            "end_idx": "46",
+            "back_eval_a": "my phone would not stop ringinging .",
+            "score": 0.5714285714285715,
+            "category": [
+                "action",
+                "outcome resolution"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        },
+        {
+            "question": "What happened after dad posted the video?",
+            "answer": "It seemed like everyone had seen my video and thought i was the cutest , most bravest pig ever !.",
+            "start_idx": "-1",
+            "end_idx": "95",
+            "back_eval_a": "my phone would not stop ringinging .",
+            "score": 0.08333333333333333,
+            "category": [
+                "action",
+                "outcome resolution",
+                "casual relationship"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        },
+        {
+            "question": "What happened after i posted the video?",
+            "answer": "I guess dad had posted a video of my first try with my cart.",
+            "start_idx": "-1",
+            "end_idx": "60",
+            "back_eval_a": "the phone would not stop ringinging .",
+            "score": 0.0,
+            "category": [
+                "action",
+                "outcome resolution",
+                "casual relationship"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        }
+    ],
+    [
+        {
+            "question": "What did i visit in different cities?",
+            "answer": "Tv shows.",
+            "start_idx": "106",
+            "end_idx": "114",
+            "back_eval_a": "tv shows .",
+            "score": 1.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What happened after my cart?",
+                    "answer": "My life.",
+                    "start_idx": "9",
+                    "end_idx": "16",
+                    "back_eval_a": "my life got busy after that .",
+                    "score": 0.5,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is the name of my cart?",
+                    "answer": "My cart.",
+                    "start_idx": "74",
+                    "end_idx": "81",
+                    "back_eval_a": "my cart is called the name of it .",
+                    "score": 0.4,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What kind of friends did i make?",
+                    "answer": "All kinds.",
+                    "start_idx": "144",
+                    "end_idx": "153",
+                    "back_eval_a": "new friends .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What did i make?",
+                    "answer": "New friends.",
+                    "start_idx": "157",
+                    "end_idx": "168",
+                    "back_eval_a": "what did i make ? .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What happened after my cart was discovered?",
+                    "answer": "Everyone wated to know about me and my cart.",
+                    "start_idx": "-1",
+                    "end_idx": "44",
+                    "back_eval_a": "my life got busyly .",
+                    "score": 0.15384615384615383,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "Where did i visit tv shows in?",
+            "answer": "Different cities.",
+            "start_idx": "118",
+            "end_idx": "134",
+            "back_eval_a": "different cities .",
+            "score": 1.0,
+            "category": [
+                "setting"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What happened after my cart?",
+                    "answer": "My life.",
+                    "start_idx": "9",
+                    "end_idx": "16",
+                    "back_eval_a": "my life got busy after that .",
+                    "score": 0.5,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What is the name of my cart?",
+                    "answer": "My cart.",
+                    "start_idx": "74",
+                    "end_idx": "81",
+                    "back_eval_a": "my cart is called the name of it .",
+                    "score": 0.4,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What kind of friends did i make?",
+                    "answer": "All kinds.",
+                    "start_idx": "144",
+                    "end_idx": "153",
+                    "back_eval_a": "new friends .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What did i make?",
+                    "answer": "New friends.",
+                    "start_idx": "157",
+                    "end_idx": "168",
+                    "back_eval_a": "what did i make ? .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What happened after my cart was discovered?",
+                    "answer": "Everyone wated to know about me and my cart.",
+                    "start_idx": "-1",
+                    "end_idx": "44",
+                    "back_eval_a": "my life got busyly .",
+                    "score": 0.15384615384615383,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What happened after my cart?",
+            "answer": "My life.",
+            "start_idx": "9",
+            "end_idx": "16",
+            "back_eval_a": "my life got busy after that .",
+            "score": 0.5,
+            "category": [
+                "action",
+                "outcome resolution"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What kind of friends did i make?",
+                    "answer": "All kinds.",
+                    "start_idx": "144",
+                    "end_idx": "153",
+                    "back_eval_a": "new friends .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What did i make?",
+                    "answer": "New friends.",
+                    "start_idx": "157",
+                    "end_idx": "168",
+                    "back_eval_a": "what did i make ? .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What did my life get busy after that?",
+                    "answer": "I got to visit lots of tv shows in different cities and make all kinds of new friends.",
+                    "start_idx": "-1",
+                    "end_idx": "86",
+                    "back_eval_a": "my life got busy after that .",
+                    "score": 0.08333333333333333,
+                    "category": [
+                        "action",
+                        "casual relationship"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What is the name of my cart?",
+            "answer": "My cart.",
+            "start_idx": "74",
+            "end_idx": "81",
+            "back_eval_a": "my cart is called the name of it .",
+            "score": 0.4,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What kind of friends did i make?",
+                    "answer": "All kinds.",
+                    "start_idx": "144",
+                    "end_idx": "153",
+                    "back_eval_a": "new friends .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What did i make?",
+                    "answer": "New friends.",
+                    "start_idx": "157",
+                    "end_idx": "168",
+                    "back_eval_a": "what did i make ? .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "What did my life get busy after that?",
+                    "answer": "I got to visit lots of tv shows in different cities and make all kinds of new friends.",
+                    "start_idx": "-1",
+                    "end_idx": "86",
+                    "back_eval_a": "my life got busy after that .",
+                    "score": 0.08333333333333333,
+                    "category": [
+                        "action",
+                        "casual relationship"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What kind of friends did i make?",
+            "answer": "All kinds.",
+            "start_idx": "144",
+            "end_idx": "153",
+            "back_eval_a": "new friends .",
+            "score": 0.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What happened after my cart was discovered?",
+                    "answer": "Everyone wated to know about me and my cart.",
+                    "start_idx": "-1",
+                    "end_idx": "44",
+                    "back_eval_a": "my life got busyly .",
+                    "score": 0.15384615384615383,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What did i make?",
+            "answer": "New friends.",
+            "start_idx": "157",
+            "end_idx": "168",
+            "back_eval_a": "what did i make ? .",
+            "score": 0.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What happened after my cart was discovered?",
+                    "answer": "Everyone wated to know about me and my cart.",
+                    "start_idx": "-1",
+                    "end_idx": "44",
+                    "back_eval_a": "my life got busyly .",
+                    "score": 0.15384615384615383,
+                    "category": [
+                        "action",
+                        "outcome resolution"
+                    ],
+                    "answer_in_text": false
+                },
+                {
+                    "question": "What did my life get busy after that?",
+                    "answer": "I got to visit lots of tv shows in different cities and make all kinds of new friends.",
+                    "start_idx": "-1",
+                    "end_idx": "86",
+                    "back_eval_a": "my life got busy after that .",
+                    "score": 0.08333333333333333,
+                    "category": [
+                        "action",
+                        "casual relationship"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What happened after my cart was discovered?",
+            "answer": "Everyone wated to know about me and my cart.",
+            "start_idx": "-1",
+            "end_idx": "44",
+            "back_eval_a": "my life got busyly .",
+            "score": 0.15384615384615383,
+            "category": [
+                "action",
+                "outcome resolution"
+            ],
+            "answer_in_text": false,
+            "follow_ups": [
+                {
+                    "question": "What did my life get busy after that?",
+                    "answer": "I got to visit lots of tv shows in different cities and make all kinds of new friends.",
+                    "start_idx": "-1",
+                    "end_idx": "86",
+                    "back_eval_a": "my life got busy after that .",
+                    "score": 0.08333333333333333,
+                    "category": [
+                        "action",
+                        "casual relationship"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What did my life get busy after that?",
+            "answer": "I got to visit lots of tv shows in different cities and make all kinds of new friends.",
+            "start_idx": "-1",
+            "end_idx": "86",
+            "back_eval_a": "my life got busy after that .",
+            "score": 0.08333333333333333,
+            "category": [
+                "action",
+                "casual relationship"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        }
+    ],
+    [
+        {
+            "question": "What does inspring mean?",
+            "answer": "People kept calling me \" inspring , \" which i think means that i make them feel like they want to do their very best.",
+            "start_idx": "-1",
+            "end_idx": "117",
+            "back_eval_a": "makes people want to do their very best .",
+            "score": 0.4666666666666667,
+            "category": [
+                "action",
+                "casual relationship"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        }
+    ],
+    [
+        {
+            "question": "What does making people smile put them in?",
+            "answer": "Good mood.",
+            "start_idx": "138",
+            "end_idx": "147",
+            "back_eval_a": "good mood .",
+            "score": 1.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "Who says i do that all the time?",
+                    "answer": "Dad.",
+                    "start_idx": "43",
+                    "end_idx": "46",
+                    "back_eval_a": "dad says i do that all the time .",
+                    "score": 0.2222222222222222,
+                    "category": [
+                        "character"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "Who says i do that all the time?",
+            "answer": "Dad.",
+            "start_idx": "43",
+            "end_idx": "46",
+            "back_eval_a": "dad says i do that all the time .",
+            "score": 0.2222222222222222,
+            "category": [
+                "character"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What does it seem to me that if you make people smile ,?",
+                    "answer": "It seems to me that if you make people smile , it puts them in good mood.",
+                    "start_idx": "-1",
+                    "end_idx": "75",
+                    "back_eval_a": "it puts them in good mood .",
+                    "score": 0.5454545454545454,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What does all i want to do is make people smile?",
+            "answer": "All i want to do is make people smile , and dad says i do that all the time.",
+            "start_idx": "-1",
+            "end_idx": "76",
+            "back_eval_a": "what does all i want to do is make people smile ? .",
+            "score": 0.6206896551724137,
+            "category": [
+                "action",
+                "casual relationship"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        },
+        {
+            "question": "What does it seem to me that if you make people smile ,?",
+            "answer": "It seems to me that if you make people smile , it puts them in good mood.",
+            "start_idx": "-1",
+            "end_idx": "75",
+            "back_eval_a": "it puts them in good mood .",
+            "score": 0.5454545454545454,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        }
+    ],
+    [
+        {
+            "question": "What is in a good mood?",
+            "answer": "A good mood.",
+            "start_idx": "17",
+            "end_idx": "28",
+            "back_eval_a": "it is easier to think positive .",
+            "score": 0.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What is oinkity-oinking?",
+                    "answer": "Other words.",
+                    "start_idx": "123",
+                    "end_idx": "134",
+                    "back_eval_a": "what is oinkity-oinking ? of positive thinking .",
+                    "score": 0.0,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What is oinkity-oinking?",
+            "answer": "Other words.",
+            "start_idx": "123",
+            "end_idx": "134",
+            "back_eval_a": "what is oinkity-oinking ? of positive thinking .",
+            "score": 0.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What does this mean?",
+                    "answer": "And if you 're in a good mood , it 's easier to think positive.",
+                    "start_idx": "-1",
+                    "end_idx": "65",
+                    "back_eval_a": "it means you are in a good mood .",
+                    "score": 0.45454545454545453,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What does this mean?",
+            "answer": "And if you 're in a good mood , it 's easier to think positive.",
+            "start_idx": "-1",
+            "end_idx": "65",
+            "back_eval_a": "it means you are in a good mood .",
+            "score": 0.45454545454545453,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        },
+        {
+            "question": "What is the main point of this story?",
+            "answer": "And if you think positive , who knows what you can do ?.",
+            "start_idx": "-1",
+            "end_idx": "54",
+            "back_eval_a": "if you are in a good mood , it is easier to think positive .",
+            "score": 0.33333333333333337,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        }
+    ],
+    [
+        {
+            "question": "What has traveling been?",
+            "answer": "A great adventure.",
+            "start_idx": "28",
+            "end_idx": "45",
+            "back_eval_a": "great adventure .",
+            "score": 0.8,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": []
+        },
+        {
+            "question": "What is the best part about traveling?",
+            "answer": "Traveling all over has been a great adventure.",
+            "start_idx": "-1",
+            "end_idx": "46",
+            "back_eval_a": "adventure .",
+            "score": 0.2222222222222222,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        }
+    ],
+    [
+        {
+            "question": "What was delivered to my door?",
+            "answer": "A hot fudge sundae.",
+            "start_idx": "62",
+            "end_idx": "80",
+            "back_eval_a": "a hot fudge sundae .",
+            "score": 1.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "Where did i stay in new york city?",
+                    "answer": "A hotel room.",
+                    "start_idx": "40",
+                    "end_idx": "52",
+                    "back_eval_a": "hotel room .",
+                    "score": 0.8,
+                    "category": [
+                        "setting"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "Where did i go to stay?",
+                    "answer": "New york city.",
+                    "start_idx": "15",
+                    "end_idx": "28",
+                    "back_eval_a": "hotel .",
+                    "score": 0.0,
+                    "category": [
+                        "setting"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "Where was the hot fudge sundae delivered to?",
+            "answer": "My door.",
+            "start_idx": "94",
+            "end_idx": "101",
+            "back_eval_a": "my door .",
+            "score": 1.0,
+            "category": [
+                "setting"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "Where did i stay in new york city?",
+                    "answer": "A hotel room.",
+                    "start_idx": "40",
+                    "end_idx": "52",
+                    "back_eval_a": "hotel room .",
+                    "score": 0.8,
+                    "category": [
+                        "setting"
+                    ],
+                    "answer_in_text": true
+                },
+                {
+                    "question": "Where did i go to stay?",
+                    "answer": "New york city.",
+                    "start_idx": "15",
+                    "end_idx": "28",
+                    "back_eval_a": "hotel .",
+                    "score": 0.0,
+                    "category": [
+                        "setting"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "Where did i stay in new york city?",
+            "answer": "A hotel room.",
+            "start_idx": "40",
+            "end_idx": "52",
+            "back_eval_a": "hotel room .",
+            "score": 0.8,
+            "category": [
+                "setting"
+            ],
+            "answer_in_text": true,
+            "follow_ups": []
+        },
+        {
+            "question": "Where did i go to stay?",
+            "answer": "New york city.",
+            "start_idx": "15",
+            "end_idx": "28",
+            "back_eval_a": "hotel .",
+            "score": 0.0,
+            "category": [
+                "setting"
+            ],
+            "answer_in_text": true,
+            "follow_ups": []
+        },
+        {
+            "question": "What did i do in new york city?",
+            "answer": "I even went to new york city , stayed in a hotel room , and had a hot fudge sundae delivered to my door !.",
+            "start_idx": "-1",
+            "end_idx": "104",
+            "back_eval_a": "stayed in a hotel room and had hot fudge sundae delivered to my door .",
+            "score": 0.7777777777777778,
+            "category": [
+                "action",
+                "casual relationship"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        }
+    ],
+    [
+        {
+            "question": "What is most important to you?",
+            "answer": "My family.",
+            "start_idx": "84",
+            "end_idx": "93",
+            "back_eval_a": "being with your family .",
+            "score": 0.3333333333333333,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What is the main thing that you are happy about being famous for?",
+                    "answer": "Being famous is all really fun and exciting , but now i 'm happy to be back home with my family , playing with aspen and duma and getting as dirty as possible.",
+                    "start_idx": "-1",
+                    "end_idx": "159",
+                    "back_eval_a": "being with your family .",
+                    "score": 0.1714285714285714,
+                    "category": [
+                        "action",
+                        "casual relationship"
+                    ],
+                    "answer_in_text": false
+                }
+            ]
+        },
+        {
+            "question": "What is the main thing that you are happy about being famous for?",
+            "answer": "Being famous is all really fun and exciting , but now i 'm happy to be back home with my family , playing with aspen and duma and getting as dirty as possible.",
+            "start_idx": "-1",
+            "end_idx": "159",
+            "back_eval_a": "being with your family .",
+            "score": 0.1714285714285714,
+            "category": [
+                "action",
+                "casual relationship"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        }
+    ],
+    [
+        {
+            "question": "What is the best thing about my new life?",
+            "answer": "The best thing.",
+            "start_idx": "0",
+            "end_idx": "14",
+            "back_eval_a": "i get to meet people and animals who are different .",
+            "score": 0.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": []
+        },
+        {
+            "question": "What is the best thing about my new life?",
+            "answer": "My new life.",
+            "start_idx": "21",
+            "end_idx": "32",
+            "back_eval_a": "i get to meet people and animals who are different .",
+            "score": 0.0,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": []
+        },
+        {
+            "question": "What is the best thing about my new life?",
+            "answer": "The best thing about my new life is that i get to meet people and animals who are different.",
+            "start_idx": "-1",
+            "end_idx": "94",
+            "back_eval_a": "i get to meet people and animals who are different .",
+            "score": 0.6896551724137931,
+            "category": [
+                "action",
+                "casual relationship"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        }
+    ],
+    [
+        {
+            "question": "What does the story show that helps kids learn to be yooooo-neek?",
+            "answer": "A tiny pink pig.",
+            "start_idx": "32",
+            "end_idx": "47",
+            "back_eval_a": "what a tiny pink pig can do help .",
+            "score": 0.6666666666666666,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What do they realize that piggies can also be?",
+                    "answer": "All kinds.",
+                    "start_idx": "139",
+                    "end_idx": "148",
+                    "back_eval_a": "all kinds of things .",
+                    "score": 0.6666666666666666,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What do they realize that piggies can also be?",
+            "answer": "All kinds.",
+            "start_idx": "139",
+            "end_idx": "148",
+            "back_eval_a": "all kinds of things .",
+            "score": 0.6666666666666666,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": [
+                {
+                    "question": "What does the pink pig need?",
+                    "answer": "A little help.",
+                    "start_idx": "60",
+                    "end_idx": "73",
+                    "back_eval_a": "what does the pink pig need ? a little help .",
+                    "score": 0.5,
+                    "category": [
+                        "action"
+                    ],
+                    "answer_in_text": true
+                }
+            ]
+        },
+        {
+            "question": "What does the pink pig need?",
+            "answer": "A little help.",
+            "start_idx": "60",
+            "end_idx": "73",
+            "back_eval_a": "what does the pink pig need ? a little help .",
+            "score": 0.5,
+            "category": [
+                "action"
+            ],
+            "answer_in_text": true,
+            "follow_ups": []
+        },
+        {
+            "question": "What does the pink pig show that kids can do?",
+            "answer": "I think that when they see what a tiny pink pig can do with a little help - and a lot of grunting - it makes them realize that they can do all kinds of things , too.",
+            "start_idx": "-1",
+            "end_idx": "165",
+            "back_eval_a": "what kids can do with a little help and gruntingng .",
+            "score": 0.3555555555555555,
+            "category": [
+                "action",
+                "casual relationship"
+            ],
+            "answer_in_text": false,
+            "follow_ups": []
+        }
+    ]
+]

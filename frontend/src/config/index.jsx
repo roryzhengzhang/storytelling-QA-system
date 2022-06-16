@@ -1,1 +1,1 @@
-export const MODE = 1;
+export var MODE = 1;

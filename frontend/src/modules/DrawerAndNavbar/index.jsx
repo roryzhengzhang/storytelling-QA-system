@@ -18,19 +18,19 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
+import { useHistory } from 'react-router-dom';
 import MailIcon from '@material-ui/icons/Mail';
 import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import BookIcon from '@material-ui/icons/Book';
+import ChromeReaderModeIcon from '@material-ui/icons/ChromeReaderMode';
 import TuneIcon from '@material-ui/icons/Tune';
 import HelpIcon from '@material-ui/icons/Help';
 import DashboardIcon from '@material-ui/icons/Dashboard';
 
 import { Link as RouterLink } from 'react-router-dom'
 
-import { resetPage } from "../StoryBook/storybookSlice";
-import { useDispatch } from 'react-redux';
-
-import { MODE } from '../../config'
+import { resetPage, setMode } from "../StoryBook/storybookSlice";
+import { useDispatch, useSelector } from 'react-redux';
 
 const drawerWidth = 240;
 
@@ -126,6 +126,9 @@ const DrawerAndNavbar = (props) => {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
   const { content } = props;
+  const history = useHistory();
+
+  const MODE = useSelector(state => state.storybook.MODE)
 
   const dispatch = useDispatch();
 
@@ -136,6 +139,11 @@ const DrawerAndNavbar = (props) => {
   const handleDrawerClose = () => {
     setOpen(false);
   };
+
+  const handleModeSwitch = () => {
+    dispatch(setMode())
+    history.push("/");
+  }
 
   return (
     <div className={classes.root}>
@@ -162,7 +170,7 @@ const DrawerAndNavbar = (props) => {
             Story Buddy
           </Typography>
           <Typography variant="body1" noWrap style={{ marginLeft: 4 }}>
-            <sub>{MODE === 0 ? "accompanied" : "independent"}</sub>
+            <span style={{color: "secondary"}}>{MODE === 0 ? "read with parent" : "child alone"}</span>
           </Typography>
         </Toolbar>
       </AppBar>
@@ -187,11 +195,15 @@ const DrawerAndNavbar = (props) => {
         <Divider />
         <List>
           <ListItemLink to="/storyselection" primary="Select Storybooks" icon={<LibraryBooksIcon />} />
-          {MODE == 1 &&
-            <ListItemLink to="/questionpreview" primary="Question Preview" icon={<HelpIcon />} />}
-          <ListItemLink to="/storydisplay" primary="Read Story" icon={<BookIcon />} />
-          <ListItemLink to="/config" primary="Configuration" icon={<TuneIcon />} />
+          {/* {MODE == 1 &&
+            <ListItemLink to="/questionpreview" primary="Question Preview" icon={<HelpIcon />} />} */}
+          {/* <ListItemLink to="/storydisplay" primary="Read Story" icon={<BookIcon />} /> */}
+          { MODE == 0 && <ListItemLink to="/config" primary="Configuration" icon={<TuneIcon />} /> }
           <ListItemLink to="/dashboard" primary="Dashboard" icon={<DashboardIcon />} />
+          <ListItem button onClick={handleModeSwitch}>
+            <ListItemIcon>{<ChromeReaderModeIcon />}</ListItemIcon>
+            <ListItemText primary="Switch Mode" />
+          </ListItem>
         </List>
       </Drawer>
       <main className={classes.content}>

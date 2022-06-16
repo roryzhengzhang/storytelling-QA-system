@@ -1,6 +1,68 @@
 import axios from 'axios'
 
-import { storyLibrary, questionLibrary, simQuestionLibrary } from '../../store/data'
+import { storyLibrary, questionLibrary, simQuestionLibrary } from '../../store/data_new_third_person'
+
+import { setServerReturned } from '../../modules/StoryBook/storybookSlice'
+
+import { useSelector, useDispatch } from 'react-redux';
+
+// function sleep(delay) {
+//     var start = new Date().getTime();
+//     while (new Date().getTime() < start + delay);
+// }
+
+function waitResponse(value) {
+    while(value === false);
+    
+    return;
+}
+
+// write a async function to enable await. It will ensure the program will only move on after http request returns
+export async function checkAnswer(question, answer) {
+        let is_correct = await checkAnswerWithDialogflow(question, answer).then(value => {
+        // console.log("value", value)
+        return value
+    });
+    return is_correct;
+}
+
+export function checkAnswerWithDialogflow(question, answer) {
+
+    console.log("check answer function called")
+
+    var is_correct;
+
+    // const serverReturned = useSelector(state => state.storybook.serverReturned);
+
+    // const dispatch = useDispatch();
+
+    // dispatch(setServerReturned(false))
+
+    return axios.get('https://ndhci.org:2053/text-input', {
+        params: {
+            question,
+            answer
+        }
+    }, {
+        headers: {
+            "Access-Control-Allow-Origin": "*"
+        }
+    }).then( response => response.data ).then(data => {
+        is_correct = data.correctness;
+        console.log("response correctness", is_correct)
+        // dispatch(setServerReturned(true))
+        // finished = true
+        return is_correct
+    })
+
+
+    return is_correct;
+    // console.log("correctness:", is_correct)
+
+    // // waitResponse(is_correct)
+
+    // console.log("correctness:", is_correct)
+}
 
 export async function getTTS(content) {
 
@@ -28,6 +90,21 @@ export async function getTTS(content) {
 
     return audio;
 }
+
+export async function getTextResponse(content) {
+    const request = axios.post('http://localhost:2053/text-input', {
+        message: content
+    });
+
+    var text_res;
+
+    request.then((response) => {
+        text_res = response.data[0].queryResult.fulfillmentText
+    })
+
+    return text_res;
+}
+
 
 export async function fetchStoryFromServer(storyInfo) {
 

@@ -3,7 +3,8 @@ import DrawerAndNavbar from '../../modules/DrawerAndNavbar';
 import { Typography, Paper, Dialog, DialogTitle, DialogActions, Button, DialogContent } from '@material-ui/core';
 import StoryBook from '../../modules/StoryBook';
 import { makeStyles } from '@material-ui/core/styles';
-import { MODE } from '../../config'
+import { useLocation } from "react-router-dom";
+import { useSelector } from 'react-redux';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -34,11 +35,22 @@ function StoryDisplay(props) {
 
     const classes = useStyles();
 
+    const location = useLocation();
+
+    const MODE = useSelector(state => state.storybook.MODE)
+
     const storyContent = (
         <div className={classes.paper} >
-            <StoryBook className={classes.card} hideQuestion={MODE === 1}>
-                The API documentation of the Paper React component. Learn more about the props and the CSS customization points.
-            </StoryBook>
+            {
+                MODE === 1 ?
+                    <StoryBook className={classes.card} hideQuestion={MODE === 1} question_selected={location.state.questionSelected}>
+                        The API documentation of the Paper React component. Learn more about the props and the CSS customization points.
+                    </StoryBook> :
+                    <StoryBook className={classes.card} hideQuestion={MODE === 1}>
+                        The API documentation of the Paper React component. Learn more about the props and the CSS customization points.
+                    </StoryBook>
+            }
+
         </div>
     );
 

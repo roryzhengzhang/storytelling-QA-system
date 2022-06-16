@@ -42,9 +42,14 @@ const theme = createTheme({
             "dark": "#006556"
         },
         "secondary": {
-            "main": "#FFAB00",
+            "main": "#ff8f00",
             "light": "#ffd740",
             "dark": "#ff8f00"
+        },
+        "button-color": {
+            "main": "#ff8f00",
+            "light": "#ff9d3f",
+            "dark": "#b53d00"
         },
         "contrastThreshold": 1.8
     }

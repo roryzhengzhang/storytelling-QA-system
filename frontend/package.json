@@ -10,6 +10,10 @@
     "@material-ui/lab": "*",
     "@mui-treasury/components": "^1.10.1",
     "@mui-treasury/mockup": "^1.2.12",
+    "@nivo/bar": "^0.73.1",
+    "@nivo/core": "^0.73.0",
+    "@nivo/pie": "^0.73.0",
+    "@nivo/radar": "^0.73.0",
     "@reduxjs/toolkit": "^1.6.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -18,9 +22,13 @@
     "chart.js": "^3.5.0",
     "chat-ui-react": "^0.2.14",
     "circular-json": "^0.5.9",
+    "date-fns": "^2.23.0",
     "material-ui-popup-state": "^1.9.0",
     "mdi-material-ui": "^6.22.1",
+    "mui-datatables": "^3.7.8",
     "mui-modal-provider": "^1.5.0",
+    "nivo": "^0.31.0",
+    "promise-status-async": "^1.1.11",
     "react": "^17.0.2",
     "react-bot-ui": "^2.0.0",
     "react-chartjs-2": "^3.0.4",
@@ -28,15 +36,16 @@
     "react-material-ui-carousel": "^2.2.7",
     "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^4.0.3",
     "react-simple-chatbot": "^0.6.1",
     "react-speech": "^1.0.2",
     "redux-persist": "^6.0.0",
     "redux-persist-transform-filter": "^0.0.20",
+    "styled-components": "^5.3.0",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set HTTPS=true&&react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -58,5 +67,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "modify the `MODE` parameter in `./frontend/src/config/index.jsx` to switch from two modes:",
+  "main": "index.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

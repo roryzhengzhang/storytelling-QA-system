@@ -11,6 +11,8 @@ import {
 import axios from 'axios';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import PauseIcon from '@material-ui/icons/Pause';
+import { setEverPlayed } from './storybookSlice';
+import { useDispatch, useSelector } from 'react-redux';
 import { MODE } from '../../config'
 const useStyles = makeStyles((theme) => ({
     card: {
@@ -78,6 +80,9 @@ const StoryPage = (props) => {
     const classes = useStyles();
     const [tts, setTts] = React.useState('');
     const [play, setPlay] = React.useState(false);
+    const dispatch = useDispatch();
+    const everPlayed = useSelector(state => state.storybook.everPlayed)
+    // const [everPlayed, setEverPlayed] = React.useState(false);
 
     const ttsRequest = {
         "audioConfig": {
@@ -108,10 +113,10 @@ const StoryPage = (props) => {
 
     React.useEffect(() => {
         axios
-            .post('https://texttospeech.googleapis.com/v1beta1/text:synthesize?key=AIzaSyDbAoO-MIi1PFP64Rfxvho7jN4DB2qTb5M', ttsRequest)
+            .post('https://texttospeech.googleapis.com/v1beta1/text:synthesize?key=AIzaSyC92d2V2tFuaTWQlV03HMveuEIxj9vfRC0', ttsRequest)
             .then(response => {
                 var audio = new Audio("data:audio/wav;base64," + response.data.audioContent);
-                audio.onended = () => { setPlay(false) };
+                audio.onended = () => { setPlay(false); dispatch(setEverPlayed()) };
                 setTts(audio);
             })
     }, [])

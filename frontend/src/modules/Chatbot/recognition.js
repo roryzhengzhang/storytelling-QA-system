@@ -16,10 +16,12 @@ export default class Recognition {
    * @memberof Recognition
    * @constructor
    */
+  
   constructor(onChange = noop, onEnd = noop, onStop = noop, lang = 'en') {
-    if (!instance) {
-      instance = this;
-    }
+    // if (!instance) {
+    //   instance = this;
+    // }
+
     this.state = {
       inputValue: '',
       lang,
@@ -116,6 +118,7 @@ export default class Recognition {
    */
   setup() {
     if (!Recognition.isSupported()) {
+      console.log("recognition doesn't supported")
       return this;
     }
 
@@ -151,6 +154,7 @@ export default class Recognition {
    */
   speak() {
     if (!Recognition.isSupported()) {
+      console.log("recognition doesn't supported")
       return this;
     }
     const { speaking } = this.state;
