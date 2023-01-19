@@ -3,4 +3,4 @@ The front end server code is in `frontend` folder. Please run `npm start` to lau
 
 ## Run backend server
 
-To deploy back end server, you can first run `pip install -r requirements.txt` under `flask` folder. Then run `python server.py` tp launch the server.
+To deploy back end server, you can first run `pip install -r requirements.txt` under `flask` folder. Then run `python server.py` to launch the server.
